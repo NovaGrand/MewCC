@@ -1,2 +1,2 @@
-# SACE
- Style Attributes Community Edition
+# SACC
+ Style Attributes Collection Community
