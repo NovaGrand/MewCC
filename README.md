@@ -1,2 +1,2 @@
-# SACC
- Style Attributes Collection Community
+# MewCC
+ A Frontend Multi-Element Widgets Community Collection

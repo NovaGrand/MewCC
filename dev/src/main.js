@@ -2,9 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
-
-import "./plugins/style in attribute"
+import './style'
+import './plugins/sacc'
 
 createApp(App)
     .use(router)

@@ -1,19 +1,19 @@
 {
-  "name": "sace",
+  "name": "mewcc",
   "version": "0.0.1",
-  "description": "Style Attributs Community Edition",
+  "description": "A Frontend Multi-Element Widgets Community Collection",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NovaGrand/SACE.git"
+    "url": "git+https://github.com/NovaGrand/MewCC.git"
   },
   "author": "NovaGrand",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NovaGrand/SACE/issues"
+    "url": "https://github.com/NovaGrand/MewCC/issues"
   },
-  "homepage": "https://github.com/NovaGrand/SACE#readme"
+  "homepage": "https://github.com/NovaGrand/MewCC#readme"
 }
