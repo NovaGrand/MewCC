@@ -1,6 +1,8 @@
 <template>
     <div class="wrapper">
-        <router-view/>
+        <div class="constraint">
+            <router-view/>
+        </div>
     </div>
 </template>
 
@@ -12,10 +14,23 @@ name: "wrapper"
 
 <style scoped lang="scss">
 div.wrapper{
-    width: 67vw;
-    height: 100%;
+    width: 64vw;
+    height: calc(100vh - 65px);
     overflow-y: scroll;
-    padding-top: 55px;
+    padding: 20px;
+    @media(max-width: 1200px){
+        width: 70vw;
+    }
+    @media(max-width: 1000px){
+        width: 78vw;
+    }
+    @media(max-width: 800px){
+        width: 100vw;
+        padding: 5px;
+    }
+    div.constraint{
+        max-width: 900px;
+    }
 }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="documentation" flex>
-        <headbar/>
-        <sidebar/>
+        <headbar :stat="stat"/>
+        <sidebar :stat="stat"/>
         <wrapper/>
     </div>
 </template>
@@ -13,7 +13,14 @@ import wrapper from "./wrapper"
 
 export default {
     name: "documentation",
-    components:{headbar, sidebar, wrapper},
+    components: { headbar, sidebar, wrapper },
+    data(){
+        return {
+            stat:{
+                drawer: false
+            }
+        }
+    },
 
 }
 </script>
@@ -23,7 +30,6 @@ div.documentation{
     position: relative;
     width: 100vw;
     height: 100vh;
-    //padding-top: 55px;
-    //background: red;
+    padding: 65px 0 0 0;
 }
 </style>

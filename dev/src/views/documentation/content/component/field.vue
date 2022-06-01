@@ -1,0 +1,15 @@
+<template>
+    <div>
+        field
+    </div>
+</template>
+
+<script>
+export default {
+name: "field"
+}
+</script>
+
+<style scoped>
+
+</style>

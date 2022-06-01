@@ -1,8 +1,12 @@
 <template>
-    <div>
-        home
+    <div fill flex jc pt-xl>
         <div>
-            <router-link to="/doc/intro">documentation</router-link>
+            <div jc bold>
+                HOME
+            </div>
+            <div>
+                <router-link to="/doc/quick_start">documentation</router-link>
+            </div>
         </div>
     </div>
 </template>

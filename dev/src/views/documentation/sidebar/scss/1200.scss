@@ -1,0 +1,20 @@
+div#sidebar{
+  @media(max-width: 1200px){
+    width: 30vw;
+  }
+  @media(max-width: 1000px){
+    width: 22vw;
+  }
+  @media(max-width: 800px){
+    position: absolute;top: 55px;z-index: 1;
+    margin-top: 0;
+    height: calc(100vh - 55px);
+    padding-top: 20px;
+    background-color: white;
+    transform: translateX(-190px);
+    transition: all .2s;
+    &.show{
+      transform: translateX(0);
+    }
+  }
+}

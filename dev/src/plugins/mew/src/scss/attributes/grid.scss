@@ -2,6 +2,6 @@
 @for $i from 1 through 25 {
   [col-#{$i}]{
     --wd:#{$i * 4}%;
-    width: var(--wd);
+    width:var(--wd);
   }
 }

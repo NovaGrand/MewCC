@@ -8,3 +8,9 @@ export default {
 }
 </script>
 
+<style lang="scss">
+div#app{
+    height: 100%;
+}
+</style>
+

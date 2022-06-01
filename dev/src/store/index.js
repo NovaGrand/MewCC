@@ -3,60 +3,118 @@ import { createStore } from 'vuex'
 const store = createStore({
     state () {
         return {
+            version:'1.3.1',
             doc:{
-                "开始":[
+                "指南":[
                     {
-                        name:'Intro',
-                        path:'intro',
-                        file:'/intro.vue'
-                    },
-                    {
-                        name:'Quick start',
+                        name:'开始 Start',
+                        prefix:'开始',suffix:'Start',
                         path:'quick_start',
-                        file:'/quick_start.vue'
+                        file:'/intro/quick_start.vue'
+                    },
+                    {
+                        name:'规范 Standard',
+                        prefix:'规范',suffix:'Standard',
+                        path:'standard',
+                        file:'/intro/standard.vue'
+                    },
+                    {
+                        name:'优势 Advantage',
+                        prefix:'优势',suffix:'Advantage',
+                        path:'advantage',
+                        file:'/intro/advantage.vue'
+                    },
+
+
+                ],
+                "预设":[
+                    {
+                        name:'CSS Reset',
+                        prefix:'CSS',suffix:'Reset',
+                        path:'reset',
+                        file:'/preset/reset.vue'
+                    },
+                    {
+                        name:'蒙板 Overlay',
+                        prefix:'蒙板',suffix:'Overlay',
+                        path:'overlay',
+                        file:'/preset/overlay.vue'
+                    },
+                    {
+                        name:'动效 Transition',
+                        prefix:'动效',suffix:'Transition',
+                        path:'transition',
+                        file:'/preset/transition.vue'
                     },
                 ],
-                "颜色属性":[
+                "属性":[
                     {
-                        name:'Colors',
+                        name:'颜色 Colors',
+                        prefix:'颜色',suffix:'Colors',
                         path:'colors',
-                        file:'/colors.vue'
+                        file:'/attribute/colors.vue'
                     },
-                ],
-                "文字属性":[
                     {
-                        name:'Text',
+                        name:'尺寸 Sizing',
+                        prefix:'尺寸',suffix:'Sizing',
+                        path:'box',
+                        file:'/attribute/sizing.vue'
+                    },
+                    {
+                        name:'文字 Text',
+                        prefix:'文字',suffix:'Text',
                         path:'text',
-                        file:'/text.vue'
+                        file:'/attribute/text.vue'
+                    },
+                    {
+                        name:'栅格 Grids',
+                        prefix:'栅格',suffix:'Grids',
+                        path:'grids',
+                        file:'/attribute/grids.vue',
+                    },
+                    {
+                        name:'测试 Test',
+                        prefix:'测试',suffix:'Test',
+                        path:'test',
+                        file:'/attribute/test.vue',
                     },
                 ],
-                "尺寸属性":[
+                "组件":[
                     {
-                        name:'Padding & Margin',
-                        path:'padding&margin',
-                        file:'/padding&margin.vue'
+                        name:'按钮 Btn',
+                        prefix:'按钮',suffix:'Btn',
+                        path:'btn',
+                        file:'/component/btn.vue',
                     },
                     {
-                        name:'Width & Height',
-                        path:'width&height',
-                        file:'/width&height.vue',
-                    },
-                ],
-                "布局属性":[
-                    {
-                        name:'Flex',
-                        path:'flex',
-                        file:'/flex.vue',
+                        name:'图标 Icon',
+                        prefix:'图标',suffix:'Icon',
+                        path:'icon',
+                        file:'/component/icon',
                     },
                     {
-                        name:'Nudge',
-                        path:'nudge',
-                        file:'/nudge.vue'
+                        name:'消息 Hint',
+                        prefix:'消息',suffix:'Hint',
+                        path:'hint',
+                        file:'/component/hint.vue',
                     },
                     {
-                        name:'Columns',
-                        path:'columns',
-                        file:'/columns.vue'
+                        name:'输入 Field',
+                        prefix:'输入',suffix:'Field',
+                        path:'field',
+                        file:'/component/field.vue',
+                    },
+                    {
+                        name:'图片 Image',
+                        prefix:'图片',suffix:'Image',
+                        path:'image',
+                        file:'/component/image.vue',
+                    },
+                    {
+                        name:'表格 Table',
+                        prefix:'表格',suffix:'Table',
+                        path:'table',
+                        file:'/component/table.vue',
                     },
                 ]
             }

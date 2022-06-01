@@ -1,38 +1,50 @@
 <template>
-    <div class="sidebar">
-        <p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p><p>sidebar</p>
+    <div id="sidebar" :class="{ show: stat.drawer}">
+        <div class="content">
+            <div class="group" v-for="(items, group) in itemList">
+                <div class="title">{{ group }}</div>
+                <ul>
+                    <li v-for="item in items" >
+                        <router-link :to="item.path"
+                                     :class="{ activated:routeName === item.name }"
+                                     @click="stat.drawer = false"
+                        >
+                            <div class="prefix">{{ item.prefix }}</div>
+                            <div class="suffix">
+                                {{ item.suffix }}
+                            </div>
+                        </router-link>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-name: "sidebar"
+    name: "sidebar",
+    created() {
+
+    },
+    data(){
+        return {
+            current:''
+        }
+    },
+    props:['stat'],
+    computed:{
+        itemList(){
+            return this.$store.state.doc
+        },
+        routeName(){
+            return this.$route.name
+        }
+    },
 }
 </script>
 
-<style scoped lang="scss">
-div.sidebar{
-    border-right: 1px solid #d3d3d3;
-    width: 33vw;
-    height: 100%;
-    direction: rtl;
-    padding-top: 55px;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    position: relative;
-    &::-webkit-scrollbar{
-        width: 0;
-    }
-    //&::after{
-    //    position: fixed;content: '';display: inline-block;right: 0;top: 0;
-    //    height: 100%;
-    //    width: .5px;
-    //    background-color: #d3d3d3;
-    //}
-    p{
-        margin: 0 0 150px 0;
-    }
-}
-
+<style lang="scss" scoped>
+@import "./scss/sidebar";
+@import "./scss/1200";
 </style>
