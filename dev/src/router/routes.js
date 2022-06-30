@@ -29,7 +29,12 @@ let routes = [
         // ]
     },
     // 404 页面
-    { name:'error', path: '/:pathMatch(.*)*', component: () => import('@/views/error') },
+    {
+        path: '/:pathMatch(.*)*',
+        name:'error',
+        redirect: '/',
+        // component: () => import('@/views/error')
+    },
 ]
 
 export default routes

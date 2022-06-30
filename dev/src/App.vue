@@ -5,6 +5,9 @@
 <script>
 export default {
     name:'App',
+    updated(){
+
+    }
 }
 </script>
 

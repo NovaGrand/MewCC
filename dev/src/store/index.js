@@ -9,8 +9,8 @@ const store = createStore({
                     {
                         name:'开始 Start',
                         prefix:'开始',suffix:'Start',
-                        path:'quick_start',
-                        file:'/intro/quick_start.vue'
+                        path:'start',
+                        file:'/intro/start.vue'
                     },
                     {
                         name:'规范 Standard',
@@ -18,14 +18,38 @@ const store = createStore({
                         path:'standard',
                         file:'/intro/standard.vue'
                     },
+                ],
+                "属性":[
                     {
-                        name:'优势 Advantage',
-                        prefix:'优势',suffix:'Advantage',
-                        path:'advantage',
-                        file:'/intro/advantage.vue'
+                        name:'颜色 Colors',
+                        prefix:'颜色',suffix:'Colors',
+                        path:'colors',
+                        file:'/attribute/color'
                     },
-
-
+                    {
+                        name:'尺寸 Sizing',
+                        prefix:'尺寸',suffix:'Sizing',
+                        path:'sizing',
+                        file:'/attribute/sizing'
+                    },
+                    {
+                        name:'盒子 Box',
+                        prefix:'盒子',suffix:'Box',
+                        path:'box',
+                        file:'/attribute/box'
+                    },
+                    {
+                        name:'文字 Text',
+                        prefix:'文字',suffix:'Text',
+                        path:'text',
+                        file:'/attribute/text'
+                    },
+                    {
+                        name:'测试 Test',
+                        prefix:'测试',suffix:'Test',
+                        path:'test',
+                        file:'/attribute/test.vue',
+                    },
                 ],
                 "预设":[
                     {
@@ -35,10 +59,16 @@ const store = createStore({
                         file:'/preset/reset.vue'
                     },
                     {
-                        name:'蒙板 Overlay',
-                        prefix:'蒙板',suffix:'Overlay',
+                        name:'蒙板 Matte',
+                        prefix:'蒙板',suffix:'Matte',
                         path:'overlay',
                         file:'/preset/overlay.vue'
+                    },
+                    {
+                        name:'消息 Message',
+                        prefix:'消息',suffix:'Message',
+                        path:'message',
+                        file:'/preset/doc-message',
                     },
                     {
                         name:'动效 Transition',
@@ -47,39 +77,36 @@ const store = createStore({
                         file:'/preset/transition.vue'
                     },
                 ],
-                "属性":[
+                "容器":[
                     {
-                        name:'颜色 Colors',
-                        prefix:'颜色',suffix:'Colors',
-                        path:'colors',
-                        file:'/attribute/colors.vue'
+                        name:'自适应 Fit',
+                        prefix:'自适应',suffix:'Fit',
+                        path:'fit',
+                        file:'/container/doc-fit'
                     },
                     {
-                        name:'尺寸 Sizing',
-                        prefix:'尺寸',suffix:'Sizing',
-                        path:'box',
-                        file:'/attribute/sizing.vue'
-                    },
-                    {
-                        name:'文字 Text',
-                        prefix:'文字',suffix:'Text',
-                        path:'text',
-                        file:'/attribute/text.vue'
-                    },
-                    {
-                        name:'栅格 Grids',
-                        prefix:'栅格',suffix:'Grids',
-                        path:'grids',
-                        file:'/attribute/grids.vue',
-                    },
-                    {
-                        name:'测试 Test',
-                        prefix:'测试',suffix:'Test',
-                        path:'test',
-                        file:'/attribute/test.vue',
+                        name:'陈列 Flex',
+                        prefix:'陈列',suffix:' Flex',
+                        path:'flex',
+                        file:'/container/doc-flex',
+                        width:'45px',
                     },
                 ],
+                "指令":[
+                    {
+                        name:'懒加载',
+                        prefix:'懒加载',suffix:'Lazy',
+                        path:'lazy',
+                        file:'/directive/doc-lazy',
+                    }
+                ],
                 "组件":[
+                    {
+                        name:'图标 Ico',
+                        prefix:'图标',suffix:'Ico',
+                        path:'icon',
+                        file:'/component/icon',
+                    },
                     {
                         name:'按钮 Btn',
                         prefix:'按钮',suffix:'Btn',
@@ -87,34 +114,10 @@ const store = createStore({
                         file:'/component/btn.vue',
                     },
                     {
-                        name:'图标 Icon',
-                        prefix:'图标',suffix:'Icon',
-                        path:'icon',
-                        file:'/component/icon',
-                    },
-                    {
-                        name:'消息 Hint',
-                        prefix:'消息',suffix:'Hint',
-                        path:'hint',
-                        file:'/component/hint.vue',
-                    },
-                    {
                         name:'输入 Field',
                         prefix:'输入',suffix:'Field',
                         path:'field',
                         file:'/component/field.vue',
-                    },
-                    {
-                        name:'图片 Image',
-                        prefix:'图片',suffix:'Image',
-                        path:'image',
-                        file:'/component/image.vue',
-                    },
-                    {
-                        name:'表格 Table',
-                        prefix:'表格',suffix:'Table',
-                        path:'table',
-                        file:'/component/table.vue',
                     },
                 ]
             }

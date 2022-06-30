@@ -7,7 +7,7 @@ arr.pop()
 let names = []
 
 arr.forEach(item => {
-    names.push(item.split('mew-')[1])
+    names.push(item.split('mew-icon-')[1])
 })
 
 fs.writeFileSync('index.js','export default ' + JSON.stringify(names))

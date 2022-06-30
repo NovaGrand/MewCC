@@ -1,6 +1,6 @@
 <template>
     <div>
-        image
+        <imgs/>
     </div>
 </template>
 

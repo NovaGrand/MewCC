@@ -16,5 +16,11 @@ div#sidebar{
     &.show{
       transform: translateX(0);
     }
+    div.content{
+      div.group.homePage{
+        display: block;
+      }
+    }
+
   }
 }

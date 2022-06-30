@@ -1,40 +1,44 @@
-[flex]{
+[flex],[reverse],[column],[wrap],[js],[je],[jc],[jsb],[jsa],[ae],[ac],[as]{
   display: flex;align-items: flex-start;justify-content: flex-start;
 }
-[flex][reverse]{
+
+//[flex]{
+//  display: flex;align-items: flex-start;justify-content: flex-start;
+//}
+[reverse]{
   flex-direction: row-reverse;
 }
-[flex][column]{
+[column]{
   flex-direction: column
 }
-[flex][column][reverse]{
+[column][reverse]{
   flex-direction: column-reverse;
 }
-[flex][wrap]{
+[wrap]{
   flex-wrap: wrap;
 }
-[flex][js]{
+[js]{
   justify-content: flex-start;
 }
-[flex][je]{
+[je]{
   justify-content: flex-end;
 }
-[flex][jc]{
+[jc]{
   justify-content: center;
 }
-[flex][jsb]{
+[jsb]{
   justify-content: space-between;
 }
-[flex][jsa]{
+[jsa]{
   justify-content: space-around;
 }
-[flex][ae] {
+[ae] {
   align-items: flex-end;
 }
-[flex][ac]{
+[ac]{
   align-items: center;
 }
-[flex][as]{
+[as]{
   align-items: stretch;
 }
 

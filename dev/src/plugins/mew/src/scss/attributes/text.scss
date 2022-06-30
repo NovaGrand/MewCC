@@ -24,13 +24,11 @@
   --xfs:12;--fs:0;
 }
 
-
 @for $i from 1 through 25 {
   [fs-#{$i}]{
     --fs:#{$i};
   }
 }
-
 
 // 字间距属性-BEGIN-
 *{
@@ -58,9 +56,11 @@
   }
 }
 // 字间距属性-END-
-
+[indent]{
+  text-indent: 3em;
+}
 [bold] {
-  --font-weight: bold !important;
+  --font-weight: bold;
   font-weight: var(--font-weight)
 }
 
@@ -70,20 +70,68 @@
   white-space: nowrap;
 }
 
-[jc]:not([flex]){
-  text-align: center;
+//状态属性
+[quote]{
+  background-color: #f5f9fb;
 }
-[je]:not([flex]){
-  text-align: right;
+[success],[message],[caution],[warning],[failure]{
+  line-height: 1.55;
+  font-family: 'mew';
+  position: relative;
+  border-radius: 4px;
+  padding: 0.6em 1.53em 0.75em 3.65em;
+  &::before{
+    top:0.55em;
+    height: 1em;line-height: 1em;
+    font-size: 1.3em;
+    display: inline-block;content: '';
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: absolute;
+  }
 }
-[jsb]:not([flex]){
-  text-align: justify;
-  text-align-last: justify;
+[success]{
+  color: #007f32;
+  background-color: #f4fcf2;
+  &::before {
+    left: 1.08em;
+    content: "\e992";
+  }
 }
-[ac]:not([flex]){
-  --lh:1;
+[message]{
+  color: #00538d;
+  background-color: #e6f4ff;
+  &::before {
+    font-size: 1.4em;
+    left: .96em;
+    content: "\e994";
+  }
 }
-[ae]:not([flex]){
-  --lh:1.97;
+[caution]{
+  //color: #ff4c00;
+  //background-color: #ffefe5;
+  color: #00538d;
+  background-color: #e6f4ff;
+  &::before {
+    top:0.6em;
+    left: 1.1em;
+    content: "\e995";
+  }
 }
-
+[warning]{
+  color: #ff6100;
+  background-color: #fff8e8;
+  &::before {
+    left: 1.1em;top: .65em;
+    content: "\e997";
+  }
+}
+[failure]{
+  color: #db0000;
+  background-color: #ffe1e1;
+  &::before {
+    font-size: 1.15em;
+    left: 1.3em;top: .8em;
+    content: "\e993";
+  }
+}

@@ -11,12 +11,8 @@ div.doc-ico{
         height: 30px;width: 30px;
         display: flex;align-items: center;
         color: rgba(50,80,100,.8);
-        //color:rgba(60,0,0,1);
         i.icon{
           transform: translateY(0px);
-          &:before{
-
-          }
         }
       }
       div.textBox{

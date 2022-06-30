@@ -29,6 +29,9 @@ div#headbar{
         }
         h2.title{
           display: inline-block;
+          a{
+            color: inherit;
+          }
         }
         a.logo{
           display: none;

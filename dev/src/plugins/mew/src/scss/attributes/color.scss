@@ -1,42 +1,130 @@
-$color-sheet:(
-    "red": #bf0000,
-    "pink": #e400b6,
-    "cyan": #00cce6,
-    "blue": #00a2ff,
-    "grey": #98a5b5,
-    "gold": #ffe093,
-    "green": #79f200,
-    "black": #4d5156,
-    "purple": #b100cf,
-    "orange": #e89200,
-    "catskill": #f5f8fa,
-);
+*{
+    --c: null; // color
+    --an: 25;  // alpha-number
+    color: rgba(var(--c), calc(0.04 * var(--an)));
+}
+@for $i from 1 through 25{ [alpha-#{$i}]{ --an:#{$i} } }
 
-@each $key,$val in $color-sheet {
-  $lighted:lighten($val, 15%);
-  $darked:darken($val, 15%);
-
-  [#{$key}]:not([bg]){ color: #{$val};--color: #{$val}!important;}
-  [#{$key}][lighten]:not([bg]){ color: #{$lighted};--color: #{$lighted}!important }
-  [#{$key}][darken]:not([bg]){ color: #{$darked};--color: #{$darked}!important }
-  [#{$key}][bg]{
-    background-color: #{$val};
-    --background-color: #{$val}!important;
-    @if lightness($val) > 65% { color: black;--color: black!important;--text-shadow: 0 0 2px rgba(255,255,255,.5); }
-    @else { color: white;--color: white!important;--text-shadow: 0 0 2px rgba(0,0,0,.6) }
-  }
-  [#{$key}][bg][lighten]{
-    background-color: $lighted;
-    --background-color: $lighted!important;
-    @if lightness($lighted) > 53%{
-      color: black;
-      --color: black!important;
-      --text-shadow: 0 0 2px rgba(255,255,255,.5);
+[red]{
+    --c: 190,0,0;
+    &[lighten]{
+        --c: 255,13,13
     }
-  }
-  [#{$key}][bg][darken]{
-    background-color:$darked;
-    --background-color:$darked!important;
-  }
+    &[darken]{
+        --c: 130,0,0
+    }
+}
+[pink]{
+    --c:240,0,190; // #f000be
+    &[lighten]{
+        --c: 255,100,235;
+        &[bg]{
+            color:black
+        }
+    }
+    &[darken]{
+        --c: 152,0,120
+    }
+}
+[purple]{
+    --c:180,0,200;
+    &[lighten]{
+        --c: 222,29,255
+    }
+    &[darken]{
+        --c: 112,0,131
+    }
+}
+[orange]{
+    --c: 247,127,0;
+    &[lighten]{
+        --c: 255,175,100;
+        &[bg]{
+            color:black
+        }
+    }
+    &[darken]{
+        --c: 240,75,0
+    }
+}
+[cyan]{
+    --c: 0,220,255;
+    &[lighten]{
+        --c: 20,255,255;
+        &[bg]{
+            color:black
+        }
+    }
+    &[darken]{
+        --c: 0,166,232
+    }
+}
+[green]{
+    --c: 112,214,72;
+    &[lighten]{
+        --c: 144,255,104;
+        &[bg]{
+            color:black
+        }
+    }
+    &[darken]{
+        --c: 40,170,0
+    }
+}
+[blue]{
+    --c: 0,110,255;
+    &[lighten]{
+        --c: 0,162,255;
+    }
+    &[darken]{
+        --c: 0,80,190;
+    }
+}
+[grey]{
+    --c: 105,113,133;
+    &[lighten]{ --c: 179,185,200;&[bg]{ color:black } }
+    &[darken]{ --c: 76,83,99; &[bg]{ color:white } }
+}
+[black]{
+    --c: 60,60,60;
+    &[lighten]{
+        --c: 90,90,90;
+    }
+    &[darken]{
+        --c: 0,0,0
+    }
+}
+[yellow]{
+    --c: 255,240,0; &[bg]{ color:black }
+    &[lighten]{
+        --c: 255,250,115; &[bg]{ color:black }
+    }
+    &[darken]{
+        --c: 252,227,0; &[bg]{ color:black }
+    }
+}
+[catskill]{
+    //--c: 220,228,234;
+    --c:203,226,242;
+    &[bg]{ color:black }
+    &[lighten]{
+        --c: 229,244,255; &[bg]{ color:black }
+    }
+    &[darken]{
+        --c: 163,199,224; &[bg]{ color:black }
+    }
+}
+[white]{
+    --c: 245,245,245; &[bg]{ color:black }
+    &[lighten]{
+        --c: 255,255,255; &[bg]{ color:black }
+    }
+    &[darken]{
+        --c: 235,235,235; &[bg]{ color:black }
+    }
+}
+[bg]{
+    color:white;
+    background-color: rgba(var(--c), calc(0.04 * var(--an)))
 }
 

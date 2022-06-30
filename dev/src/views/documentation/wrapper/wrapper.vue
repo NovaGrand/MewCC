@@ -8,7 +8,15 @@
 
 <script>
 export default {
-name: "wrapper"
+    name: "wrapper",
+    mounted(){
+        // console.log(this.$router)
+    },
+    watch:{
+        $route(to, from){
+            this.$el.scrollTop = 0
+        }
+    },
 }
 </script>
 
