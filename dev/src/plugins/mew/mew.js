@@ -7,14 +7,21 @@ export let loading = reactive({
     text: 'Loading',
     icon: '',
     size: 1,
+    next: null,
+    target: null,
+    config: null,
 })
 
 export let pending = reactive({
     valid: false,
     color:'white',
-    text: 'pending',
+    image:'',
+    text: 'Pending',
+    icon: '',
     size: 1,
-    icon: ''
+    next: null,
+    target: null,
+    config: null,
 })
 
 // ------------- notify -------------

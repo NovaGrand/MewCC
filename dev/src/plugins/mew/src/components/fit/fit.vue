@@ -1,5 +1,5 @@
 <template>
-    <div class="mew-fit"><slot></slot></div>
+    <div class="mew-fit" :class="{ contain: contain }"><slot></slot></div>
 </template>
 
 <script>
@@ -10,6 +10,12 @@ export default {
     },
     updated(){
         this.init()
+    },
+    props:{
+        contain:{
+            type: Boolean,
+            default: false
+        }
     },
     methods:{
         init(){
@@ -39,6 +45,11 @@ div.mew-fit{
         object-fit: cover;
         width:100%;
         height: 100%;
+    }
+    &.contain{
+        .mew-fit-item{
+            object-fit: contain;
+        }
     }
 }
 </style>

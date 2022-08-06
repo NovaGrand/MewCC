@@ -71,9 +71,6 @@
 }
 
 //状态属性
-[quote]{
-  background-color: #f5f9fb;
-}
 [success],[message],[caution],[warning],[failure]{
   line-height: 1.55;
   font-family: 'mew';
@@ -94,7 +91,7 @@
   color: #007f32;
   background-color: #f4fcf2;
   &::before {
-    left: 1.08em;
+    left: 1.08em;top:0.65em;
     content: "\e992";
   }
 }
@@ -134,4 +131,8 @@
     left: 1.3em;top: .8em;
     content: "\e993";
   }
+}
+
+[noselect]{
+  user-select: none;
 }

@@ -124,24 +124,24 @@
             <span class="btn right" @click="$notify.clear()">清空</span>
         </div>
         <div mt-sm>
-            <prism lang="js" bevel><pre><code>// 直接传入配置文件的方式调用
-this.$notify({
-    color: '', // 字符串，可以使用样式属性中的预定义颜色，默认是 blue
-    title: '', // 字符串、布尔，默认是空
-    delay: 4, // 整数，消息存在时间，默认是 4
-    stick: false, // 布尔，消息框是否一直存在
-    close: true, // 布尔，是否显示关闭图标
-    class: 'foo bar', //字符串，自定义类名
-    style: '' // 字符串，自定义样式
-    text: '', // 字符串，提示框的主要内容，默认是 This is a message
-    icon: '', // 字符串、布尔，使用预定义图标或用 false 关闭图标显示
-})
-
-// 直接使用预定义消息框
+            <prism lang="js" bevel style="margin-top: 20px"><pre><code>// 预定义消息框
 this.$notify.message('This is a message')
 this.$notify.success('This is a success')
 this.$notify.caution('This is a caution')
 this.$notify.failure('This is a failure')
+
+// 自定义消息框
+this.$notify({
+    color: '', // 字符串，可以使用样式属性中的预定义颜色，默认是 blue
+    title: '', // 字符串、布尔，默认是空
+    delay: 4,  // 整数，消息存在时间，默认是 4
+    stick: false, // 布尔，消息框是否一直存在
+    close: true,  // 布尔，是否显示关闭图标
+    class: 'foo bar', //字符串，自定义类名
+    style: '' // 字符串，用于特殊情况下的样式
+    text: '', // 字符串，提示框的主要内容，默认是 This is a message
+    icon: '', // 字符串、布尔，使用预定义图标或用 false 关闭图标显示
+})
 </code></pre></prism>
         </div>
     </div>
@@ -166,6 +166,10 @@ export default {
         // this.$notify.success()
         // this.$notify.caution()
         // this.$notify.failure()
+        // this.$notify({
+        //     color:'lake',
+        //     stick:true
+        // })
     },
     methods:{
         showSamples(){

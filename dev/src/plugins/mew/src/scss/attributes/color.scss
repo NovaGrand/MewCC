@@ -36,59 +36,60 @@
     }
 }
 [orange]{
-    --c: 247,127,0;
-    &[lighten]{
-        --c: 255,175,100;
-        &[bg]{
-            color:black
-        }
-    }
-    &[darken]{
-        --c: 240,75,0
-    }
+    --c: 255,155,0;
+    &[lighten]{--c: 255,185,80; &[bg]{color:black}}
+    &[darken]{--c: 240,130,0}
 }
 [cyan]{
-    --c: 0,220,255;
+    --c: 0,220,255; &[bg]{ color:black }
     &[lighten]{
-        --c: 20,255,255;
-        &[bg]{
-            color:black
-        }
+        --c: 20,255,255; &[bg]{color:black}
     }
     &[darken]{
-        --c: 0,166,232
+        --c: 0,166,232; &[bg]{ color:white }
     }
 }
 [green]{
-    --c: 112,214,72;
+    //--c: 112,214,72;
+    --c: 0,200,0;
     &[lighten]{
-        --c: 144,255,104;
+        --c: 0,255,0;
         &[bg]{
             color:black
         }
     }
     &[darken]{
-        --c: 40,170,0
+        --c: 0,150,0
     }
 }
 [blue]{
-    --c: 0,110,255;
+    --c: 0,150,255;
     &[lighten]{
-        --c: 0,162,255;
+        --c:60,175,255;
     }
     &[darken]{
-        --c: 0,80,190;
+        --c: 0,120,230;
+    }
+}
+[indigo]{
+    --c: 0,100,165;
+    &[lighten]{
+        --c:0,120,185;
+    }
+    &[darken]{
+        --c:5,82,137;
     }
 }
 [grey]{
-    --c: 105,113,133;
+    --c: 145,152,170;
     &[lighten]{ --c: 179,185,200;&[bg]{ color:black } }
-    &[darken]{ --c: 76,83,99; &[bg]{ color:white } }
+    &[darken]{ --c: 110,120,140; &[bg]{ color:white } }
+    //109,118,140
 }
 [black]{
-    --c: 60,60,60;
+    --c: 55,55,55;
     &[lighten]{
-        --c: 90,90,90;
+        --c: 75,80,80;
     }
     &[darken]{
         --c: 0,0,0
@@ -100,29 +101,46 @@
         --c: 255,250,115; &[bg]{ color:black }
     }
     &[darken]{
-        --c: 252,227,0; &[bg]{ color:black }
+        --c: 245,220,0; &[bg]{ color:black }
     }
 }
 [catskill]{
-    //--c: 220,228,234;
-    --c:203,226,242;
-    &[bg]{ color:black }
+    --c:203,226,242; &[bg]{ color:black }
     &[lighten]{
-        --c: 229,244,255; &[bg]{ color:black }
+        --c: 229,244,255;
     }
     &[darken]{
-        --c: 163,199,224; &[bg]{ color:black }
+        --c: 181,207,224;
+    }
+}
+[lake]{
+    --c: 95,240,215; &[bg]{ color:black }
+    &[lighten]{
+        --c: 135,255,235;
+    }
+    &[darken]{
+        --c: 68,226,197;
     }
 }
 [white]{
     --c: 245,245,245; &[bg]{ color:black }
     &[lighten]{
-        --c: 255,255,255; &[bg]{ color:black }
+        --c: 255,255,255;
     }
     &[darken]{
-        --c: 235,235,235; &[bg]{ color:black }
+        --c: 235,235,235;
     }
 }
+[golden]{
+    --c: 255,224,147; &[bg]{ color:black }
+    &[lighten]{
+        --c:255,235,191; &[bg]{ color:black }
+    }
+    &[darken]{
+        --c:255,212,114; &[bg]{ color:black }
+    }
+}
+
 [bg]{
     color:white;
     background-color: rgba(var(--c), calc(0.04 * var(--an)))

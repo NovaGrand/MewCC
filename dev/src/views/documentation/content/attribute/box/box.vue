@@ -1,5 +1,5 @@
 <template>
-    <div class="doc-box" ba grey lighten pa-md>
+    <div class="doc-box" lighten pa-md card bv>
         <div class="btns" xs jsb>
             <div class="btnBox" jc v-for="(item, idx) in samps" @click="index = String(idx + 1)">
                 <i noselect class="btn" :class="{ current: index === String(idx + 1)}">
@@ -16,13 +16,13 @@
         Mew 提供非常详细的边距属性，内外边距通过段位和标号控制，同段位同标号的值都一样，所有标号跨度也都一样，例如 pa-xs 和 ma-xs，他们的值是一样的，
         前者用于内边距，后者用于外边距。<i bold>边距的段位，不是均匀递增，而是针对使用场景确定的</i>，例如 mt-md 适合文章上下段落之间的外边距，mt-lg 是适合文章主题分块的外边距。
     </p>
-    <prism lang="css" style="margin-top: 20px"><pre>/* 内间距公式示例 */
+    <prism lang="css" style="margin-top: 25px"><pre>/* 内间距公式示例 */
 padding: calc( var(--pt) * 1px + var(--xpt) * 1px )
          calc( var(--pr) * 1px + var(--xpr) * 1px )
          calc( var(--pb) * 1px + var(--xpb) * 1px )
          calc( var(--pl) * 1px + var(--xpl) * 1px );</pre>
     </prism>
-    <ul mt-md>
+    <ul style="margin-top: 40px">
         <li>
             <q>pt</q> <q>pr</q> <q>pb</q> <q>pl</q> → <q>padding-top</q> <q>padding-right</q> <q>padding-bottom</q> <q>padding-left</q>
         </li>
@@ -33,7 +33,7 @@ padding: calc( var(--pt) * 1px + var(--xpt) * 1px )
             <q>mx-auto</q> → <q>margin-left:auto;margin-right:auto</q>
         </li>
     </ul>
-    <div xs message mt-md>外边距属性用法与内边距相同，通过 mt mr ma mx my 等控制；使用时，建议先尝试边距段位，再通过标号微调。</div>
+    <div xs message style="margin-top: 10px">外边距属性用法与内边距相同，通过 mt mr ma mx my 等控制；使用时，建议先尝试边距段位，再通过标号微调。</div>
     <div grey lighten bb dashed mt-md></div>
     <h2 tag-bar md style="margin-top: 36px">边框 微调和圆角</h2>
     <p>

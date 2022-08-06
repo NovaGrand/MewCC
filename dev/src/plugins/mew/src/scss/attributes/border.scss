@@ -25,10 +25,34 @@ $grades: ( xs: 1, sm: 3, md: 4, lg: 5, xl: 6 );
 [bl]{ --bl:1; }
 [dashed]{--bs:dashed}
 [dotted]{--bs:dotted}
-[bevel]{border-radius: 3px!important}
-[bv-xs]{border-radius: 1px}
-[bv-sm]{border-radius: 2px}
-[bv-md]{border-radius: 3px}
-[bv-lg]{border-radius: 6px}
-[bv-xl]{border-radius: 8px}
-[round]{border-radius: 3000px}
+
+[bevel],[bv]{overflow:hidden;border-radius: 3px!important}
+[bv-xs]{overflow:hidden;border-radius: 2px}
+[bv-sm]{overflow:hidden;border-radius: 3px}
+[bv-md]{overflow:hidden;border-radius: 4px}
+[bv-lg]{overflow:hidden;border-radius: 6px}
+[bv-xl]{overflow:hidden;border-radius: 8px}
+[round]{overflow:hidden;border-radius: 3000px;}
+[left]{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+[right]{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+[top]{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+[rect]{
+  border-radius: 0;
+}
+[bottom]{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+[card]{
+  box-shadow: 0 0 1px rgba(0,0,0,.2), 0 1px 4px rgba(0,0,0,.1);
+}

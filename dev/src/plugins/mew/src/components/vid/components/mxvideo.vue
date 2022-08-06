@@ -1,0 +1,52 @@
+<template>
+    <video fill @contextmenu.prevent controlsList="nodownload"
+           @loadstart="initialize"
+           @loadedmetadata="v.duration = $el.duration;v.playing = v.autoplay;$parent.$emit('load',$el.duration)"
+           @timeupdate="updateTime();$parent.$emit('playing',v.time)"
+           @ended="initialize();$parent.$emit('end')"
+           @waiting="v.loading = true;$parent.$emit('wait')"
+           @canplay="v.loading = false"
+           :autoplay="v.autoplay"
+           :volume="v.volume"
+           :poster="v.poster"
+           :loop="v.loop"
+    >
+        <err/>
+    </video>
+</template>
+<script>
+import err from './err'
+export default {
+    name: "mew-vid-mxvideo",
+    components:{ err },
+    inject: ['v'],
+    emits: ['load'],
+    mounted(){
+        this.v.el = this.$el
+    },
+    watch:{
+        'v.playing': function(val){
+            this.$parent.$emit(val ? 'play' : 'pause')
+        }
+    },
+    methods:{
+        initialize(){
+            this.$el.playbackRate = 1
+            this.v.time = 0
+            this.v.rate = '1.0'
+            if(!this.v.loop)
+                this.v.playing = false
+        },
+        updateTime(){
+            this.v.time = this.$el.currentTime
+        },
+    }
+}
+</script>
+<style lang="scss">
+:picture-in-picture{
+    width: 200px!important;height: 200px!important;
+    outline: 5px solid red!important;
+    border: 5px solid blue!important;
+}
+</style>

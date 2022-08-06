@@ -1,0 +1,45 @@
+@media(max-width: 600px){
+  div.grand-player{
+    div.frame{
+      div.viewport {
+        div.loadingBox{
+          position: absolute;
+          left: calc(50% - 60px) !important;
+          bottom: calc(50% - 60px)!important;
+        }
+      }
+      div.console{
+        div.controls{
+          div.volume{
+            input{
+              width: 80px!important;
+              opacity: .5!important;
+              pointer-events: auto!important;
+            }
+          }
+          div.duration{
+            display: none;
+          }
+          div.playbackRate{
+            width: 72px;
+            margin-right:0;
+            div.currentRate::before{
+              left: 10px;
+            }
+            div.bleeds{
+              padding: 0 0 5px 0;left: -20px;
+              width: 100%;
+            }
+          }
+          div.loop{
+            width: 60px;
+            margin-right: 0;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

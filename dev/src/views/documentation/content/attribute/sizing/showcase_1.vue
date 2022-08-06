@@ -1,5 +1,5 @@
 <template>
-    <div xs class="doc-sizing-showcase_1" style="border: .5px solid rgba(0,0,0,.1);">
+    <div xs class="doc-sizing-showcase_1" card bv>
         <div bold jc class="tt"><i jc>宽 度</i><i jc>高 度</i></div>
         <div class="row">
             <div class="box">
@@ -211,7 +211,7 @@
                 <i class="bar" grey darken bg wd-12 @click="getInnerText"></i>
             </div>
         </div>
-        <small jc style="margin: 8px 0">常见宽高尺度用例，点击中部属性名即可复制</small>
+        <small jc style="margin: 10px 0">常见宽高尺度用例，点击中部属性名即可复制</small>
     </div>
 </template>
 

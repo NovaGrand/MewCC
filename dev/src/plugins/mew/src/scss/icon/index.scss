@@ -13,14 +13,14 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 1.3em;height: 1.3em;
+  width: 1.2em;height: 1.2em;
   position: relative;
   top: -.04em;
   vertical-align: middle;
   &:before{
     user-select: auto;
     position: absolute;left: 0;top: 0;
-    width: 1.3em;height: 1.3em;line-height: 1.25em;
+    width: 1.2em;height: 1.2em;line-height: 1.25em;
     text-align: center;
   }
 }

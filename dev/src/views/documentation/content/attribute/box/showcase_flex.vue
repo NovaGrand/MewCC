@@ -22,19 +22,19 @@
             ae:vertical === 'ae', ac:vertical === 'ac', as:vertical === 'as',
             wrap:wrap, column:column, reverse:reverse
             }">
-            <div class="aaaa _0"><ico>doc-square</ico></div>
+            <div class="aaaa _0" ac jc><ico>doc-square</ico></div>
             <fit class="item _1">
                 <img fill :src="img_1">
             </fit>
-            <div class="aaaa _0"><ico>doc-square</ico></div>
+            <div class="aaaa _0" ac jc><ico>doc-square</ico></div>
             <fit class="item _2">
                 <img fill :src="img_2">
             </fit>
-            <div class="aaaa _0"><ico>doc-square</ico></div>
+            <div class="aaaa _0" ac jc><ico>doc-square</ico></div>
             <fit class="item _1">
                 <img fill :src="img_3">
             </fit>
-            <div class="aaaa _0"><ico>doc-square</ico></div>
+            <div class="aaaa _0" ac jc><ico>doc-square</ico></div>
         </div>
     </div>
 </template>
@@ -131,7 +131,7 @@ div.showcase_flex{
         }
         &.reverse{ flex-direction: row-reverse }
         div.aaaa{
-            border: 1px solid rgba(0,0,0,.2);
+            //border: 1px solid rgba(0,0,0,.2);
             border-radius: 2px;text-align: center;
             color: rgba(0,0,0,1);
             margin: 0 16px;

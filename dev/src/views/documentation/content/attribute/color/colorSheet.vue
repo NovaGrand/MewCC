@@ -56,17 +56,6 @@
             </div>
         </div>
         <div class="colorBox">
-            <div class="bar" green bg lighten>
-                <i class="cpy">green lighten</i><samp class="cpy hex"></samp>
-            </div>
-            <div class="bar" green bg>
-                <i class="cpy">green</i><samp class="cpy hex"></samp>
-            </div>
-            <div class="bar" green bg darken>
-                <i class="cpy">green darken</i><samp class="cpy hex"></samp>
-            </div>
-        </div>
-        <div class="colorBox">
             <div class="bar" blue bg lighten>
                 <i class="cpy">blue lighten</i><samp class="cpy hex"></samp>
             </div>
@@ -78,16 +67,62 @@
             </div>
         </div>
         <div class="colorBox">
-            <div class="bar" grey bg lighten>
-                <i class="cpy">grey lighten</i><samp class="cpy hex"></samp>
+            <div class="bar" golden bg lighten>
+                <i class="cpy">golden lighten</i><samp class="cpy hex"></samp>
             </div>
-            <div class="bar" grey bg>
-                <i class="cpy">grey</i><samp class="cpy hex"></samp>
+            <div class="bar" golden bg>
+                <i class="cpy">golden</i><samp class="cpy hex"></samp>
             </div>
-            <div class="bar" grey bg darken>
-                <i class="cpy">grey darken</i><samp class="cpy hex"></samp>
+            <div class="bar" golden bg darken>
+                <i class="cpy">golden darken</i><samp class="cpy hex"></samp>
             </div>
         </div>
+        <div class="colorBox">
+            <div class="bar" lake bg lighten>
+                <i class="cpy">lake lighten</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" lake bg>
+                <i class="cpy">lake</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" lake bg darken>
+                <i class="cpy">lake darken</i><samp class="cpy hex"></samp>
+            </div>
+        </div>
+        <div class="colorBox">
+            <div class="bar" indigo bg lighten>
+                <i class="cpy">indigo lighten</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" indigo bg>
+                <i class="cpy">indigo</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" indigo bg darken>
+                <i class="cpy">indigo darken</i><samp class="cpy hex"></samp>
+            </div>
+        </div>
+
+        <div class="colorBox">
+            <div class="bar" yellow bg lighten>
+                <i class="cpy">yellow lighten</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" yellow bg>
+                <i class="cpy">yellow</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" yellow bg darken>
+                <i class="cpy">yellow darken</i><samp class="cpy hex"></samp>
+            </div>
+        </div>
+        <div class="colorBox">
+            <div class="bar" green bg lighten>
+                <i class="cpy">green lighten</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" green bg>
+                <i class="cpy">green</i><samp class="cpy hex"></samp>
+            </div>
+            <div class="bar" green bg darken>
+                <i class="cpy">green darken</i><samp class="cpy hex"></samp>
+            </div>
+        </div>
+
         <div class="colorBox">
             <div class="bar" black bg lighten>
                 <i class="cpy">black lighten</i><samp class="cpy hex"></samp>
@@ -99,15 +134,16 @@
                 <i class="cpy">black darken</i><samp class="cpy hex"></samp>
             </div>
         </div>
+
         <div class="colorBox">
-            <div class="bar" yellow bg lighten>
-                <i class="cpy">yellow lighten</i><samp class="cpy hex"></samp>
+            <div class="bar" white bg lighten>
+                <i class="cpy">white lighten</i><samp class="cpy hex"></samp>
             </div>
-            <div class="bar" yellow bg>
-                <i class="cpy">yellow</i><samp class="cpy hex"></samp>
+            <div class="bar" white bg>
+                <i class="cpy">white</i><samp class="cpy hex"></samp>
             </div>
-            <div class="bar" yellow bg darken>
-                <i class="cpy">yellow darken</i><samp class="cpy hex"></samp>
+            <div class="bar" white bg darken>
+                <i class="cpy">white darken</i><samp class="cpy hex"></samp>
             </div>
         </div>
         <div class="colorBox">
@@ -122,14 +158,14 @@
             </div>
         </div>
         <div class="colorBox">
-            <div class="bar" white bg lighten>
-                <i class="cpy">white lighten</i><samp class="cpy hex"></samp>
+            <div class="bar" grey bg lighten>
+                <i class="cpy">grey lighten</i><samp class="cpy hex"></samp>
             </div>
-            <div class="bar" white bg>
-                <i class="cpy">white</i><samp class="cpy hex"></samp>
+            <div class="bar" grey bg>
+                <i class="cpy">grey</i><samp class="cpy hex"></samp>
             </div>
-            <div class="bar" white bg darken>
-                <i class="cpy">white darken</i><samp class="cpy hex"></samp>
+            <div class="bar" grey bg darken>
+                <i class="cpy">grey darken</i><samp class="cpy hex"></samp>
             </div>
         </div>
     </div>

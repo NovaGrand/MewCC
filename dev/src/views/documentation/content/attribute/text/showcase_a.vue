@@ -65,7 +65,7 @@
                 <div jc>
                     <q xs v-text="`<div caution>使用通知属性实现特殊文字效果</div>`"></q>
                 </div>
-                <div sm caution py-sm px-md mt-md>使用通知属性实现特殊文字效果，通知属性有 message caution warning 等</div>
+                <div sm caution py-sm px-md mt-md>使用通知属性实现特殊文字效果，通知属性有 success message caution warning failure noselect</div>
             </div>
         </div>
     </div>

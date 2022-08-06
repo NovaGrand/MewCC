@@ -12,22 +12,20 @@
                 </div>
             </div>
         </div>
-        <h2 tag-bar md my-sm>用法</h2>
-        <div flex>
-            <div col-1 mr-sm flex jc ac>
-                <ico xl>building-academy</ico>
-            </div>
-            <prism col-24 bevel lang="html">{{ usage_1 }}</prism>
-        </div>
-        <div flex mt-xs>
-            <div col-1 mr-sm flex jc ac>
-                <div blue bg round jc ac pa-xs nr-md>
-                    <ico white lg nd-xs>kit-miota</ico>
+        <h2 tag-bar md style="margin-top: 35px">用法</h2>
+        <div flex style="margin-top: 20px">
+            <div col-2>
+                <div blue darken wd-12 ht-12 jc ac>
+                    <ico xl fs-10>{{ samps[n] }}</ico>
                 </div>
             </div>
-            <prism col-24 bevel lang="html">{{ usage_2 }}</prism>
+            <div col-23 style="margin-top: 0">
+                <prism lang="html" >{{ codes[n] }}</prism>
+<!--                <div xs message>图标组件变换时默认有抖入动效，使用 dense 属性可关闭抖入动效。</div>-->
+            </div>
         </div>
-        <div ht-lg></div>
+        <apiTable :items="api" style="margin-top: 35px"/>
+        <div ht-xs></div>
     </div>
 </template>
 
@@ -36,13 +34,31 @@ import names from './names'
 import copy from '@/lib/copy'
 export default {
     name: "doc-icon",
+    mounted(){
+        this.timer = setInterval(()=>{
+            this.n = this.n === 3 ? 0 : this.n + 1
+        },2000)
+    },
+    beforeUnmount(){
+        clearInterval(this.timer)
+    },
     data(){
         return {
+            n:0,
+            samps:[
+                'building-academy','state-laberty','state-bling-twinkle','msg-thumb'
+            ],
+            codes:[
+                `<ico xl blue darken> building-academy </ico>`,
+                `<ico xl blue darken> state-laberty </ico>`,
+                `<ico xl blue darken> state-bling-twinkle </ico>`,
+                `<ico xl blue darken> msg-thumb </ico>`
+            ],
             names,
-            usage_1:`<ico xl> building-academy </ico>`,
-            usage_2:`<div blue bg round wd-xs wd-7 ht-xs ht-7 flex jc ac>
-    <ico white lg nd-sm>kit-miota</ico>
-</div>`
+            api:[
+                { name:'dense', type:'Attribute', description:'为图标添加 dense 属性可，关闭图标变换时的抖入动效' },
+            ],
+            timer: null
         }
     },
     methods:{

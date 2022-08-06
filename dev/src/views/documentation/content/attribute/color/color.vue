@@ -1,15 +1,15 @@
 <template>
     <div class="doc-color">
         <color-sheet/>
-        <small jc style="margin-top: 5px">Mew 提供三十六种颜色；点击色卡左侧或右侧，复制 颜色属性 或 Hex 到粘贴板</small>
+        <small jc style="margin-top: 8px">点击色卡左侧或右侧，复制 颜色属性 或 Hex 到粘贴板</small>
         <div bb dashed alpha-3 style="margin-top: 20px"></div>
         <h2 tag-bar md ls-xs style="margin-top: 35px">文字颜色</h2>
         <p>
-            <i bold>直接在元素上使用“颜色名”作为属性，即修改文字颜色，</i>例如  <q v-text="'<i red>Hello</i>'"></q>，结果为 <i red>Hello</i>。
-            如果该元素同时也使用 <kbd>border</kbd> <kbd>bg</kbd> 属性，颜色也会对边框和背景生效，并且<i bold>文字颜色会根据背景的明度，自动选择“撞色”</i>。
+            <i bold>直接在元素上使用“颜色名”作为属性，可为文字指定颜色，</i>例如  <q v-text="'<i red>Hello</i>'"></q>，结果为 <i red>Hello</i>。
+            如果该元素同时也使用 <kbd>border</kbd> <kbd>bg</kbd> 属性，颜色也会对边框和背景生效，<i bold>文字颜色会根据背景的明度，自动变为黑色或白色</i>。
             颜色属性的全部特性和使用方法为：
         </p>
-        <div jsb ls-xs xs style="margin: 20px 0">
+        <div jsb ls-xs xs style="margin: 35px 0 15px 0">
             <i wd-sm wd-5 ht-xs blue bg round pointer @click="copy('blue bg')">
                 <i fill jc ac nu-md>背 景 颜 色</i>
             </i>
@@ -30,7 +30,7 @@
         <prism lang="html" style="margin-top: 12px" bv-xs>
             {{ sample_1 }}
         </prism>
-        <ul style="margin-top: 20px">
+        <ul style="margin-top: 30px">
             <li>元素添加 red 属性，元素的文字颜色会变为红色，这种控制颜色的属性有
                 <q>red</q> <q>pink</q> <q>purple</q> <q>cyan</q> <q>blue</q> ... 等十二种。</li>
             <li>元素添加 <q>ba</q> 属性后，颜色不仅影响文字，还会影响边框，如果此时还要自定义文字颜色，只能通过子元素实现了。</li>
@@ -38,20 +38,19 @@
             <li>每种颜色只有 default、lighten 和 darken 三种明度，同一种颜色的<i bold>不同明度有非常明显的界限</i>。</li>
 <!--            <li>元素有多个颜色属性时，最终显示结果与颜色属性的先后顺序无关。</li>-->
         </ul>
-        <div message xs style="margin-top: 20px">foo bar 等“测试属性”与颜色不同，虽然它们也产生颜色，但没有 lighten border bg alpha 等相关功能，因此测试属性仅能用于布局测试。</div>
+        <div message xs style="margin-top: 10px">foo bar 等“测试属性”与颜色不同，虽然它们也产生颜色，但没有 lighten border bg alpha 等相关功能，因此测试属性仅能用于布局测试。</div>
         <div bb dashed alpha-3 style="margin-top: 20px"></div>
         <h2 tag-bar md style="margin-top: 35px">颜色透明度</h2>
         <doc-color-showcase_1/>
         <small jc style="margin-top: 12px">Mew 提供 25 段透明；点击示例复制 Alpha 属性到粘贴板</small>
         <div bb dashed alpha-3 style="margin-top: 18px"></div>
-        <ul style="margin-top: 10px">
+        <ul style="margin-top: 30px">
             <li>颜色属性通过配合 <q>lighten</q> <q>darken</q> 控制明度，通过 <q>alpha</q> 属性控制透明度。</li>
             <li>
                 <q>alpha</q> 属性有 25 个分段，默认值是 alpha-25，最小值是 alpha-1，等效于 <q>opacity:0.04</q> 。
             </li>
             <li><q>alpha</q> 属性对文字颜色的影响会向下传递，但对边框和背景色的影响不会向下传递。</li>
         </ul>
-        <div ht-lg></div>
     </div>
 </template>
 

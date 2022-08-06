@@ -20,63 +20,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0dffef9-b5dd-4e23-8439-ef7e8f84e481" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/components/prism/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/components/prism/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/components/prism/prism.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/lib/debounce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/lib/throttle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/fit/fit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/fit/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/flex/flex.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/flex/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/message/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/message/message.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/overlay/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/overlay/overlay.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/hint/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-fit/doc-fit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-fit/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-flex/doc-flex.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-flex/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-lazy/doc-lazy.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-lazy/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/directive/doc-lazy/doc-lazy.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/directive/doc-lazy/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/home/scss/1200.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/home/scss/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/bg_bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/bg_dot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/bg_foo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/Culligan-home.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/c_c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/c_c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/c_e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/c_e2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/c_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/c_w.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/reinitialisation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/s_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/s_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/s_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/s_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/s_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/wordcloud.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/wordcloud_hq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/wordcloud_rect.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/wordcloud_rect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/wordcloud_rect_light.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/doc/yspyj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/dot_1px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/assets/line_1px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/components/apiTable/apiTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/components/apiTable/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/btn/btn.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/btn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/btn/scss/btn.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/loading/loading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/matte/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/matte/matte.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/store/doc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/test/showcase_list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/test/showcase_parallax.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/test/test.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/btn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/field/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/matte/components/samp_1.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/matte/components/samp_2.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/matte/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/matte/overlay.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/lib/copy.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/lib/copy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dev/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/assets/wolai/eeY6cJEbmT1gpA9wQr4LZr.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/mew.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/mew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/icon/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/ico/ico.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/icon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/ico/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/effect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/effect.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/icon/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/icon/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/fit/fit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/fit/fit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/ico/ico.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/ico/ico.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/loader/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/loading/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/loader/loader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/border.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/cursor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/effect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/test.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/other.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/assets/doc/180 228.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/text.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/reset.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/hint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/hint/hint.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/names/getNames.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/names/getNames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/names/icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/names/icons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/scss/ico.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/icon/scss/ico.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/image.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/image.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/intro/quick_start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/intro/start.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/box/box.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/box/box.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/box/showcase_flex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/box/showcase_flex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/color/color.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/color/color.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/color/colorSheet.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/color/colorSheet.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/sizing/showcase_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/sizing/showcase_1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/sizing/showcase_cards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/sizing/showcase_cards.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/sizing/sizing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/sizing/sizing.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/test.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/text/showcase_a.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/text/showcase_a.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/text/text.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/attribute/text/text.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/btn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/btn/btn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/component/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/component/field/field.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-fit/doc-fit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/container/doc-fit/doc-fit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/directive/doc-lazy/doc-lazy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/directive/doc-lazy/doc-lazy.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/intro/standard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/intro/standard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/intro/start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/intro/start.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/overlay.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/reset.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/content/preset/reset.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/headbar/scss/1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/headbar/scss/1200.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/headbar/scss/headbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/headbar/scss/headbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/sidebar/scss/1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/sidebar/scss/1200.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/sidebar/scss/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/sidebar/scss/sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/sidebar/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/sidebar/sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/home/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/release/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/documentation/wrapper/wrapper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/documentation/wrapper/wrapper.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,20 +133,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../海鸥前端 Mevo-Mew/Mew-UI-Doc/dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="D:\ISD\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\btn" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\field" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\matte" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\container" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\hint" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\ico\names" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\ico" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\components\prism" />
@@ -215,6 +241,35 @@
       <workItem from="1654884291248" duration="3847000" />
       <workItem from="1654930733982" duration="3242000" />
       <workItem from="1654939187790" duration="8828000" />
+      <workItem from="1657718962396" duration="3833000" />
+      <workItem from="1657731741878" duration="317000" />
+      <workItem from="1657772636362" duration="6618000" />
+      <workItem from="1657796740602" duration="1579000" />
+      <workItem from="1657801815581" duration="7655000" />
+      <workItem from="1657863857461" duration="6068000" />
+      <workItem from="1657894950660" duration="4389000" />
+      <workItem from="1657946887852" duration="11910000" />
+      <workItem from="1658001044883" duration="174000" />
+      <workItem from="1658074271879" duration="592000" />
+      <workItem from="1658121705946" duration="5138000" />
+      <workItem from="1658130700055" duration="3306000" />
+      <workItem from="1658138431100" duration="9987000" />
+      <workItem from="1658309646369" duration="1709000" />
+      <workItem from="1658337972178" duration="3000" />
+      <workItem from="1658440063277" duration="754000" />
+      <workItem from="1658446539676" duration="2310000" />
+      <workItem from="1658448900647" duration="393000" />
+      <workItem from="1658449834965" duration="1176000" />
+      <workItem from="1658483728072" duration="12000" />
+      <workItem from="1658496705937" duration="2108000" />
+      <workItem from="1658507898704" duration="3352000" />
+      <workItem from="1658515456357" duration="8137000" />
+      <workItem from="1658597072681" duration="7256000" />
+      <workItem from="1658612308755" duration="11809000" />
+      <workItem from="1658681412428" duration="161000" />
+      <workItem from="1658684796240" duration="9648000" />
+      <workItem from="1658703076001" duration="3488000" />
+      <workItem from="1658789795112" duration="92000" />
     </task>
     <servers />
   </component>
@@ -242,14 +297,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="93" y="93" width="2375" height="1215" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1652705424161" />
-    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl" timestamp="1654950961223">
+    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl" timestamp="1658789885535">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1654950961223" />
-    <state x="782" y="345" key="SettingsEditor" timestamp="1653955243368">
+    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1658789885535" />
+    <state x="782" y="345" key="SettingsEditor" timestamp="1658447169674">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="782" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1653955243368" />
+    <state x="782" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1658447169674" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1652705421089">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -262,9 +317,13 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="701" y="95" width="999" height="1406" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1653507925893" />
-    <state x="1684" y="333" key="run.anything.popup" timestamp="1652203165691">
+    <state x="1684" y="333" key="run.anything.popup" timestamp="1658143310630">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1684" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1652203165691" />
+    <state x="1684" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1658143310630" />
+    <state x="938" y="593" key="search.everywhere.popup" timestamp="1658621267605">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="938" y="593" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1658621267605" />
   </component>
 </project>

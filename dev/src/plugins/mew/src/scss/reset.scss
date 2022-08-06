@@ -12,6 +12,7 @@ html {
   width: 100vw;height: 100vh;
   scroll-behavior: smooth!important;
   font-family:"PingFang SC",Arial,"Microsoft YaHei","微软雅黑","Hiragino Sans GB",sans-serif;
+  color: rgba(0,0,0,.88);
   font-size: 15px;
   letter-spacing: .4px;
   -webkit-font-smoothing: antialiased;
@@ -74,7 +75,7 @@ code, kbd, q, pre, samp {
 }
 kbd,q{
   opacity: .7;
-  font-family: Arial;
+  font-family: Roboto,Arial;
   line-height: 1.2;
   text-decoration: none;
   padding:1px 6px 2px 6px;
@@ -233,7 +234,7 @@ button {
   overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
 }
 button, select {
-  padding: 2px 10px;
+  //padding: 2px 10px;
   text-transform: none; /* Firefox 40+, Internet Explorer 11- */
 }
 details, main {

@@ -3,8 +3,8 @@
         <fit style="height:300px" bevel>
             <img v-lazy :src="img">
         </fit>
-        <h2 tag-bar md my-sm>基本用法</h2>
-        <prism mt-sm lang="html" bevel>{{ usage }}</prism>
+        <h2 tag-bar md style="margin-top: 40px">基本用法</h2>
+        <prism style="margin-top: 20px" lang="html" bevel>{{ usage }}</prism>
     </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
     data(){
         return {
             img,
-            usage:`<!--对 img video 元素都有效-->
+            usage:`<!--对 img video src input 等具有 src 属性的元素都有效-->
 <fit ht-xl ht-25 col-25 bevel>
     <img v-lazy src="...">
 </fit>

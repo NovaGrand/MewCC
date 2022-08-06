@@ -4,6 +4,9 @@ import './main'
 import { loading, pending, notify } from './mew'
 
 import ico from './src/components/ico'
+import btn from './src/components/btn'
+import vid from './src/components/vid'
+
 import fit from './src/components/fit'
 import flex from './src/components/flex'
 
@@ -15,6 +18,8 @@ export default {
         app.config.globalProperties.$pending = pending
         app.config.globalProperties.$notify = notify
         app.component('ico',ico)
+        app.component('btn',btn)
+        app.component('vid',vid)
         app.component('fit',fit)
         app.component('flex',flex)
         app.directive('lazy',lazy)

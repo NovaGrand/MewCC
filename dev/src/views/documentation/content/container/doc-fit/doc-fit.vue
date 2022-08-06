@@ -34,8 +34,6 @@
             </VueDragResize>
         </div>
 
-        <div ht-xl></div>
-
     </div>
 </template>
 
@@ -56,14 +54,15 @@ export default {
             usage:`
 <!--fit 组件内只能同时显示一个元素-->
 <!--fit 组件只有在具有宽高尺寸时，才会将内容裁切匹配-->
+<!--fit 组件默认是短边适配-->
 <fit fill>
     <img :src="img">
 </fit>
 
-<!--等效于下面这段 html-->
-<div style="width ...; height ...;" >
-    <img :src="img" style="object-fit: cover; width:100%; height: 100%;">
-</div>
+<!--通过 contain 属性改为长边适配-->
+<fit fill contain>
+    <img :src="img">
+</fit>
 
 `,
 

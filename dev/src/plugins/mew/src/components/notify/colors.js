@@ -19,12 +19,20 @@ export default {
         fontColor:'#005991',
         backgroundColor:'rgba(230,252,255,.92)'
     },
+    lake:{
+        fontColor:'#005b49',
+        backgroundColor:'rgba(224,255,249,.92)'
+    },
     green:{
         fontColor:'#007d03',
         backgroundColor:'rgba(236,255,236,.92)'
     },
     blue: {
         fontColor:'#0058c4',
+        backgroundColor:'rgba(220,235,255,.92)'
+    },
+    indigo: {
+        fontColor:'#003860',
         backgroundColor:'rgba(220,235,255,.92)'
     },
     grey:{
@@ -38,6 +46,10 @@ export default {
     yellow:{
         fontColor:'#aa5800',
         backgroundColor:'rgba(255,253,225,.92)'
+    },
+    golden:{
+        fontColor:'#844c03',
+        backgroundColor:'rgba(255,238,205,.92)'
     },
     catskill:{
         fontColor:'#2e3f50',

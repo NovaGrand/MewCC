@@ -35,6 +35,13 @@ let routes = [
         redirect: '/',
         // component: () => import('@/views/error')
     },
+    // 404 页面
+    {
+        path: '/blob',
+        name:'error',
+        redirect: '/',
+        // component: () => import('@/views/error')
+    },
 ]
 
 export default routes

@@ -14,11 +14,11 @@
                     </div>
                 </fit>
                 <div jsb relative style="margin-top: 5px;height: 115px">
-                    <div black bg jc ac xl style="width: 24px;height: 24px;text-align: center;padding-bottom: 6px"
+                    <div black bg jc ac xl style="width: 24px;height: 24px;text-align: center;padding-bottom: 7px"
                          class="sample" @click="copy('wd-6 ht-6')">
                         +
                     </div>
-                    <div black bg jc ac md style="width: 24px;height: 24px;text-align: center;padding-bottom:2px;position: absolute;left: 29px"
+                    <div black bg jc ac md style="width: 24px;height: 24px;text-align: center;padding-bottom:4px;position: absolute;left: 29px"
                          class="sample" @click="copy('wd-6 ht-6')">
                         ①
                     </div>

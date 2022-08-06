@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="doc-box" ba grey lighten pa-md>
+        <div class="doc-box" card lighten pa-md>
             <div class="btns" xs jsb>
                 <div class="btnBox" jc v-for="(item, idx) in samps" @click="index = String(idx + 1)">
                     <i noselect class="btn" :class="{ current: index === String(idx + 1)}">
@@ -11,8 +11,8 @@
             <input style="width: 812px" mx-auto pointer type="range" min="1" max="11" v-model="index">
             <showcase_a :index="index"></showcase_a>
         </div>
-        <div class="sampleBox" ht-md ht-10 mt-md relative>
-            <fit bv-sm fill relative class="bg">
+        <div class="sampleBox" ht-md ht-10 relative style="margin-top: 15px">
+            <fit fill relative class="bg" style="border-radius: 2px 2px 0 0">
                 <img fill :src="img">
             </fit>
             <div class="container" white py-md px-lg fill flex>
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <prism lang="html" style="margin-top: 20px">{{ html }}</prism>
+        <prism lang="html" style="margin-top: 0;border-radius: 0 0 2px 2px">{{ html }}</prism>
         <div caution xs>希望你看到那长串的属性时，没有被吓到，与看上去不同的是，样式属性就同在元素上写 style 一样，实际心智负担很小。</div>
     </div>
 </template>

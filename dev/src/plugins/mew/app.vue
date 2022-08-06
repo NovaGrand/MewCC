@@ -1,20 +1,17 @@
 <template>
-    <loader/>
-    <!--蒙版容器-->
-    <overlay/>
+    <matte/>
     <!--消息容器-->
     <notify/>
 </template>
 
 <script>
-import loader from "./src/components/loader"
-import overlay from './src/components/overlay'
+import matte from "./src/components/matte"
 import notify from './src/components/notify'
 
 export default {
     name: "app",
     components:{
-        loader, overlay, notify
+        matte, notify
     },
     mounted() {
 
@@ -28,5 +25,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import "src/scss/app";
+div#mew{
+    position: fixed;top: 0;left: 0;
+    div.mew-vid{
+        height: 100vh!important;
+        width: 100vw!important;
+    }
+}
 </style>
