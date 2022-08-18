@@ -49,7 +49,7 @@
 <script>
 import { loading, pending } from '../../../mew'
 import spinner from '../utils/spinner'
-import ico from '../ico'
+import ico from '../../components/ico'
 export default {
     name: "mew-matte",
     mounted(){
@@ -122,18 +122,19 @@ div.mew-matte{
     display: flex;justify-content: center;align-items: center;
     .partten{
         @keyframes foo {
-            0%{transform: scale(1)}
-            100%{transform: scale(1.2)}
+            0%{transform: scale(1.1)}
+            100%{transform: scale(1)}
         }
         @keyframes bar {
-            0%{transform: scale(1)}
-            100%{transform: scale(1.2)}
+            0%{transform: scale(1.1)}
+            100%{transform: scale(1)}
         }
         &.foo{
-            animation: foo .4s cubic-bezier(0.84, -1.13, 0.16, 2);
+            //animation: foo .4s cubic-bezier(0.84, -1.13, 0.16, 2);
+            animation: foo .2s ease;
         }
         &.bar{
-            animation: bar .4s cubic-bezier(0.84, -1.13, 0.16, 2);
+            animation: bar .2s ease;
         }
     }
     @keyframes flash {

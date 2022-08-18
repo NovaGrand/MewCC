@@ -30,14 +30,13 @@ let routes = [
     },
     // 404 页面
     {
-        path: '/:pathMatch(.*)*',
+        path: '/doc/:pathMatch(.*)*',
         name:'error',
         redirect: '/',
         // component: () => import('@/views/error')
     },
-    // 404 页面
     {
-        path: '/blob',
+        path: '/:pathMatch(.*)*',
         name:'error',
         redirect: '/',
         // component: () => import('@/views/error')

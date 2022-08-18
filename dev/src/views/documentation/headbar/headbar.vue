@@ -1,5 +1,5 @@
 <template>
-    <div id="headbar" :class="{ border: stat.drawer }" noselect>
+    <div id="headbar" :class="{ border: stat.drawer, dark:$color.theme === 'dark' }" bg noselect>
         <div class="leftBox">
             <div class="logoBox">
                 <div class="menuBtn" :class="{ close:stat.drawer }" @click="stat.drawer = !stat.drawer"></div>

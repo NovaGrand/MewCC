@@ -1,130 +1,163 @@
 <template>
     <div class="doc-message">
-        <div class="showcase" noselect>
-            <div class="sample" flex jsb style="margin-bottom: 10px">
-                <toast style="width: 360px;margin: 0 5px 0 0"
-                    color="blue"
-                    title="消息"
-                    :stick="true"
-                    text="这是一个消息通知 !"
-                    icon="state-hint-caution"
-                />
-                <toast style="width: 360px;margin: 0 5px"
-                       color="green"
-                       title="完成"
-                       :stick="true"
-                       text="这是一个成功通知 !"
-                       icon="state-hint-achieve"
-                />
-                <toast style="width: 360px;margin: 0 0 0 5px"
-                       color="yellow"
-                       title="注意"
-                       :stick="true"
-                       text="这是一个注意通知 !"
-                       icon="state-hint-warning"
-                />
-            </div>
-            <div class="sample" flex jsb style="margin-bottom: 10px">
-                <toast style="width: 360px;margin: 0 5px 0 0"
-                       color="red"
-                       title="错误"
-                       :stick="true"
-                       text="这是一个错误通知 !"
-                       icon="state-hint-bad"
-                />
-                <toast style="width: 360px;margin: 0 5px"
-                       color="pink"
-                       title="粉色"
-                       :stick="true"
-                       text="这是一个粉色的通知 ..."
-                       icon="user-favorite-fill"
-                />
-                <toast style="width: 360px;margin: 0 0 0 5px"
-                       color="purple"
-                       title="紫色"
-                       :stick="true"
-                       text="这是一个紫色的通知 ..."
-                       icon="state-bling-twinkle"
-                />
-            </div>
-            <div class="sample" flex jsb style="margin-bottom: 10px">
-                <toast style="width: 360px;margin: 0 5px 0 0"
-                       color="orange"
-                       title="橙色"
-                       :stick="true"
-                       text="这是一个橙色的通知 ..."
-                       icon="food-lemon"
-                />
+        <div ect bv-md>
+            <div class="showcase" noselect>
+                <div class="sample" flex jsb style="margin-bottom: 10px">
+                    <toast style="width: 360px;margin: 0 5px 0 0"
+                           color="blue"
+                           title="消息"
+                           :stick="true"
+                           text="这是一个消息通知 !"
+                           icon="state-hint-caution"
+                           pointer
+                           @click="showSample(0)"
+                    />
+                    <toast style="width: 360px;margin: 0 5px"
+                           color="green"
+                           title="完成"
+                           :stick="true"
+                           text="这是一个成功通知 !"
+                           icon="state-hint-achieve"
+                           pointer
+                           @click="showSample(1)"
+                    />
+                    <toast style="width: 360px;margin: 0 0 0 5px"
+                           color="yellow"
+                           title="注意"
+                           :stick="true"
+                           text="这是一个注意通知 !"
+                           icon="state-hint-warning"
+                           pointer
+                           @click="showSample(2)"
+                    />
+                </div>
+                <div class="sample" flex jsb style="margin-bottom: 10px">
+                    <toast style="width: 360px;margin: 0 5px 0 0"
+                           color="red"
+                           title="错误"
+                           :stick="true"
+                           text="这是一个错误通知 !"
+                           icon="state-hint-bad"
+                           pointer
+                           @click="showSample(3)"
+                    />
+                    <toast style="width: 360px;margin: 0 5px"
+                           color="pink"
+                           title="粉色"
+                           :stick="true"
+                           text="这是一个粉色的通知 ..."
+                           icon="user-favorite-fill"
+                           pointer
+                           @click="showSample(4)"
+                    />
+                    <toast style="width: 360px;margin: 0 0 0 5px"
+                           color="purple"
+                           title="紫色"
+                           :stick="true"
+                           text="这是一个紫色的通知 ..."
+                           icon="state-bling-twinkle"
+                           pointer
+                           @click="showSample(5)"
+                    />
+                </div>
+                <div class="sample" flex jsb style="margin-bottom: 10px">
+                    <toast style="width: 360px;margin: 0 5px 0 0"
+                           color="orange"
+                           title="橙色"
+                           :stick="true"
+                           text="这是一个橙色的通知 ..."
+                           icon="food-lemon"
+                           pointer
+                           @click="showSample(6)"
+                    />
 
-                <toast style="width: 360px;margin: 0 5px"
-                       color="cyan"
-                       title="青色"
-                       :stick="true"
-                       text="这是一个青色的通知 ..."
-                       icon="mail-notify-round"
-                />
-                <toast style="width: 360px;margin: 0 0 0 5px"
-                       color="catskill"
-                       title="Catskill"
-                       :stick="true"
-                       text="这是一个 Catskill 通知 ..."
-                       icon="ui-org-dot"
-                />
-            </div>
-            <div class="sample" flex jsb style="margin-bottom: 10px">
-                <toast style="width: 360px;margin: 0 5px 0 0"
-                       color="black"
-                       title="黑色"
-                       :stick="true"
-                       text="这是一个黑色通知 ..."
-                       icon="kit-miota"
-                />
-                <toast style="width: 360px;margin: 0 5px"
-                       color="grey"
-                       title="灰色"
-                       :stick="true"
-                       text="这是一个灰色的通知 ..."
-                       icon="kit-voiceprint"
-                />
-                <toast style="width: 360px;margin: 0 0 0 5px"
-                       color="white"
-                       title="白色"
-                       :stick="true"
-                       text="这是一个白色的通知 ..."
-                       icon="state-hint-info"
-                />
+                    <toast style="width: 360px;margin: 0 5px"
+                           color="cyan"
+                           title="青色"
+                           :stick="true"
+                           text="这是一个青色的通知 ..."
+                           icon="mail-notify-round"
+                           pointer
+                           @click="showSample(7)"
+                    />
+                    <toast style="width: 360px;margin: 0 0 0 5px"
+                           color="catskill"
+                           title="Catskill"
+                           :stick="true"
+                           text="这是一个 Catskill 通知 ..."
+                           icon="ui-org-dot"
+                           pointer
+                           @click="showSample(8)"
+                    />
+                </div>
+                <div class="sample" flex jsb style="margin-bottom: 10px">
+                    <toast style="width: 360px;margin: 0 5px 0 0"
+                           color="black"
+                           title="黑色"
+                           :stick="true"
+                           text="这是一个黑色通知 ..."
+                           icon="kit-miota"
+                           pointer
+                           @click="showSample(9)"
+                    />
+                    <toast style="width: 360px;margin: 0 5px"
+                           color="grey"
+                           title="灰色"
+                           :stick="true"
+                           text="这是一个灰色的通知 ..."
+                           icon="kit-voiceprint"
+                           pointer
+                           @click="showSample(10)"
+                    />
+                    <toast style="width: 360px;margin: 0 0 0 5px"
+                           color="white"
+                           title="白色"
+                           :stick="true"
+                           text="这是一个白色的通知 ..."
+                           icon="state-hint-info"
+                           pointer
+                           @click="showSample(11)"
+                    />
 
+                </div>
+                <div class="sample" flex jsb style="margin-bottom: 10px">
+                    <toast style="max-width: 293.3px;margin: 3px 5px 0 0;border-radius: 100px;border: 3px solid #ffaa00;box-shadow: 0 0 0 3px black"
+                           class="doc-message-dadwa"
+                           color="black"
+                           title="自定义"
+                           :stick="true"
+                           text="这是一个自定义样式的通知 ..."
+                           icon="state-hint-info"
+                           :close="false"
+                           pointer
+                           @click="showSample(12)"
+                    />
+                    <toast style="width: 360px;margin: 0 5px"
+                           :stick="true"
+                           text="这是一个多行文本通知示例 ... 各国都在不断改进提高政策，在关系上，力求完善。"
+                           icon="state-note-signal"
+                           pointer
+                           @click="showSample(13)"
+                    />
+                    <toast style="max-width: 293.3px;margin: 0 0 0 5px"
+                           text="纯文本消息"
+                           :icon="false"
+                           :stick="true"
+                           :close="false"
+                           pointer
+                           @click="showSample(14)"
+                    />
+                </div>
             </div>
-            <div class="sample" flex jsb style="margin-bottom: 10px">
-                <toast style="max-width: 293.3px;margin: 3px 5px 0 0;border-radius: 100px;border: 3px solid #ffaa00;box-shadow: 0 0 0 3px black"
-                       class="doc-message-dadwa"
-                       color="black"
-                       title="自定义"
-                       :stick="true"
-                       text="这是一个自定义样式的通知 ..."
-                       icon="state-hint-info"
-                       :close="false"
-                />
-                <toast style="width: 360px;margin: 0 5px"
-                       :stick="true"
-                       text="这是一个多行文本通知示例 ... 各国都在不断改进提高政策，在关系上，力求完善。"
-                       icon="state-note-signal"
-                />
-                <toast style="max-width: 293.3px;margin: 0 0 0 5px"
-                       text="纯文本消息"
-                       :icon="false"
-                       :stick="true"
-                       :close="false"
-                />
+            <div jc style="margin: 20px 0 20px 0">
+                <btn vanilla bv-sm bold px-md blue bg sm mr-lg @click="preview">预 览</btn>
+                <btn vanilla bv-sm bold px-md white darken bg sm @click="$notify.clear()">清 空</btn>
             </div>
         </div>
         <div class="border"></div>
-        <div flex class="box">
-            <span class="btn left" @click="showSamples">点击预览</span>
-            <span class="btn right" @click="$notify.clear()">清空</span>
-        </div>
+
         <div mt-sm>
-            <prism lang="js" bevel style="margin-top: 20px"><pre><code>// 预定义消息框
+            <prism lang="js" bevel ><pre><code>// 预定义消息框
 this.$notify.message('This is a message')
 this.$notify.success('This is a success')
 this.$notify.caution('This is a caution')
@@ -144,6 +177,8 @@ this.$notify({
 })
 </code></pre></prism>
         </div>
+        <p>吐司消息框的 HTML 结构:</p>
+        <prism lang="html">{{ toastBarHTML }}</prism>
     </div>
 </template>
 
@@ -158,21 +193,27 @@ export default {
     data(){
         return {
             configs,
-            n:0
+            n:0,
+            toastBarHTML:`<!--Toast bar 的 HTML 结构-->
+<li class="mew-toast">
+    <i class="mew-toast-icon"></i>
+    <div class="mew-toast-ctx" flex column>
+        <i class="mew-toast-title">title</i>
+        <i class="mew-toast-texts">text</i>
+    </div>
+    <i class="mew-icon-form-close"/>
+</li>`
         }
     },
     mounted(){
-        // this.$notify.message()
-        // this.$notify.success()
-        // this.$notify.caution()
-        // this.$notify.failure()
-        // this.$notify({
-        //     color:'lake',
-        //     stick:true
-        // })
+
     },
     methods:{
-        showSamples(){
+        showSample(n){
+            let cfg = this.configs[n]
+            this.$notify(cfg)
+        },
+        preview(){
             let cfg = this.configs[this.n]
             cfg.stick = true
             this.$notify(cfg)
@@ -198,7 +239,7 @@ div.doc-message{
     div.showcase{
         position: relative;
         transform: scale(.7);
-        transform-origin: top center;
+        transform-origin: center center;
         //&::after{
         //    position: absolute;
         //    left: 45px;top: 55px;content: '';display: inline-block;
@@ -208,11 +249,13 @@ div.doc-message{
         //}
         div.sample{
             position: relative;z-index: 1;
+            li.mew-toast:hover{
+                outline: 3px solid #0099ff;
+            }
         }
     }
     div.border{
         border-bottom: .5px solid rgba(0,0,0,.2);
-        margin: 40px 0;
     }
     div.box{
         box-shadow: 0 2px 2px rgba(0,0,0,.2), 0 0 3px rgba(0,0,0,.2);

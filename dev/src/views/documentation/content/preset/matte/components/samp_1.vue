@@ -7,11 +7,11 @@
             <div class="mask"/>
         </div>
         <div class="controls" jc ac>
-            <button @click="toggleColor">color</button>
-            <button @click="toggleIcon">icon</button>
+            <button @click="toggleColor">Color</button>
+            <button @click="toggleIcon">Icon</button>
             <button @click="toggle">{{ $loading.valid ? 'Close matte' : 'Show matte' }}</button>
-            <button @click="toggleImage">image</button>
-            <button @click="toggleText">text</button>
+            <button @click="toggleImage">Image</button>
+            <button @click="toggleText">Text</button>
         </div>
     </div>
 </template>
@@ -114,14 +114,14 @@ div.monitor{
     div.controls{
         height: 50px;
         button{
-            padding: 2px 15px 4px 15px;
-            font-size: 15px;
-            min-width: 84px;
-            background: linear-gradient(0deg,rgba(0,0,0,.06) 10% ,rgba(255,255,255,0.4) 95%);
+            color: #464e56;
+            font-size: 14px;
+            padding: 0 20px 1px 20px;
+            min-width: 90px;height: 28px;
             border: .5px solid rgba(0,0,0,.4);
+            background: linear-gradient(0deg,rgba(0,0,0,.04) 10% ,rgba(255,255,255,0.5) 95%);
             box-shadow: 0 1px 1px inset rgba(255,255,255,.4),0 -1px 1px inset rgba(0,0,0,.2),0 0 1px rgba(0,0,0,.3);
             &:hover{
-                transition: filter .1s linear;
                 filter: brightness(1.2);
             }
             &:first-child{

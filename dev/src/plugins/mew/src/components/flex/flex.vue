@@ -7,15 +7,10 @@
 </template>
 
 <script>
-import throttle from "@/plugins/mew/lib/throttle"
 
 export default {
     name: "flex",
     mounted(){
-        // 处理容器的居中问题
-        // this.ob = new ResizeObserver(throttle(entries => {
-        //   this.init()
-        // },200))
         this.ob = new ResizeObserver(entries => {
             this.init()
         })

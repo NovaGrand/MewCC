@@ -1,11 +1,14 @@
-div.mew-btn{
+button.mew-btn{
+  font-family:"PingFang SC",Arial,"Microsoft YaHei","微软雅黑","Hiragino Sans GB",sans-serif;
   position: relative;
   user-select: none;
   cursor: pointer;
   overflow: unset;
   overflow: hidden;
+  line-height: var(--lh,1.45);
+  letter-spacing: var(--xls,1px);
   &:not([dense]){
-    padding: calc( var(--pt) * 1px + var(--xpt) * 1px + .3em)
+    padding: calc( var(--pt) * 1px + var(--xpt) * 1px + .35em)
     calc( var(--pr) * 1px + var(--xpr) * 1px + 1.4em)
     calc( var(--pb) * 1px + var(--xpb) * 1px + .25em)
     calc( var(--pl) * 1px + var(--xpl) * 1px + 1.4em);
@@ -31,30 +34,30 @@ div.mew-btn{
   // 点击后的波纹效果
   &:not([card],.vanilla,.disabled){
     @keyframes foo {
-      0%{box-shadow: 0 0 0 0 rgba(var(--c), calc(0.04 * var(--an)));}
+      0%{box-shadow: 0 0 0 0 rgba(var(--c), calc(0.04 * var(--ac)));}
       100%{box-shadow: 0 0 0 4px rgba(0,0,0,0);}
     }
     @keyframes bar {
-      0%{box-shadow: 0 0 0 0 rgba(var(--c), calc(0.04 * var(--an)));}
+      0%{box-shadow: 0 0 0 0 rgba(var(--c), calc(0.04 * var(--ac)));}
       100%{box-shadow: 0 0 0 4px rgba(0,0,0,0);}
     }
     &.foo{
-      animation: foo .2s linear;
+      animation: foo .22s linear;
     }
     &.bar{
-      animation: bar .2s linear;
+      animation: bar .22s linear;
     }
   }
 }
 
-div.mew-btn{
+button.mew-btn{
   &.disabled{
     filter: saturate(0) brightness(1.4)!important;
     opacity: .3!important;
     cursor: default;
   }
 }
-div.mew-btn[card]{
+button.mew-btn[card]{
   box-shadow:  0 1px 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3);
   transition: box-shadow .01s linear;
   &:active:not(.disabled){
@@ -62,9 +65,13 @@ div.mew-btn[card]{
     box-shadow: 0 0 1px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.3);
   }
 }
-div.mew-btn.vanilla{
+button.mew-btn.vanilla{
   overflow: hidden;
   box-shadow:0 0 0 .5px rgba(0,0,0,.4), 1px 1px 10px rgba(0,0,0,.08);
+  padding: calc( var(--pt) * 1px + var(--xpt) * 1px + .3em)
+  calc( var(--pr) * 1px + var(--xpr) * 1px + 1.4em)
+  calc( var(--pb) * 1px + var(--xpb) * 1px + .3em)
+  calc( var(--pl) * 1px + var(--xpl) * 1px + 1.4em);
   &::after{
     position: absolute;left: 0;top: 0;width: 100%;height: 100%;content: '';display: block;z-index: 9999;
     background: linear-gradient(0deg,rgba(0,0,0,.2) 20% ,rgba(255,255,255,0.4) 100%);

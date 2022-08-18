@@ -26,8 +26,8 @@ this.$loading.next = () => {
 this.$loading.config = { color:'white', target: this.$refs.screen }
 </pre>
         </prism>
-        <div xs message>蒙版是全局唯一的，蒙版只能同时存在于一个元素内，如果希望同时使用多个 loading，请使用元素指令 v-loading</div>
-        <div grey dashed bb alpha-10 style="margin-top: 20px"></div>
+        <div xs message mt-sm>蒙版是全局唯一的，蒙版只能同时存在于一个元素内，如果希望同时使用多个 loading，请使用元素指令 v-loading</div>
+        <div grey dashed bb alpha-10 my-lg></div>
         <h2 tag-bar lg style="margin-top: 40px">状态 & 交互指引</h2>
         <p>
             $pending 样式风格更倾向于 ToB，其他功能与 $loading 完全一样。当蒙版被过多使用时，通过两种蒙版交替使用，减轻用户的疲惫感。

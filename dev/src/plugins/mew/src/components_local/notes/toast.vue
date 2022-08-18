@@ -91,12 +91,12 @@ li.mew-toast{
     }
     &.title{
         i.mew-toast-icon{
-            top: 12.4px;
+            top: 12.8px;
         }
     }
     i.mew-toast-icon{
         position: absolute;
-        left: 11px;top: 15px;
+        left: 11px;top: 16.5px;
         font-size: 20px;
         opacity: .7;
     }

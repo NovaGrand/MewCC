@@ -56,7 +56,7 @@ export default {
             ],
             names,
             api:[
-                { name:'dense', type:'Attribute', description:'为图标添加 dense 属性可，关闭图标变换时的抖入动效' },
+                { name:'dense', type:'Boolean', description:'图标变换使默认有抖入效果，使用该属性可关闭图标动效' },
             ],
             timer: null
         }

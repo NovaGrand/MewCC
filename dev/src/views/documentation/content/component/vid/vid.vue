@@ -3,13 +3,12 @@
         <vid autoplay/>
         <h2 bold lg style="margin-top: 20px">视频组件</h2>
         <p>
-            原生 video 封装，提供 blob 资源保护，<i bold>对调试工具进行了防修改、防下载处理，支持直播资源(HLS)</i>。
+            由原生 video 封装，提供 blob 资源保护，<i bold>对调试工具进行了防修改、防下载处理，支持直播资源(HLS)</i>。
             默认使用 Fetch 获取资源，自动区分资源类型，如果你需要进一步加强视频防盗功能，可以在视频加载(@load 事件)开始后，定时请求影子文件。
         </p>
         <div xs message style="margin-top: 20px">普通视频（例如.mp4）容易被盗取；虽然播放器支持 m3u8 格式，但更佳的防盗，还需从资源端加固(例如添加影子请求、设置白名单、视频加密)。</div>
         <prism lang="html">{{ code }}</prism>
         <apiTable :items="api" style="margin-top: 35px"/>
-
     </div>
 </template>
 

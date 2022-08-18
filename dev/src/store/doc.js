@@ -59,16 +59,16 @@ export default {
             file:'/preset/matte'
         },
         {
+            name:'主题 Theme',
+            prefix:'主题',suffix:'Theme',
+            path:'theme',
+            file:'/preset/doc-theme'
+        },
+        {
             name:'消息 Message',
             prefix:'消息',suffix:'Message',
             path:'message',
             file:'/preset/doc-message',
-        },
-        {
-            name:'动效 Transition',
-            prefix:'动效',suffix:'Transition',
-            path:'transition',
-            file:'/preset/transition.vue'
         },
     ],
     "容器":[
@@ -85,14 +85,6 @@ export default {
             file:'/container/doc-flex',
             width:'45px',
         },
-    ],
-    "指令":[
-        {
-            name:'懒加载',
-            prefix:'懒加载',suffix:'Lazy',
-            path:'lazy',
-            file:'/directive/doc-lazy',
-        }
     ],
     "组件":[
         {
@@ -114,12 +106,18 @@ export default {
             file:'/component/vid',
         },
         {
-            name:'输入 Field',
-            prefix:'输入',suffix:'Field',
+            name:'字段 Field',
+            prefix:'字段',suffix:'Field',
             path:'field',
             file:'/component/field',
         },
-
-
-    ]
+    ],
+    "指令":[
+        {
+            name:'懒加载',
+            prefix:'懒加载',suffix:'Lazy',
+            path:'lazy',
+            file:'/directive/doc-lazy',
+        },
+    ],
 }

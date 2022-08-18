@@ -13,8 +13,8 @@
           calc( var(--mb) * 1px + var(--xmb) * 1px )
           calc( var(--ml) * 1px + var(--xml) * 1px );
 
-  --nx:0; --ny:0;
-  transform: translateX(var(--nx)) translateY(var(--ny));
+  --nx:0; --ny:0;--fd:0;
+  transform: translateX(var(--nx)) translateY(var(--ny)) rotate(var(--fd));
 }
 $grades: (
         xs: 2,
@@ -88,22 +88,24 @@ $grades: (
 [nu-sm]{ --ny:-1px}
 [nu-md]{ --ny:-1.5px}
 [nu-lg]{ --ny:-2px}
-[nu-xl]{ --ny:-2.5px}
+[nu-xl]{ --ny:-3px}
 
 [nd-xs]{ --ny:.5px}
 [nd-sm]{ --ny:1px}
 [nd-md]{ --ny:1.5px}
 [nd-lg]{ --ny:2px}
-[nd-xl]{ --ny:2.5px}
+[nd-xl]{ --ny:3px}
 
 [nr-xs]{ --nx:.5px}
 [nr-sm]{ --nx:1px}
 [nr-md]{ --nx:1.5px}
 [nr-lg]{ --nx:2px}
-[nr-xl]{ --nx:2.5px}
+[nr-xl]{ --nx:3px}
 
 [nl-xs]{ --nx:-.5px}
 [nl-sm]{ --nx:-1px}
 [nl-md]{ --nx:-1.5px}
 [nl-lg]{ --nx:-2px}
-[nl-xl]{ --nx:-2.5px}
+[nl-xl]{ --nx:-3px}
+
+[flip]{ --fd: 180deg}

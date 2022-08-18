@@ -38,6 +38,7 @@ export default {
 
 <style scoped lang="scss">
 table.mew-apiTable{
+    line-height: 1.7;
     width: 100%;
     border-collapse: collapse;
     letter-spacing: 1px;

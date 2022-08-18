@@ -39,17 +39,18 @@
 <!--            <li>元素有多个颜色属性时，最终显示结果与颜色属性的先后顺序无关。</li>-->
         </ul>
         <div message xs style="margin-top: 10px">foo bar 等“测试属性”与颜色不同，虽然它们也产生颜色，但没有 lighten border bg alpha 等相关功能，因此测试属性仅能用于布局测试。</div>
-        <div bb dashed alpha-3 style="margin-top: 20px"></div>
+        <div bb dashed alpha-3 my-lg></div>
         <h2 tag-bar md style="margin-top: 35px">颜色透明度</h2>
         <doc-color-showcase_1/>
         <small jc style="margin-top: 12px">Mew 提供 25 段透明；点击示例复制 Alpha 属性到粘贴板</small>
         <div bb dashed alpha-3 style="margin-top: 18px"></div>
         <ul style="margin-top: 30px">
-            <li>颜色属性通过配合 <q>lighten</q> <q>darken</q> 控制明度，通过 <q>alpha</q> 属性控制透明度。</li>
+            <li>颜色属性配合 <q>lighten</q> <q>darken</q> 控制颜色亮度，通过 <q>alpha</q> 属性控制透明度。</li>
             <li>
                 <q>alpha</q> 属性有 25 个分段，默认值是 alpha-25，最小值是 alpha-1，等效于 <q>opacity:0.04</q> 。
             </li>
             <li><q>alpha</q> 属性对文字颜色的影响会向下传递，但对边框和背景色的影响不会向下传递。</li>
+            <li><q>alpha</q> 属性的缩写属性是 <q>ac</q>，即 alpha-channel。</li>
         </ul>
     </div>
 </template>

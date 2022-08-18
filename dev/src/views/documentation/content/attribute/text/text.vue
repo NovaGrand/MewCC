@@ -15,23 +15,23 @@
             <fit fill relative class="bg" style="border-radius: 2px 2px 0 0">
                 <img fill :src="img">
             </fit>
-            <div class="container" white py-md px-lg fill flex>
-                <div lighten>
+            <div class="container" fill white px-lg jsb ac>
+                <div lighten ls-sm column jsb ht-sm ht-20>
                     <h2 xl>Lorem Ipsum</h2>
                     <h2>
-                        <i xl fs-25>A</i><i ml-sm lg>TOM</i>
+                        <i xl fs-25 foo>A</i><i ml-sm lg>TOM</i>
                     </h2>
-                    <small mt-xl mt-21>Excepteur sint occaecat cupidatat</small>
+                    <small mt-lg mt-24 foo>Excepteur ociafat sint ona</small>
                 </div>
-                <div bl dashed white alpha-18 ht-sm ht-20 my-sm my-7 mx-md mx-12></div>
-                <div wd-lg wd-8>
+                <div bl dashed white ac-18 ht-sm ht-19/>
+                <div wd-lg wd-10 column jsb ht-sm ht-22>
                     <p indent>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    <p white alpha-15 pt-lg pt-24>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. </p>
+                    <p white ac-15>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. </p>
                 </div>
             </div>
         </div>
-        <prism lang="html" style="margin-top: 0;border-radius: 0 0 2px 2px">{{ html }}</prism>
-        <div caution xs>希望你看到那长串的属性时，没有被吓到，与看上去不同的是，样式属性就同在元素上写 style 一样，实际心智负担很小。</div>
+        <prism lang="html" style="margin-top:10px;border-radius: 0 0 2px 2px">{{ html }}</prism>
+        <div caution xs style="margin-top: 10px">为便于排版布局，减轻字体对元素尺寸的影响，元素默认行高只有0.8（元素上下边界与字体齐平），只有 p q li 元素默认使用多行文本行高。</div>
     </div>
 </template>
 
@@ -50,17 +50,17 @@ export default {
             samps:[
                 '超大号', '大标题','小标题','最小文本','普通文本','加 粗','间距控制','文末省略','首行缩进','文字颜色','特殊样式'
             ],
-            html:`<div white lighten>
+            html:`<div lighten ls-sm column jsb ht-sm ht-20>
     <h2 xl>Lorem Ipsum</h2>
     <h2>
         <i xl fs-25>A</i><i ml-sm lg>TOM</i>
     </h2>
-    <small mt-xl mt-21>Excepteur sint occaecat cupidatat</small>
+    <small mt-lg mt-24>Excepteur ociafat sint ona</small>
 </div>
-<div bl dashed white alpha-18 ht-sm ht-20 my-sm my-7 mx-md mx-12/>
-<div wd-lg wd-8>
-    <p white indent>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ... </p>
-    <p white alpha-15 pt-lg pt-24>Integer in mauris eu nibh euismod gravida. Duis ac tellusi ... </p>
+<div bl dashed white ac-18 ht-sm ht-19/>
+<div wd-lg wd-10 column jsb ht-sm ht-22>
+    <p indent>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ... </p>
+    <p white ac-15>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputa ... </p>
 </div>`,
         }
     }

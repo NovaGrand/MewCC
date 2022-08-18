@@ -22,7 +22,7 @@
 import { notes } from '@/plugins/mew/mew'
 import toast from './toast'
 export default {
-    name: "mew-notify",
+    name: "mew-notes",
     mounted(){
     },
     components:{

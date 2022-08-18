@@ -1,5 +1,5 @@
 <template>
-    <i class="mew" :class="[name, tink]"></i>
+    <i class="mew" :class="[name, tink, still]"></i>
 </template>
 
 <script>
@@ -8,6 +8,12 @@ export default {
     data(){
         return {
             tink:''
+        }
+    },
+    props:{
+        dense:{
+            type: Boolean,
+            default: false
         }
     },
     watch:{
@@ -19,11 +25,14 @@ export default {
         name(){
             return this.$slots.default ? 'mew-icon-' + this.$slots.default()[0].children : ''
         },
+        still(){
+            return this.dense ? 'dense' : ''
+        }
     }
 }
 </script>
 <style scoped lang="scss">
-i.mew:not([dense]){
+i.mew:not(.dense){
     @keyframes foo {
         0%{transform: scale(1.05)}
         10%{transform: scale(1.1)}

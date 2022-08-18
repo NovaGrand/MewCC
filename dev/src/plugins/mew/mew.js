@@ -23,7 +23,9 @@ export let pending = reactive({
     target: null,
     config: null,
 })
-
+export let color = reactive({
+    theme:'light'
+})
 // ------------- notify -------------
 export let notes = reactive([])
 export let notify = function(config){
@@ -38,8 +40,21 @@ export let notify = function(config){
     notes.push(obj)
     if(notes.length > 8) notes.shift()
 }
+notify.__proto__.flag = false
 notify.__proto__.clear = function(config){
-    notes.length = 0
+    if(!this.flag){
+        this.flag = true
+        if(notes.length > 0)
+            notes.shift()
+        let t = setInterval(()=>{
+            if(notes.length === 0){
+                this.flag = false
+                clearInterval(t)
+            }
+            else
+                notes.shift()
+        },200)
+    }
 }
 notify.__proto__.message = function(config){
     let cfg = {

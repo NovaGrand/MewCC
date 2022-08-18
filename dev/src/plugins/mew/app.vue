@@ -1,17 +1,20 @@
 <template>
+    <!--主题颜色-->
+    <color/>
+    <!--蒙版容器-->
     <matte/>
     <!--消息容器-->
-    <notify/>
+    <notes/>
 </template>
 
 <script>
-import matte from "./src/components/matte"
-import notify from './src/components/notify'
-
+import matte from "./src/components_local/matte"
+import color from './src/components_local/color'
+import notes from './src/components_local/notes'
 export default {
     name: "app",
     components:{
-        matte, notify
+        matte, color, notes
     },
     mounted() {
 
@@ -21,6 +24,7 @@ export default {
 
         }
     },
+
 }
 </script>
 

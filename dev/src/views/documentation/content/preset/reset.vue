@@ -8,7 +8,7 @@
     </p>
     <div ba catskill ht-sm style="margin: 20px 0 100px 0"></div>
     <div style="margin-top: 35px" jsb>
-        <fit wd-md wd-2 class="wordCloud" style="transform: translateX(0)">
+        <fit wd-md wd-2 class="wordCloud" style="transform: translateY(-3px)">
             <img  fill :src="cloud">
         </fit>
         <div  col-14>

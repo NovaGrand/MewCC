@@ -1,7 +1,7 @@
 <template>
-    <div class="mew-btn" :class="{ vanilla: vanilla, disabled: disabled, foo: n === 1, bar: n === 2 }" @click="click">
+    <button class="mew-btn" :class="{ vanilla: vanilla, disabled: disabled, foo: n === 1, bar: n === 2 }" @click="click">
         <slot></slot>
-    </div>
+    </button>
 </template>
 
 <script>
@@ -20,18 +20,13 @@ export default {
     },
     data(){
         return {
-            t: null,
             n: 0
         }
     },
     methods:{
         click(){
+            this.$emit('click')
             this.n = this.n === 1 ? 2 : 1
-            this.t = setTimeout(()=>{
-                clearTimeout(this.t)
-                this.t = null
-                this.$emit('click')
-            },200)
         }
     }
 }

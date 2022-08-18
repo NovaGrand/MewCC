@@ -12,7 +12,7 @@
             <small><ico style="transform: rotate(90deg);">arrow-trangle</ico> 点击图片，修改容器大小，查看匹配效果</small>
         </div>
         <div bb my-sm dashed grey alpha-15></div>
-        <h2 tag-bar md style="margin: 30px 0 15px 0">基本用法</h2>
+        <h2 tag-bar md style="margin: 30px 0 15px 0">图像自适应容器</h2>
         <prism mt-sm lang="html" bevel>{{ usage }}</prism>
 
         <h2 tag-bar md  style="margin: 30px 0 15px 0">更多示例</h2>
@@ -51,8 +51,7 @@ export default {
         return {
             img,
             w:900,
-            usage:`
-<!--fit 组件内只能同时显示一个元素-->
+            usage:`<!--fit 组件内只能同时显示一个元素-->
 <!--fit 组件只有在具有宽高尺寸时，才会将内容裁切匹配-->
 <!--fit 组件默认是短边适配-->
 <fit fill>

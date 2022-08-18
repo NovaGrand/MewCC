@@ -8,7 +8,7 @@
 //      instance：使用该指令的组件实例。
 //      dir：指令的定义对象。
 // vnode：代表绑定元素的底层 VNode。
-export default{
+export default {
     // 在绑定元素的 attribute 前
     // 或事件监听器应用前调用
     created(el, binding, vnode) {

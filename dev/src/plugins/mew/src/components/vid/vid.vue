@@ -29,7 +29,7 @@ export default {
             duration: 0,  // 总时长
             playing: false,
             loading: false,
-            volume: 1,
+            volume: .6,
 
             cinematic: false, // 影院模式
         }

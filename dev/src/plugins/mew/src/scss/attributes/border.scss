@@ -1,9 +1,9 @@
 *{
   --bt: null; --br:null; --bb: null; --bl:null; --bs:solid;
-  border-top: calc(var(--bt) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--an)));
-  border-right: calc(var(--br) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--an)));
-  border-bottom: calc(var(--bb) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--an)));
-  border-left: calc(var(--bl) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--an)));
+  border-top: calc(var(--bt) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--ac)));
+  border-right: calc(var(--br) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--ac)));
+  border-bottom: calc(var(--bb) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--ac)));
+  border-left: calc(var(--bl) * 0.5px) var(--bs) rgba(var(--c), calc(0.04 * var(--ac)));
 }
 
 $grades: ( xs: 1, sm: 3, md: 4, lg: 5, xl: 6 );
@@ -16,7 +16,7 @@ $grades: ( xs: 1, sm: 3, md: 4, lg: 5, xl: 6 );
   [bl-#{$key}]{ --bl:#{$val} }
 }
 [border],[ba],[bt],[br],[bb],[bl],[ba-xs],[ba-sm],[ba-md],[ba-lg],[ba-xl],[bt-xs],[bt-sm],[bt-md],[bt-lg],[bt-xl],[br-xs],[br-sm],[br-md],[br-lg],[br-xl],[bb-xs],[bb-sm],[bb-md],[bb-lg],[bb-xl],[bl-xs],[bl-sm],[bl-md],[bl-lg],[bl-xl]{
-  --c:0,0,0;
+  --c:var(--theme);
 }
 [ba],[border]{ --bt:1;--br:1;--bb:1;--bl:1 }
 [bt]{ --bt:1; }

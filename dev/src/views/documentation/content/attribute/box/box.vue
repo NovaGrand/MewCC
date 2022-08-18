@@ -22,7 +22,7 @@ padding: calc( var(--pt) * 1px + var(--xpt) * 1px )
          calc( var(--pb) * 1px + var(--xpb) * 1px )
          calc( var(--pl) * 1px + var(--xpl) * 1px );</pre>
     </prism>
-    <ul style="margin-top: 40px">
+    <ul style="margin-top: 10px">
         <li>
             <q>pt</q> <q>pr</q> <q>pb</q> <q>pl</q> → <q>padding-top</q> <q>padding-right</q> <q>padding-bottom</q> <q>padding-left</q>
         </li>
@@ -33,8 +33,8 @@ padding: calc( var(--pt) * 1px + var(--xpt) * 1px )
             <q>mx-auto</q> → <q>margin-left:auto;margin-right:auto</q>
         </li>
     </ul>
-    <div xs message style="margin-top: 10px">外边距属性用法与内边距相同，通过 mt mr ma mx my 等控制；使用时，建议先尝试边距段位，再通过标号微调。</div>
-    <div grey lighten bb dashed mt-md></div>
+    <div xs message style="margin-top: 10px">外边距属性用法与内边距相同，通过 mt mr ma mx my 等控制；使用时，先确定边距段位，再通过标号微调。</div>
+    <div grey lighten bb dashed ac-18 my-lg></div>
     <h2 tag-bar md style="margin-top: 36px">边框 微调和圆角</h2>
     <p>
         边框属性可以控制边框的宽度、样式、倒角和颜色，<i bold>边框只有段位，边框无标号，边框的段位仅控制宽度</i>。
@@ -60,8 +60,8 @@ padding: calc( var(--pt) * 1px + var(--xpt) * 1px )
             </fit>
         </div>
     </div>
-    <prism lang="html" style="margin-top:0;border-radius: 2px 2px 20px 20px">{{ html }}</prism>
-    <div bt dashed grey alpha-10 col-24 style="margin: 18px auto"/>
+    <prism lang="html" style="margin-top:0;border-radius: 0 0 20px 20px;">{{ html }}</prism>
+    <div bt dashed grey lighten ac-18 col-24 my-lg/>
     <h2 tag-bar md style="margin-top: 36px">弹性 盒子和对齐</h2>
     <p>对齐属由 <q>display:flex</q> 实现，例如 <q>jsb</q> 对应的样式就是 <q>display:flex;justify-content:space-between;</q></p>
     <showcase_flex style="margin-top: 18px"/>

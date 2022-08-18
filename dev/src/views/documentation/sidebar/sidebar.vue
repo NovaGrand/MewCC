@@ -1,5 +1,5 @@
 <template>
-    <div id="sidebar" :class="{ show: stat.drawer}" noselect>
+    <div id="sidebar" :class="{ show: stat.drawer}" noselect black br-xs alpha-3>
         <div class="content">
             <div class="group homePage">
                 <ul>
@@ -14,19 +14,20 @@
                 </ul>
             </div>
             <div class="group" :class="{ noPaddingTop: index === 0}" v-for="(items, group, index) in itemList">
-                <div class="title">{{ group }}</div>
+
+                <div class="title" black darken alpha-10>{{ group }}</div>
                 <ul>
                     <li v-for="item in items">
                         <router-link :to="'/doc/' + item.path" draggable="false"
-                                     :class="{ activated:routeName === item.name }"
+                                     :class="{ activated:routeName === item.name, dark: $color.theme === 'dark'}"
                                      @click="stat.drawer = false"
                         >
-                            <div class="prefix" :style="'width:' + item.width">
+                            <div class="prefix" :style="'width:' + item.width" black darken alpha-13>
                                 <i v-for="char in Chars(item.prefix)">
                                     {{ char }}
                                 </i>
                             </div>
-                            <div class="suffix">
+                            <div class="suffix" black darken alpha-10>
                                 {{ item.suffix }}
                             </div>
                         </router-link>

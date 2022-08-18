@@ -51,7 +51,7 @@ import rates from './rates'
 import setting from './setting'
 import volume from './volume'
 import screen from './screen'
-import spinner from '../../utils/spinner'
+import spinner from '../../../components_local/utils/spinner'
 import info from './info'
 export default {
     name: "mew-vid-control",

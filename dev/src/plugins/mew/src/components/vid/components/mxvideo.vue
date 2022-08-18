@@ -1,7 +1,7 @@
 <template>
     <video fill @contextmenu.prevent controlsList="nodownload"
            @loadstart="initialize"
-           @loadedmetadata="v.duration = $el.duration;v.playing = v.autoplay;$parent.$emit('load',$el.duration)"
+           @loadedmetadata="v.duration = $el.duration;$parent.$emit('load',$el.duration);autoplay()"
            @timeupdate="updateTime();$parent.$emit('playing',v.time)"
            @ended="initialize();$parent.$emit('end')"
            @waiting="v.loading = true;$parent.$emit('wait')"
@@ -40,6 +40,12 @@ export default {
         updateTime(){
             this.v.time = this.$el.currentTime
         },
+        autoplay(){
+            if(this.v.autoplay){
+                this.v.volume = 0
+                this.v.playing = true
+            }
+        }
     }
 }
 </script>

@@ -1,12 +1,12 @@
 <template>
     <div class="doc-start">
         <p xl ls-sm>安装</p>
-        <p md>
+        <p md mt-sm>
             让我们从 Mew 开始吧，充分利用 Vue 3 的各项特性，构建功能丰富、快速的应用程序。
         </p>
         <div ht-sm bb dashed grey alpha-8></div>
         <p lg ls-xs>创建 Vue 项目</p>
-        <p>
+        <p mt-sm>
             如果你还没有使用 <i bold>Vue CLI</i> 创建 Vue.js 的项目，你需要在命令行工具内进行下面的操作:
         </p>
         <q class="code" col-25 style="padding: 10px 30px;margin-top: 20px">
@@ -17,10 +17,9 @@
                 <i grey># ... 待 vue 项目创建完成后，进入刚刚创建的项目目录内</i> <br>
                 <i sm>cd my-app</i><br>
             </p>
-            <ico class="cp"  grey pointer @click="step_1">list-selected-none</ico>
         </q>
-        <p lg ls-xs style="margin-top: 35px">下载并使用 Mew</p>
-        <p>
+        <p lg ls-xs style="margin-top: 50px">下载并使用 Mew</p>
+        <p mt-sm>
             进入到项目目录后，利用你的 JS 包管理工具，下载 Mew 到当前项目：
         </p>
         <q class="code" col-25 style="padding: 10px 30px;margin-top: 20px">
@@ -30,9 +29,8 @@
                 <i grey mt-sm mt-5># 或使用 yarn add 命令</i> <br>
                 <i sm>yarn add mewcc</i><br>
             </p>
-            <ico class="cp"  grey pointer @click="step_2">list-selected-none</ico>
         </q>
-        <p style="margin-top: 20px">
+        <p style="margin-top: 30px">
             下载完成后，在项目的 main.js 文件中，引入并使用 Mew：
         </p>
 <prism lang="js">
@@ -51,9 +49,9 @@ createApp(App)
     .mount('#app')
 </pre>
 </prism>
-        <p lg ls-xs style="margin-top: 35px">完 成</p>
-        <p>
-            至此，你已经可以在项目的任意视图和组件里，使用 Mew 的各项功能了
+        <p lg ls-xs style="margin-top: 50px">完 成</p>
+        <p mt-sm>
+            至此，你已经可以在项目的视图、组件里，使用 Mew 的各项功能了
             <i wd-6 ht-6 nd-xl>
                 <svg width="182" height="186" viewBox="0 0 182 186" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.7602 184.683L137.367 131.082L54.7613 48.4768L1.16008 164.032C0.391421 165.877 -2.52949 173.307 5.41333 180.379C14.0223 188.014 19.9154 185.452 21.7602 184.683Z" fill="url(#paint0_linear_1041_52)"/>
@@ -255,12 +253,10 @@ export default {
 
 <style scoped lang="scss">
 div.doc-start{
-    color: rgba(0,0,0,.87);
     font-family: roboto;
     q.code{
         position: relative;
-        background-color: rgba(0,0,0,.02);
-        border: .5px solid rgba(0,0,0,.3);
+        //border: .5px solid rgba(0,0,0,.1);
         i.cp{
             position: absolute;right: 15px;top: 15px;
         }
@@ -269,9 +265,10 @@ div.doc-start{
         width: 750px;
         position: relative;
         perspective: 700px;
-        transform: scale(.7) translateX(-135px);
+        transform: scale(.6) translateX(-230px);
         box-shadow: 0 16px 15px 0 #a0a0a0;
         background: linear-gradient(0deg,#a0a0a0,#565656);
+        margin-top: -30px;
         div.p{
             transform-origin: top;
             cursor: pointer;
