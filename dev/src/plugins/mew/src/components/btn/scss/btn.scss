@@ -7,23 +7,18 @@ button.mew-btn{
   overflow: hidden;
   line-height: var(--lh,1.45);
   letter-spacing: var(--xls,1px);
-  &:not([dense]){
-    padding: calc( var(--pt) * 1px + var(--xpt) * 1px + .35em)
-    calc( var(--pr) * 1px + var(--xpr) * 1px + 1.4em)
-    calc( var(--pb) * 1px + var(--xpb) * 1px + .25em)
-    calc( var(--pl) * 1px + var(--xpl) * 1px + 1.4em);
-  }
+  // 默认边距
+  --pt:5;--pb:5;--pl:25;--pr:26;
+  // 默认倒角
+  --bdrd:.2em;
+  // 边框颜色深度调整
+  --adjust-border:0.03;
   &:not(.vanilla,[card],[border],[ba],[bt],[br],[bb],[bl],[ba-xs],[ba-sm],[ba-md],[ba-lg],[ba-xl],[bt-xs],[bt-sm],[bt-md],[bt-lg],[bt-xl],[br-xs],[br-sm],[br-md],[br-lg],[br-xl],[bb-xs],[bb-sm],[bb-md],[bb-lg],[bb-xl],[bl-xs],[bl-sm],[bl-md],[bl-lg],[bl-xl]){
     // 默认样式添加内阴影
     &::before{
-      position: absolute;width: 100%;height: 100%;z-index: 9999;content: '';display: block;
-      left: 0;top: 0;
+      position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: 9999;content: '';display: block;
       box-shadow:inset 0 -0.6em 2em -0.35em rgba(0,0,0,0.1),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
     }
-  }
-  &:not([round],[rect],[bevel],[bv],[bv-xs],[bv-sm],[bv-md],[bv-lg],[bv-xl]){
-    // 添加默认倒角
-    border-radius: .2em;
   }
   &:hover:not(.vanilla){
     filter: saturate(1.4);
@@ -67,11 +62,7 @@ button.mew-btn[card]{
 }
 button.mew-btn.vanilla{
   overflow: hidden;
-  box-shadow:0 0 0 .5px rgba(0,0,0,.4), 1px 1px 10px rgba(0,0,0,.08);
-  padding: calc( var(--pt) * 1px + var(--xpt) * 1px + .3em)
-  calc( var(--pr) * 1px + var(--xpr) * 1px + 1.4em)
-  calc( var(--pb) * 1px + var(--xpb) * 1px + .3em)
-  calc( var(--pl) * 1px + var(--xpl) * 1px + 1.4em);
+  box-shadow:0 0 0 .5px rgba(0,0,0,.5), 1px 1px 10px rgba(0,0,0,.08);
   &::after{
     position: absolute;left: 0;top: 0;width: 100%;height: 100%;content: '';display: block;z-index: 9999;
     background: linear-gradient(0deg,rgba(0,0,0,.2) 20% ,rgba(255,255,255,0.4) 100%);

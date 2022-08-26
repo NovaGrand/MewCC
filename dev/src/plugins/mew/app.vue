@@ -5,6 +5,9 @@
     <matte/>
     <!--消息容器-->
     <notes/>
+<!--    <div id="mew-field-park">-->
+
+<!--    </div>-->
 </template>
 
 <script>
@@ -34,6 +37,9 @@ div#mew{
     div.mew-vid{
         height: 100vh!important;
         width: 100vw!important;
+    }
+    div#mew-field-park{
+        width: 100vw;height: 100vh;
     }
 }
 </style>

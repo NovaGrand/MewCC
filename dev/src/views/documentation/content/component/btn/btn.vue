@@ -2,14 +2,14 @@
     <div class="doc-btn">
         <section>
             <div ht-xs ht-20 black lighten bg top bv-xl ac px-lg jsb>
-                <btn golden bg vanilla px-sm><i black lighten>Vanilla</i></btn>
-                <btn blue lighten bg wd-xs wd-5 jc>Default</btn>
-                <btn green lighten bg card pr-9 ac>
-                    <ico italic nl-xl mr-xs>pay-wallet</ico>
+                <btn golden bg vanilla><i black lighten>Vanilla</i></btn>
+                <btn blue lighten bg jc>Default</btn>
+                <btn green lighten bg card ac>
+                    <ico italic nl-xl nl-6 nu-sm>pay-wallet</ico>
                     <i italic bold>Card</i>
                 </btn>
-                <btn green lighten ba dense ac px-20 py-xs py-3>
-                    <ico nl-xl>state-bling-twinkle</ico>
+                <btn green lighten ba ac px-md>
+                    <ico nl-xl nl-6>state-bling-twinkle</ico>
                     <i sm ls-xs>Outlined</i>
                 </btn>
 
@@ -19,21 +19,23 @@
             </div>
 
             <div ht-xs ht-20 white bg bottom bv-xl ac px-lg jsb>
-                <btn foo baz vanilla round px-sm>Vanilla</btn>
-                <btn red lighten bg round disabled wd-xs wd-5 jc>Disabled</btn>
-                <btn white lighten bg card pr-9 ac>
+                <btn foo baz vanilla round>Vanilla</btn>
+                <btn red lighten bg round disabled px-xs wd-xs wd-2>Disabled</btn>
+                <btn white lighten bg card ac>
                     <ico italic nl-xl nd-xs mr-xs>auth-analysis</ico>
                     <i italic bold>Card</i>
                 </btn>
-                <div wd-sm wd-9 ht-9 jc ac>
-                    <btn wd-sm ht-7 jc ac blue darken ba round xs left>LEFT</btn>
-                    <btn wd-sm ht-7 jc ac blue darken bt bb xs rect>RECT</btn>
-                    <btn wd-sm ht-7 jc ac blue darken ba round xs right>RIGHT</btn>
-                </div>
-                <div wd-xs wd-9 jsb ac>
-                    <btn black ba wd-9 ht-9 dense ac jc round><ico lg>btn-video-round</ico></btn>
-                    <btn grey darken bg wd-8 ht-8 dense ac jc round><ico lg>level-upgrade</ico></btn>
-                    <btn black bg wd-8 ht-8 dense ac jc bv-xl><ico lg nd-xs nr-xs red lighten>btn-video-youtube</ico></btn>
+                <div jsb ac wd-md wd-12>
+                    <div js>
+                        <btn wd-19 ht-7 jc ac blue darken ba round xs left>LEFT</btn>
+                        <btn wd-19 ht-7 jc ac blue darken bt bb xs rect>RECT</btn>
+                        <btn wd-19 ht-7 jc ac blue darken ba round xs right>RIGHT</btn>
+                    </div>
+                    <div jc>
+                        <btn ml-xs ml-15 black ba ac jc round pa-xs><ico lg>btn-video-round</ico></btn>
+                        <btn ml-xs ml-15 grey darken bg ac jc round pa-xs><ico lg>level-upgrade</ico></btn>
+                        <btn ml-xs ml-15 black bg dense ac jc bv-xl pa-xs><ico lg nd-xs red lighten>btn-video-youtube</ico></btn>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,9 +63,9 @@ export default {
     data(){
         return {
             api:[
-                { name:'vanilla', type:'Boolean', default:'false', description:'为组件添加经典拟物风格的样式' },
-                { name:'dense', type:'Attribute', default:'', description:'去掉默认内边距，使内边距为零，但样式属性（如 px-sm）依然有效' },
-                { name:'rect', type:'Boolean', default:'false', description:'去掉默认的圆角效果' },
+                { name:'vanilla', type:'Boolean', default:'false', description:'使按钮呈现经典拟物风格的样式' },
+                // { name:'dense', type:'Attribute', default:'', description:'去掉默认内边距，使内边距为零，但样式属性（如 px-sm）依然有效' },
+                // { name:'rect', type:'Boolean', default:'false', description:'去掉默认的圆角效果' },
                 { name:'disabled', type:'Boolean', default:'false', description:'控制按钮的可用性' }
             ]
         }

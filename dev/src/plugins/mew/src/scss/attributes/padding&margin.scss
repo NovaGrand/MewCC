@@ -14,14 +14,18 @@
           calc( var(--ml) * 1px + var(--xml) * 1px );
 
   --nx:0; --ny:0;--fd:0;
-  transform: translateX(var(--nx)) translateY(var(--ny)) rotate(var(--fd));
+  --xnx:0; --xny:0;
+  transform:
+          translateX(calc( var(--nx) * 1px + var(--xnx) * .5px ))
+          translateY(calc( var(--ny) * 1px + var(--xny) * .5px ))
+          rotate(var(--fd));
 }
 $grades: (
-        xs: 2,
-        sm: 6,
-        md: 18,// 常用语段落区分
-        lg: 36,// 常用语大段章节区分
-        xl: 72 // 常用语留白
+        xs: 2!important,
+        sm: 6!important,
+        md: 18!important,// 常用语段落区分
+        lg: 36!important,// 常用语大段章节区分
+        xl: 72!important // 常用语留白
 );
 // 段位尺寸
 @each $key, $val in $grades {
@@ -43,9 +47,9 @@ $grades: (
 }
 // 标号尺寸
 @for $i from 1 through 25 {
-  [px-#{$i}]{ --xpl:#{$i};--xpr:#{$i} }
-  [py-#{$i}]{ --xpt:#{$i};--xpb:#{$i} }
-  [pa-#{$i}]{ --xpt:#{$i};--xpr:#{$i};--xpb:#{$i};--xpl:#{$i} }
+  [px-#{$i}]{ --xpl:#{$i};--xpr:#{$i}; }
+  [py-#{$i}]{ --xpt:#{$i};--xpb:#{$i}; }
+  [pa-#{$i}]{ --xpt:#{$i};--xpr:#{$i};--xpb:#{$i};--xpl:#{$i}; }
   [pt-#{$i}]{ --xpt:#{$i} }
   [pr-#{$i}]{ --xpr:#{$i} }
   [pb-#{$i}]{ --xpb:#{$i} }
@@ -58,7 +62,23 @@ $grades: (
   [mr-#{$i}]{ --xmr:#{$i} }
   [mb-#{$i}]{ --xmb:#{$i} }
   [ml-#{$i}]{ --xml:#{$i} }
+
+  [nu-#{$i}]{ --xny:-#{$i} }
+  [nd-#{$i}]{ --xny:#{$i} }
+  [nr-#{$i}]{ --xnx:#{$i} }
+  [nl-#{$i}]{ --xnx:-#{$i} }
 }
+
+$nudges: (xs: .5, sm: 1, md: 1.5, lg: 2, xl: 3);
+@each $key, $val in $nudges {
+  [nu-#{$key}]{ --ny:-#{$val} }
+  [nd-#{$key}]{ --ny:#{$val} }
+  [nr-#{$key}]{ --nx:#{$val} }
+  [nl-#{$key}]{ --nx:-#{$val} }
+}
+
+[flip]{ --fd: 180deg}
+
 [mx-auto]{
   margin-left: auto;margin-right: auto;
   display: block!important;
@@ -83,29 +103,3 @@ $grades: (
 [scroll-x]{
   overflow-x: scroll
 }
-
-[nu-xs]{ --ny:-.5px}
-[nu-sm]{ --ny:-1px}
-[nu-md]{ --ny:-1.5px}
-[nu-lg]{ --ny:-2px}
-[nu-xl]{ --ny:-3px}
-
-[nd-xs]{ --ny:.5px}
-[nd-sm]{ --ny:1px}
-[nd-md]{ --ny:1.5px}
-[nd-lg]{ --ny:2px}
-[nd-xl]{ --ny:3px}
-
-[nr-xs]{ --nx:.5px}
-[nr-sm]{ --nx:1px}
-[nr-md]{ --nx:1.5px}
-[nr-lg]{ --nx:2px}
-[nr-xl]{ --nx:3px}
-
-[nl-xs]{ --nx:-.5px}
-[nl-sm]{ --nx:-1px}
-[nl-md]{ --nx:-1.5px}
-[nl-lg]{ --nx:-2px}
-[nl-xl]{ --nx:-3px}
-
-[flip]{ --fd: 180deg}
