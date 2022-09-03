@@ -2,52 +2,95 @@
     <div class="mew-field-input">
         <input v-if="!field.area" fill :class="{ jc: field.jc, je: field.je }"
                :placeholder="field.placeholder"
-               :value="field.modelValue"
+               :value="field.error ? snapshot : field.modelValue"
                :type="field.type"
                :readonly="readonly"
-               @input="input"
                @focus="field.focus = true"
-               @blur="field.focus = false"
-               @click="toggleDropList"
+               @blur="field.focus = false;checkEmpty()"
+               @change="field.$emit('change');validate()"
+               @input="input"
         >
         <textarea v-else fill noresize cols="30" rows="3" :class="{ jc: field.jc, je: field.je }"
                   :placeholder="field.placeholder"
-                  :value="field.modelValue"
+                  :value="field.error ? snapshot : field.modelValue"
                   :readonly="readonly"
-                  @input="input"
                   @focus="field.focus = true"
-                  @blur="field.focus = false"
-                  @click="toggleDropList"
+                  @blur="field.focus = false;validate()"
+                  @change="field.$emit('change');validate()"
+                  @input="input"
         />
     </div>
+    <!--下拉选择列表-->
+    <drop-list v-if="field.select"><slot/></drop-list>
+    <!--label 标签-->
+    <label-tag v-if="field.label"/>
 </template>
 
 <script>
+import dropList from './dropList'
+import labelTag from './labelTag'
 export default {
     name: "mew-field-input",
     inject: ['field'],
-    mounted(){
-        this.field.el = this.field.$el.getElementsByTagName(this.field.area ? 'textarea' : 'input')[0]
+    components:{ dropList, labelTag },
+    data(){
+        return {
+            snapshot: '',
+        }
     },
     methods:{
         input(e){
-            this.field.$emit('update:modelValue', e.target.value)
+            this.field.$emit('update:modelValue', this.field.number ? Number(e.target.value) : e.target.value)
         },
-        toggleDropList(){
-            if(this.field.select)
-                this.field.focus = true
-        }
+        validate(){
+            this.field.error = ''
+            if(this.field.require && this.field.modelValue === '')
+                this.error('必填')
+            if(this.field.username){
+                let str = "[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]"
+                let reg = new RegExp(str)
+                if( reg.test(this.field.modelValue))
+                    this.error('特殊字符不可用')
+            }
+            if(this.field.email){
+                let str = "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"
+                let reg = new RegExp(str)
+                if(!reg.test(this.field.modelValue))
+                    this.error('邮箱不可用')
+            }
+            if(this.field.minLength && this.field.modelValue.length < this.field.minLength)
+                this.error('至少 ' + this.field.minLength + ' 个字符')
+            if(this.field.maxLength && this.field.modelValue.length > this.field.maxLength)
+                this.error('最多 ' + this.field.maxLength + ' 个字符')
+        },
+        checkEmpty(){
+            if(this.field.error){
+
+            }
+            else if(this.field.require && this.field.modelValue === ''){
+                this.field.error = 'error'
+                this.error('必填')
+            }
+        },
+        error(str){
+            this.snapshot = this.field.modelValue
+            this.field.$emit('update:modelValue', false)
+            this.field.error = 'error'
+            this.field.$el.style.setProperty('--errorMessage', `'${str}'`)
+        },
     },
     computed:{
         readonly(){
             return this.field.select && !this.field.text
-        }
+        },
     },
 }
 </script>
 
 <style lang="scss">
+
 div.mew-field-input{
+    position: relative;z-index: 9999;
     textarea,input{
         padding: 0;
         font-family: 微软雅黑;

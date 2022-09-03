@@ -2,7 +2,7 @@
     <table class="mew-apiTable">
         <thead>
             <tr>
-                <th class="props">属 性</th>
+                <th class="props">{{ title }}</th>
                 <th class="description">说 明</th>
             </tr>
         </thead>
@@ -11,9 +11,9 @@
                 <td class="name">{{ item.name }}</td>
                 <td class="description">
                     <div class="info">
-                        <i class="type">Type: <i class="blue">{{ item.type }}</i></i>
+                        <i class="type" v-if="item.type">Type: <i class="blue">{{ item.type }}</i></i>
                         <i class="defaultValue" v-if="item.default">Default: <i class="blue">{{ item.default }}</i></i>
-                        <i class="arg" v-if="item.argType">Arg type: <i class="blue">{{ item.argType }}</i></i>
+                        <i class="args" v-if="item.args">Args: <i class="blue" :class="{ undefined: item.args.toLowerCase() === 'undefined'}">{{ item.args }}</i></i>
                     </div>
                     <div class="text">
                         {{ item.description }}
@@ -31,6 +31,10 @@ export default {
         items:{
             type: Array,
             default: []
+        },
+        title:{
+            type: String,
+            default: '属 性'
         }
     }
 }
@@ -87,14 +91,18 @@ table.mew-apiTable{
                     font-weight: bold;
                     i.type{
                         margin-right: 14px;
-                        width: 120px;
+                        min-width: 110px;
                         color: rgba(0,0,0,.6);
                     }
                     i.defaultValue{
                         color: rgba(0,0,0,.6);
                     }
-                    i.arg{
+                    i.args{
                         color: rgba(0,0,0,.6);
+
+                    }
+                    i.undefined{
+                        opacity: .4;
                     }
                 }
                 div.text{

@@ -20,24 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/check.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/dropList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/input.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/labelTag.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/mewLabel_bak.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/types.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/validate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/fieldWrapper/fieldWrapper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/fieldWrapper/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/apiTable/apiTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/apiTable/apiTable.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/mew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/mew.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/btn/scss/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/btn/scss/btn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/chars.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/check.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/check.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/dropList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/dropList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/labelTag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/labelTag.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/field.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/border.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/padding&amp;margin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/padding&amp;margin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/validate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/validate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/width&amp;height.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/width&amp;height.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/btn/btn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/btn/btn.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/field/field.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +51,8 @@
       <list>
         <option value="CSS File" />
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -322,7 +324,24 @@
       <workItem from="1661482142137" duration="1544000" />
       <workItem from="1661484217867" duration="671000" />
       <workItem from="1661536759000" duration="8954000" />
-      <workItem from="1661554596740" duration="499000" />
+      <workItem from="1661554596740" duration="12291000" />
+      <workItem from="1661625527784" duration="7227000" />
+      <workItem from="1661702273915" duration="4275000" />
+      <workItem from="1661710587137" duration="3376000" />
+      <workItem from="1661798417404" duration="2116000" />
+      <workItem from="1661805690483" duration="14175000" />
+      <workItem from="1661886343172" duration="3387000" />
+      <workItem from="1661894729882" duration="2143000" />
+      <workItem from="1661900584697" duration="767000" />
+      <workItem from="1661919089120" duration="10182000" />
+      <workItem from="1661977085540" duration="3969000" />
+      <workItem from="1661983594326" duration="5301000" />
+      <workItem from="1661999735238" duration="10304000" />
+      <workItem from="1662020655872" duration="1243000" />
+      <workItem from="1662066329905" duration="5356000" />
+      <workItem from="1662073967115" duration="9477000" />
+      <workItem from="1662154064455" duration="5904000" />
+      <workItem from="1662162616811" duration="1910000" />
     </task>
     <servers />
   </component>
@@ -369,18 +388,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1660927435927" />
-    <state x="540" y="449" key="SettingsEditor" timestamp="1660859418861">
+    <state x="540" y="449" key="SettingsEditor" timestamp="1661711547585">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="540" y="449" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1660859418861" />
+    <state x="540" y="449" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1661711547585" />
     <state x="1088" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1659510312686">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1088" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1659510312686" />
-    <state x="930" y="489" width="672" height="677" key="run.anything.popup" timestamp="1661197402642">
+    <state x="930" y="489" width="672" height="677" key="run.anything.popup" timestamp="1661631155084">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="930" y="489" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661197402642" />
+    <state x="930" y="489" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661631155084" />
     <state x="779" y="721" width="672" height="678" key="search.everywhere.popup" timestamp="1661271856076">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

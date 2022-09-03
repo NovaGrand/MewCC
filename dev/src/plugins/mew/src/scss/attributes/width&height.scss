@@ -1,14 +1,15 @@
 // 段位 + 步伐 + 步数
 // 需要实现 fill wd-1 这种宽高控制
 *{
-  --w:0;--wx:4;--wn:null;--wp:0%;
-  width:  calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px + var(--wp));
+  --w:0;--wx:4;--wn:null;
+  width:  calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px);
 
-  --h:0;--hx:4;--hn:null;--hp:0%;
+  --h:0;--hx:4;--hn:null;
   height: calc(var(--h) * 1px + var(--hx) * var(--hn) * 1px);
 }
 [fill]{
-  --wp: 100%;--wx:0;--wn:0;
+  --wx:0;--wn:0;
+  width: calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px + 100%);
   height: 100%;
 }
 
@@ -24,7 +25,10 @@
 [ht-lg]{ --h:320; --hx:6.15; --hn:0 }
 [ht-xl]{ --h:480; --hn:0 }
 @for $i from 1 through 25 {
-  [col-#{$i}]{--wp:#{$i * 4 + '%'};--wn:0}
+  [col-#{$i}]{
+    --wp:#{$i * 4 + '%'};--wn:0;
+    width:  calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px + var(--wp));
+  }
   [wd-#{$i}]{--wn:#{$i}}
   [ht-#{$i}]{--hn:#{$i}}
 }

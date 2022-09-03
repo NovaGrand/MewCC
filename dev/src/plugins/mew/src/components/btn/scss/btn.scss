@@ -8,7 +8,7 @@ button.mew-btn{
   line-height: var(--lh,1.45);
   letter-spacing: var(--xls,1px);
   // 默认边距
-  --pt:5;--pb:5;--pl:25;--pr:26;
+  --pt:6;--pb:4;--pl:25;--pr:26;
   // 默认倒角
   --bdrd:.2em;
   // 边框颜色深度调整
@@ -61,6 +61,7 @@ button.mew-btn[card]{
   }
 }
 button.mew-btn.vanilla{
+  --pt:5;--pb:5;
   overflow: hidden;
   box-shadow:0 0 0 .5px rgba(0,0,0,.5), 1px 1px 10px rgba(0,0,0,.08);
   &::after{

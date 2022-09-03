@@ -1,4 +1,11 @@
 import { reactive } from "vue"
+// field 组件的共用数据
+export let selecting = reactive({
+    wrapper: null,
+    shadow: null,
+    valid: false,
+    keepFocus: false,
+})
 
 export let loading = reactive({
     valid: false,
@@ -117,3 +124,4 @@ notify.__proto__.failure = function(config){
     notify(cfg)
 }
 // ------------- notify -------------
+

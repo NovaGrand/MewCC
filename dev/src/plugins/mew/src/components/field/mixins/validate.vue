@@ -21,7 +21,16 @@ export default {
         email:{
             type: Boolean,
             default: false
-        }
+        },
+        minLength:{
+            type: [Boolean, String, Number],
+            default: false
+        },
+        maxLength:{
+            type: [Boolean, String, Number],
+            default: false
+        },
+
     },
     mounted(){
 

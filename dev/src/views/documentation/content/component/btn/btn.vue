@@ -5,7 +5,7 @@
                 <btn golden bg vanilla><i black lighten>Vanilla</i></btn>
                 <btn blue lighten bg jc>Default</btn>
                 <btn green lighten bg card ac>
-                    <ico italic nl-xl nl-6 nu-sm>pay-wallet</ico>
+                    <ico italic nl-xl nl-6>pay-wallet</ico>
                     <i italic bold>Card</i>
                 </btn>
                 <btn green lighten ba ac px-md>

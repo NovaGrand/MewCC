@@ -1,10 +1,10 @@
 <template>
-    <div class="mew-field-label" :class="{ shrink: shrink, activated: field.activated }">
+    <div class="mew-field-label" :class="{ shrink: shrink, activated: field.activated, noborder: field.select }">
         <i class="rim_1"></i><i class="rim_2"></i><i class="rim_3"></i>
         <div class="shot">
             {{ field.label }}
         </div>
-        <label :class="{ nudgeUp: nudgeUp }">
+        <label :class="{ nudgeUp: field.select || nudgeUp }">
             {{ field.label }}
         </label>
     </div>
@@ -15,12 +15,17 @@ export default {
     name: "mew-field-label",
     inject: ['field'],
     mounted(){
-        this.s = getComputedStyle(this.field.$el)
+        // console.log(this.field.$attrs.hasOwnProperty('bg'))
+        // 处理无边框时的 BUG
+        let s1 =getComputedStyle(this.$el)
+        if(parseInt(s1.height) === 0)
+            this.$el.style = 'height: 100%;width: 100%;left: 0;top: 0;'
 
-        this.nudgeUp = this.s.boxShadow !== 'none' && this.s.borderTopWidth === '0px'
+        let s0 = getComputedStyle(this.field.$el)
+        this.nudgeUp = (s0.boxShadow !== 'none' && s0.borderTopWidth === '0px') || this.field.$attrs.hasOwnProperty('bg')
 
         // 处理文字缩放大小
-        let x = Math.floor((parseInt(this.s.fontSize) / 5) - 3)
+        let x = Math.floor((parseInt(s0.fontSize) / 5) - 3)
         let n = x < 0 ? 0.75 : 0.75 - x * 0.08
         if( n < 0.4 ) n = 0.4
         this.$el.style.setProperty('--scale', n)
@@ -31,7 +36,6 @@ export default {
     },
     data(){
         return {
-            s: null,
             nudgeUp: false,
             labelWidth:'',
             labelHeight:'',
@@ -56,9 +60,6 @@ export default {
             return this.field.focus || this.field.modelValue || this.field.placeholder
         },
     },
-    methods:{
-
-    }
 }
 </script>
 
@@ -67,9 +68,9 @@ div.mew-field-label{
     --bt:inherit;--br:inherit;--bb:inherit;--bl:inherit;--bs:inherit;--c:inherit;--adjust-border:inherit;--ac:inherit;
     --bdrd:inherit;
     --pl:inherit;--xpl:inherit;
-
     position: absolute;
     pointer-events: none;
+    color: inherit;
     --width:calc(calc( var(--pl) * 1px + var(--xpl) * 1px ) - .15em);
     --gapWidth:var(--labelWidth);
     left: calc(calc(var(--bl) * 0.5px) * -1);
@@ -77,8 +78,13 @@ div.mew-field-label{
     width: calc(calc(var(--bl) * 0.5px) + 100% + calc(var(--br) * 0.5px));
     height: calc(calc(var(--bt) * 0.5px) + 100% + calc(var(--bb) * 0.5px));
     border: none;
-
     --paddingLeft:calc( var(--pl) * 1px + var(--xpl) * 1px );
+    &.noborder{
+        border-color: transparent;
+        i{
+            display: none;
+        }
+    }
     i{
         position: absolute;top: 0;height: 100%;
         --bt:inherit;--br:inherit;--bb:inherit;--bl:inherit;--bs:inherit;--c:inherit;--adjust-border:inherit;--ac:inherit;
@@ -119,6 +125,7 @@ div.mew-field-label{
         opacity: .7;
     }
     &.shrink{
+        color: rgba(var(--c), calc(0.04 * var(--ac)));
         --gapWidth:calc(var(--labelWidth) * var(--scale) + .4em);
         i.rim_2{
             border-top: none;
@@ -129,13 +136,18 @@ div.mew-field-label{
             transform: scale(var(--scale));
             &.nudgeUp{
                 left: 1px;
-                top: -0.5em;
+                top: -0.6em;
             }
         }
     }
     &.activated{
         label{
-            transition: all .1s linear;
+            transition: all 100ms linear;
+        }
+        &.noborder{
+            label{
+                transition-delay: 100ms;
+            }
         }
     }
 

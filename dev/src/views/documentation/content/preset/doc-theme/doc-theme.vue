@@ -32,6 +32,20 @@
             </div>
         </div>
         <btn style="margin-top: 30px" vanilla blue bg mx-auto mt-sm bold ls-xl @click="toggle">Toggle</btn>
+        <div class="sample" mb-lg>
+            <div ac ht-sm>
+                <field v-model="value" ref="field"  ba blue select text>
+                    <div @click="value=111111">111111</div>
+                    <div @click="value=222222">222222</div>
+                    <div @click="value=333333">333333</div>
+                    <div @click="value=444444">444444</div>
+                    <div @click="value=555555">555555</div>
+                    <div @click="value=666666">666666</div>
+                </field>
+                <btn @click="value += '0'" ml-sm vanilla blue bg>提 交</btn>
+            </div>
+            <div my-xl red bg>对方拉风拉风了怕</div>
+        </div>
     </div>
 </template>
 
@@ -47,7 +61,9 @@ export default {
     data(){
         return {
             n: 1,
-            themes: ['light','dark']
+            themes: ['light','dark'],
+            value:'用户名Arcadia',
+            label:'用户名',
         }
     },
     watch:{
