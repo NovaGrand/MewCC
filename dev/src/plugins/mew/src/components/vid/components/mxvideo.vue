@@ -10,6 +10,7 @@
            :volume="v.volume"
            :poster="v.poster"
            :loop="v.loop"
+
     >
         <err/>
     </video>
@@ -49,10 +50,4 @@ export default {
     }
 }
 </script>
-<style lang="scss">
-:picture-in-picture{
-    width: 200px!important;height: 200px!important;
-    outline: 5px solid red!important;
-    border: 5px solid blue!important;
-}
-</style>
+

@@ -1,9 +1,9 @@
 <template>
     <div class="doc-btn">
         <section>
-            <div ht-xs ht-20 black lighten bg top bv-xl ac px-lg jsb>
-                <btn golden bg vanilla><i black lighten>Vanilla</i></btn>
-                <btn blue lighten bg jc>Default</btn>
+            <div ht-xs ht-20 top bv-xl ac px-lg jsb style="background-color: #4B5050">
+                <btn golden bg vanilla>Vanilla</btn>
+                <btn blue bg jc>Default</btn>
                 <btn green lighten bg card ac>
                     <ico italic nl-xl nl-6>pay-wallet</ico>
                     <i italic bold>Card</i>
@@ -15,7 +15,6 @@
 
                 <btn white>Plain text</btn>
                 <btn blue lighten bg disabled>Disabled</btn>
-
             </div>
 
             <div ht-xs ht-20 white bg bottom bv-xl ac px-lg jsb>
@@ -69,7 +68,7 @@ export default {
                 { name:'disabled', type:'Boolean', default:'false', description:'控制按钮的可用性' }
             ]
         }
-    }
+    },
 }
 </script>
 

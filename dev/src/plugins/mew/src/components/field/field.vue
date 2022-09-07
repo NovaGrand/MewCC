@@ -17,7 +17,7 @@ import { selecting } from '../../../mew'
 
 export default {
     name: "mew-field",
-    emits: ['update:modelValue', 'change'],
+    emits: ['update:modelValue', 'change', 'blur', 'focus'],
     mixins: [ inits, types, validate ],
     provide() {
         return {
@@ -45,11 +45,17 @@ export default {
             else{
                 if(e.target === this.$el)
                     this.$el.getElementsByTagName(this.area ? 'textarea' : 'input')[0].focus()
-                if(this.select)
-                    this.selecting.valid = !this.selecting.valid
+                if(this.select){
+                    if(this.selecting.target)
+                        this.selecting.wrapper.unload()
+                    else
+                        this.selecting.target =  this
+                }
             }
+        },
+        $focus(){  // 用于外部调用
+            this.$el.getElementsByTagName(this.area ? 'textarea' : 'input')[0].focus()
         }
-
     }
 }
 </script>

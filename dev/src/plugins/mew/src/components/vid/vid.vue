@@ -1,5 +1,5 @@
 <template>
-    <div class="mew-vid" relative black darken bg noselect>
+    <div class="mew-vid" relative noselect style="background-color: black!important;">
         <!--视频元素-->
         <mxvideo/>
         <!--控制界面-->

@@ -22,15 +22,18 @@ export default {
             type: Boolean,
             default: false
         },
-        minLength:{
-            type: [Boolean, String, Number],
-            default: false
+        min:{
+            type: [String, Number],
+            default: ''
         },
-        maxLength:{
-            type: [Boolean, String, Number],
-            default: false
+        max:{
+            type: [String, Number],
+            default: ''
         },
-
+        validate:{
+            type: Function,
+            default: null
+        }
     },
     mounted(){
 

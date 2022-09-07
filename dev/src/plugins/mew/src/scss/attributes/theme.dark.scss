@@ -11,9 +11,6 @@ body[mew-theme="dark"]{
   [pink]{  // OK
     &[lighten]{
       --c: 160,0,125;
-      &[bg]{
-        color:black
-      }
     }
     --c:198,0,155;
     &[darken]{
@@ -32,7 +29,6 @@ body[mew-theme="dark"]{
   [orange]{ //OK
     &[lighten]{
       --c: 205,123,0;
-      &[bg]{color:black}
     }
     --c: 255,155,0;
     &[darken]{
@@ -44,21 +40,18 @@ body[mew-theme="dark"]{
     &[lighten]{
       --c: 0,160,190; &[bg]{ color:white }
     }
-    --c: 0,190,220; &[bg]{ color:black }
+    --c: 0,190,220;
     &[darken]{
       --c: 0,220,250; &[bg]{color:black}
     }
   }
   [green]{ // OK
+    --c: 0,195,0;&[bg]{ color:black }
     &[lighten]{
-      --c: 0,150,0;
-      &[bg]{
-        color:black
-      }
+      --c: 0,210,0; &[bg]{ color:black }
     }
-    --c: 0,200,0;
     &[darken]{
-      --c: 0,225,0;
+      --c: 0,175,0;&[bg]{ color:black }
     }
   }
   [blue]{ // OK
@@ -81,13 +74,12 @@ body[mew-theme="dark"]{
     }
   }
   [grey]{ // OK
-    &[lighten]{
-      --c: 110,120,140;
-      &[bg]{ color:black } }
     --c: 145,152,170;
+    &[lighten]{
+      --c: 110,120,140; }
     &[darken]{
       --c: 179,185,200;
-      &[bg]{ color:white } }
+      &[bg]{ color:black } }
   }
   [black]{ // OK
     &[lighten]{
@@ -97,12 +89,15 @@ body[mew-theme="dark"]{
     &[darken]{
       --c: 255,255,255;
     }
+    &[bg]{
+      color: black;
+    }
   }
   [yellow]{ // OK
     &[lighten]{
-      --c: 180,170,0; &[bg]{ color:black }
+      --c: 180,170,0; &[bg]{ color:white }
     }
-    --c: 200,190,0; &[bg]{ color:black }
+    --c: 200,190,0; &[bg]{ color:white }
     &[darken]{
       --c: 220,210,0; &[bg]{ color:black }
     }
@@ -111,18 +106,18 @@ body[mew-theme="dark"]{
     &[lighten]{
       --c: 85,100,110;
     }
-    --c:104,122,132; &[bg]{ color:black }
+    --c:104,122,132;
     &[darken]{
       --c: 114,134,145;
     }
   }
   [lake]{ // OK
     &[lighten]{
-      --c: 50,145,125;
+      --c: 50,145,125;&[bg]{ color:white }
     }
-    --c: 52,175,150; &[bg]{ color:black }
+    --c: 52,175,150; &[bg]{ color:white }
     &[darken]{
-      --c: 60,205,175
+      --c: 60,205,175;&[bg]{ color:black }
     }
   }
   [white]{ // OK
@@ -136,11 +131,11 @@ body[mew-theme="dark"]{
   }
   [golden]{ // OK
     &[lighten]{
-      --c:160,126,60; &[bg]{ color:black }
+      --c:160,126,60; &[bg]{ color:white;}
     }
-    --c: 196,160,88; &[bg]{ color:black }
+    --c: 196,160,88; &[bg]{ color:white;text-shadow: 0 0 1px black; }
     &[darken]{
-      --c: 242,205,121; &[bg]{ color:black }
+      --c: 242,205,121; &[bg]{ color:black;text-shadow: 0 0 1px white; }
     }
   }
 }

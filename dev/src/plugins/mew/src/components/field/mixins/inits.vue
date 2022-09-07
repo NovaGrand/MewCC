@@ -6,7 +6,7 @@ export default {
     components: { Input, Check },
     props: {
         value:{ // check 模式下，可以为 checked 赋值
-            type:[ String, Number, Boolean ], default:'mew-default'
+            type:[ String, Number ], default:'mew-default'
         },
         text:{
             type: Boolean,
@@ -61,7 +61,7 @@ export default {
             return this.check && (this.modelValue === true || (this.value !== 'default' && this.modelValue === this.value)) ? 'checked' : ''
         },
         picking(){
-            return this.select && this.selecting.valid ? 'selecting': ''
+            return this.selecting.target === this ? 'selecting': ''
         }
     }
 }

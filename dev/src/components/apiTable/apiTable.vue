@@ -53,12 +53,12 @@ table.mew-apiTable{
         text-align: left;
     }
     thead{
-        color: rgba(0,0,0,.6);
+        color: rgba(var(--theme),.7);
         height: 50px;
         th{
             position: relative;
             &::after{
-                content: '';height: 3px;background-color: rgba(0,0,0,.1);
+                content: '';height: 3px;background-color: rgba(var(--theme),.1);
                 left: 0;bottom: 0;
             }
             &.props{
@@ -78,7 +78,7 @@ table.mew-apiTable{
         tr{
             td.name{
                 font-weight: bold;
-                color: rgba(0,0,0,.6);
+                color: rgba(var(--theme),.7);
                 font-family: Arial;
                 vertical-align: top;
                 padding-top: 15px;
@@ -92,13 +92,13 @@ table.mew-apiTable{
                     i.type{
                         margin-right: 14px;
                         min-width: 110px;
-                        color: rgba(0,0,0,.6);
+                        color: rgba(var(--theme),.7);
                     }
                     i.defaultValue{
-                        color: rgba(0,0,0,.6);
+                        color: rgba(var(--theme),.7);
                     }
                     i.args{
-                        color: rgba(0,0,0,.6);
+                        color: rgba(var(--theme),.7);
 
                     }
                     i.undefined{

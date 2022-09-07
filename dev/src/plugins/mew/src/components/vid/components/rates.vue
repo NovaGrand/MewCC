@@ -70,7 +70,7 @@ div.mew-vid-rates{
             position: absolute;left: 3.5px;top:3.5px;
             color: black;
             background-color:rgba(255,255,255,.8);
-            width: 35.5px;height: 15px;line-height: 14px;
+            width: 35.5px;height: 15px;line-height: 15px;
             border-radius: 2px;
             font-weight: bold;
             text-align: left;padding-left: 4px;
@@ -98,6 +98,7 @@ div.mew-vid-rates{
             top: -5px;left: -5px;
         }
         li{
+            color: rgba(255,255,255,.8);
             cursor: pointer;
             list-style: none;
             width: 60px;
@@ -109,6 +110,7 @@ div.mew-vid-rates{
                 cursor: default;
             }
             &:hover{
+                color: rgba(255,255,255,1);
                 background-color:rgba(0,0,0,.2);
             }
             &:first-child{

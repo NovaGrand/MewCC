@@ -28,21 +28,15 @@ name: "doc-sizing-showcase_col"
 
 <style lang="scss">
 div.doc-sizing-showcase_col{
+    color: rgba(0,0,0,.5);
     i.grid{
         vertical-align: top;
         font-size: 14px;
-        background-color: #f4fbff;
+        background-color: rgba(220,240,255,.8);
         width: 36px;height: 36px;
         line-height: 35px;
         border: .5px solid rgba(0,0,0,.06);
         text-align: center;
-        //i.n{
-        //    display: block;
-        //    overflow: visible;
-        //    text-wrap: none;
-        //    width: 50px;
-        //    transform: scale(.6) translateX(-13px);
-        //}
         &.col-1{
             width: 4%;
         }

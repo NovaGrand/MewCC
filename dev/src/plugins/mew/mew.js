@@ -1,10 +1,9 @@
 import { reactive } from "vue"
 // field 组件的共用数据
 export let selecting = reactive({
-    wrapper: null,
-    shadow: null,
-    valid: false,
     keepFocus: false,
+    wrapper: null,
+    target: null,
 })
 
 export let loading = reactive({

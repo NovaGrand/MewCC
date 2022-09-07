@@ -208,7 +208,7 @@ createApp(App)
             </i>
         </p>
 
-        <div class="curtain" flex jsb>
+        <div class="curtain" :class="{ dk:$color.theme === 'dark' }" flex jsb>
             <div class="p _1"></div>
             <div class="p _2"></div>
             <div class="p _3"></div>
@@ -269,6 +269,13 @@ div.doc-start{
         box-shadow: 0 16px 15px 0 #a0a0a0;
         background: linear-gradient(0deg,#a0a0a0,#565656);
         margin-top: -30px;
+        &.dk{
+            background: linear-gradient(0deg,#282828,black);
+            box-shadow: 0 16px 15px 0 #282828;
+            div.p{
+                filter: invert(.8);
+            }
+        }
         div.p{
             transform-origin: top;
             cursor: pointer;
@@ -278,6 +285,7 @@ div.doc-start{
             background-size: cover!important;
             filter: brightness(.98);
             transition: transform .06s ease!important;
+
             &._1{
                 background: url("@/assets/doc/c_m.jpg");
                 transform: rotateX(15deg);

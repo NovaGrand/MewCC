@@ -34,9 +34,10 @@ div.mew-vid-clock{
     width: 120px;
     height: 20px;line-height: 18px;margin-top: 6px;
     i{
+        color: #dddddd;
         font-size: 13px;
         &:last-child{
-            color: #dddddd;
+
             margin-left: 18px;
             position: relative;
             &::before{

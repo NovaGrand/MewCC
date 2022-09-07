@@ -180,6 +180,7 @@ div.mew-vid-control{
     position: absolute;left: 0;top: 0;
     background-size: cover;
     outline: none;
+    height: 100%;
     &::before{
         position: absolute;content: '';left: 0;bottom: 0;width: 100%; height: 140px;
         background: linear-gradient(0deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 100%);
@@ -187,7 +188,7 @@ div.mew-vid-control{
     }
     &.visible{
         &::before{
-            background: linear-gradient(0deg, rgba(0,0,0,.5) 20%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(0deg, rgba(0,0,0,.6) 20%, rgba(0,0,0,0) 100%);
         }
     }
     div.mew-vid-viewport{

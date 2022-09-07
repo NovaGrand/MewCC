@@ -20,25 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/fieldWrapper/fieldWrapper.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/fieldWrapper/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/争议.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/apiTable/apiTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/apiTable/apiTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/prism/prism.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/prism/prism.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/mew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/mew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/btn/scss/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/btn/scss/btn.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/check.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/check.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/dropList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/dropList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/labelTag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/components/labelTag.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/field.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/validate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/validate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/width&amp;height.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/width&amp;height.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/clock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/clock.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/control.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/control.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/mxvideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/mxvideo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/rates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/rates.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/vid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/vid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components_local/fieldWrapper/fieldWrapper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/fieldWrapper/fieldWrapper.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/border.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/test.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/test.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.light.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_cards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_cards.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_col.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/btn/btn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/btn/btn.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/field/field.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/intro/standard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/standard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/intro/start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/start.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -341,7 +352,23 @@
       <workItem from="1662066329905" duration="5356000" />
       <workItem from="1662073967115" duration="9477000" />
       <workItem from="1662154064455" duration="5904000" />
-      <workItem from="1662162616811" duration="1910000" />
+      <workItem from="1662162616811" duration="5165000" />
+      <workItem from="1662176781234" duration="1504000" />
+      <workItem from="1662189455005" duration="6636000" />
+      <workItem from="1662252550877" duration="782000" />
+      <workItem from="1662255788485" duration="2784000" />
+      <workItem from="1662327632804" duration="3146000" />
+      <workItem from="1662337855982" duration="3593000" />
+      <workItem from="1662341647397" duration="834000" />
+      <workItem from="1662373793174" duration="9668000" />
+      <workItem from="1662392228630" duration="5508000" />
+      <workItem from="1662398392200" duration="1457000" />
+      <workItem from="1662429974068" duration="7952000" />
+      <workItem from="1662439721378" duration="2691000" />
+      <workItem from="1662450990790" duration="2494000" />
+      <workItem from="1662510094401" duration="120000" />
+      <workItem from="1662515069329" duration="1679000" />
+      <workItem from="1662524002298" duration="326000" />
     </task>
     <servers />
   </component>

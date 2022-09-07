@@ -51,6 +51,7 @@ $grades: ( xs: 1, sm: 3, md: 4, lg: 5, xl: 6 );
   border-bottom-right-radius: 0;
 }
 [rect]{
+  --bdrd: 0!important;
   border-radius: 0;
 }
 [bottom]{

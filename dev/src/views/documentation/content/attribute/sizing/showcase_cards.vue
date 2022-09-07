@@ -14,7 +14,7 @@
                     </div>
                 </fit>
                 <div jsb relative style="margin-top: 5px;height: 115px">
-                    <div black bg jc ac xl style="width: 24px;height: 24px;text-align: center;padding-bottom: 7px"
+                    <div black bg jc ac xl style="width: 24px;height: 24px;text-align: center"
                          class="sample" @click="copy('wd-6 ht-6')">
                         +
                     </div>

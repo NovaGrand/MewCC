@@ -6,10 +6,12 @@
 body{
   --theme: null;
   &[mew-theme="light"]{
+    color: rgba(32,32,32, calc(0.04 * var(--ac)));
     --theme:32,32,32;
     background-color: inherit;
   }
   &[mew-theme="dark"]{
+    color: rgba(235,235,235, calc(0.04 * var(--ac)));
     --theme:235,235,235;
     background-color: #282828;
   }
@@ -19,7 +21,7 @@ body{
 @for $i from 1 through 25{ [alpha-#{$i}],[ac-#{$i}]{ --c:var(--theme);--ac:#{$i} } }
 
 [bg]{
-  color:white;
+  color: white;
   background-color: rgba(var(--c), calc(0.04 * var(--ac)));
 }
 

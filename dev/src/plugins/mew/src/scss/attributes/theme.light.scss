@@ -126,12 +126,12 @@ body[mew-theme="light"]{
     }
   }
   [golden]{
-    --c: 255,224,147; &[bg]{ color:black }
+    --c: 255,224,147; &[bg]{ color:rgb(30,30,30);text-shadow: 0 0 1px white; }
     &[lighten]{
-      --c:255,235,191; &[bg]{ color:black }
+      --c:255,235,191; &[bg]{ color:rgb(30,30,30) }
     }
     &[darken]{
-      --c:255,212,114; &[bg]{ color:black }
+      --c:255,212,114; &[bg]{ color:rgb(30,30,30) }
     }
   }
 }

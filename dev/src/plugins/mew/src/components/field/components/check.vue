@@ -40,14 +40,17 @@ div.mew-field-check{
         color: inherit;
         cursor: pointer;
         //height: 1.1em;
-        font-size: .85em;
+        font-size: 1.2em;
         margin-left: .5em;
+        width: 100%;
+        display: flex;justify-content: space-between;
     }
     div.mew-check-slot{
         width: 100%;height: 100%;
         display: flex;align-items: center;
     }
     div.mew-check-mark{
+        z-index: 99999;
         --c:inherit;--ac:inherit;--bdrd:inherit;--adjust-border:inherit;
         position: relative;
         min-width: 1em;min-height: 1em;

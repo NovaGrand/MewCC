@@ -37,7 +37,7 @@
             <li>功能强相关的元素，布局时应是连续的、闭合的。</li>
             <li>内容、功能不多的页面，内部元素应该有主有次。</li>
         </ul>
-        <fit col-25 ht-sm ht-2 mt-md mt-10 contain>
+        <fit col-25 ht-sm ht-2 mt-md mt-10 contain :style="dkStyle">
             <img :src="s_4" >
         </fit>
         <div alpha-5 dashed bb style="margin: 45px 0"></div>
@@ -47,7 +47,7 @@
             <i bold>普通设计人员不应以审美、经验等原因，设计不符合用户偏好的 UI</i>，这会立刻使用户感到<i bold>“不是为我服务”</i>。
             Mew 是敬畏终端用户的，组件设计对 UI 是无偏好的。
         </p>
-        <fit col-25 ht-sm ht-7 mt-md mt-10 contain>
+        <fit col-25 ht-sm ht-7 mt-md mt-10 contain :style="dkStyle">
             <img :src="s_5" >
         </fit>
         <small jc style="margin-top: 20px">偏好一旦成为路径依赖，则难以改变，设计人员不应以审美、经验等原因，设计不符合用户偏好的 UI</small>
@@ -71,6 +71,11 @@ name: "standard",
     data(){
         return {
             s_1,s_2,s_3,s_4,s_5
+        }
+    },
+    computed:{
+        dkStyle(){
+            return this.$color.theme === 'light' ? '' : 'filter: invert(.85)'
         }
     }
 }
