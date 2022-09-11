@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="constraint">
             <router-view/>
-            <footer class="outline">
+            <footer class="outline" :class="{ mobile: $global.mobile }">
                 <h3>
                     <i style="width: 28px;height: 28px;margin: 0 3px 0 -5px">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" >
@@ -68,7 +68,7 @@
                         </div>
                         <div class="info">
                             <h2 black darken alpha-18>属性列表</h2>
-                            <small black darken alpha-15>在一个页面查看全部属性</small>
+                            <small black darken alpha-15><i v-if="!$global.mobile">在一个页面</i>查看全部属性</small>
                         </div>
                     </a>
                     <a class="entry" ba-xs black alpha-7>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="info">
                             <h2 black darken alpha-18>组件 API</h2>
-                            <small black darken alpha-15>在一个页面查看全部组件</small>
+                            <small black darken alpha-15><i v-if="!$global.mobile">在一个页面</i>查看全部组件</small>
                         </div>
                     </a>
                     <a class="entry" href="https://github.com/NovaGrand/MewCC" ba-xs black alpha-7 target="_blank">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="info">
                             <h2 black darken alpha-18>Git 仓库</h2>
-                            <small black darken alpha-15>获取源码或提交问题</small>
+                            <small black darken alpha-15><i v-if="!$global.mobile">获取源码或</i>提交问题</small>
                         </div>
                     </a>
                 </div>
@@ -157,22 +157,21 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
+body[mobile]{
+    div.wrapper{
+        width: 100vw;
+        padding:20px 8px;
+        p{
+            font-size: 14px;
+        }
+    }
+}
 div.wrapper{
     width: 64vw;
     height: calc(100vh - 65px);
     overflow-y: scroll;
     padding: 20px;
-    @media(max-width: 1200px){
-        width: 70vw;
-    }
-    @media(max-width: 1000px){
-        width: 78vw;
-    }
-    @media(max-width: 800px){
-        width: 100vw;
-        padding: 5px;
-    }
     div.constraint{
         max-width: 900px;
         footer.outline{
@@ -185,11 +184,9 @@ div.wrapper{
             div.entries{
                 margin: 15px 0;
                 a.entry{
-                    //border: .5px solid rgba(0,0,0,.2);
                     width: 32.5%;
                     height: 64px;
                     text-decoration: none;
-                    //color: rgba(0,0,0,.7);
                     display: flex;align-items: center;
                     &:hover{
                         background-color: rgba(0,0,0,.02);
@@ -250,5 +247,25 @@ div.wrapper{
         }
     }
 }
-
+footer.outline.mobile{
+    div.entries{
+        a.entry{
+            justify-content: center;
+            height: 56px!important;
+            //padding-left: 10px;
+            div.icon{
+                margin: 5px 6px 0 0!important;
+                &.attrs{
+                    width: 24px!important;
+                }
+                &.api{
+                    width: 28px!important;
+                }
+                &.git{
+                    width: 26px!important;
+                }
+            }
+        }
+    }
+}
 </style>

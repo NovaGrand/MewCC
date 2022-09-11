@@ -1,22 +1,22 @@
 <template>
-    <div>
+    <div class="doc-field">
         <p>
             <i bold>字段组件默认无样式、无外观的</i>，可组合使用样式属性以实现外观风格。字段组件内置数据校验，可通过自定义函数控制校验规则，
             <i bold>当数据不符合校验规则时，所绑定的字段值将变为 false</i>。Mew 为自定义外观提供最大的可能，无需添加类或修改CSS，利用插槽即可实现自定义外观。
         </p>
         <h2 tag-bar md style="margin-top: 36px">文本输入框</h2>
-        <section style="margin-top: 30px" jsb>
+        <section class="sample_dadwa" style="margin-top: 30px" jsb>
             <field wd-sm wd-4 blue ba label="用户名" v-model="sample.val_1"></field>
             <field wd-sm wd-4 blue bb-sm rect placeholder="请输入" v-model="sample.val_2"></field>
             <field wd-sm wd-4 blue bg card-xl inset placeholder="请输入" v-model="sample.val_3"></field>
             <field wd-sm wd-4 red ba round px-md px-2 label="Username" v-model="sample.val_4"></field>
         </section>
-        <section style="margin-top: 25px" jsb>
+        <section class="sample_dadwa" style="margin-top: 25px" jsb>
             <field wd-sm wd-4 green darken ba label="备 注" area v-model="sample.val_1"></field>
             <field wd-sm wd-4 blue ba rect disabled placeholder="disabled" v-model="sample.val_2"></field>
             <field wd-sm wd-4 white lighten bg card-md placeholder="请输入" v-model="sample.val_3"></field>
             <div   wd-sm wd-4 flex ht-xs ht-1 round ba ac-10>
-                <field fill col-21 pl-md ac-25 placeholder="查 找" v-model="sample.val_4"></field>
+                <field fill style="margin: 0" col-21 pl-md ac-25 placeholder="查 找" v-model="sample.val_4"></field>
                 <div fill col-4 black lighten ac-15 nl-xs ac jc pointer bv @click="sample.val_4 = ''" title="清除">
                     <ico >form-close</ico>
                 </div>
@@ -24,7 +24,7 @@
         </section>
 
         <h2 tag-bar md style="margin-top: 40px">选择输入框</h2>
-        <section style="margin-top: 30px" jsb>
+        <section class="sample_dadwa" style="margin-top: 30px" jsb>
             <field wd-sm wd-4 blue ba select v-model="sample.val_5" placeholder="单选框">
                 <div v-for="item in items" sm @click="sample.val_5 = item">{{ item }}</div>
             </field>
@@ -38,7 +38,7 @@
                 <div v-for="item in items" sm @click="sample.val_8 = item">{{ item }}</div>
             </field>
         </section>
-        <section style="margin-top: 30px" jsb>
+        <section class="sample_dadwa" style="margin-top: 30px" jsb>
             <field wd-sm wd-4 indigo darken ba select v-model="sample.val_9" placeholder="自定义列表">
                 <div @click="sample.val_9 = '你选择了橘子'"><ico mr-sm>food-lemon</ico><i ls-sm>半个<i bold>橘子</i></i></div>
                 <div @click="sample.val_9 = '你选择了女神'"><ico md nl-md mr-xs>state-laberty</ico><i red ls-sm>女神来了</i></div>
@@ -55,10 +55,10 @@
         <h2 tag-bar md style="margin-top: 50px">勾选框 CheckBox</h2>
         <div class="sample">
             <div mt-md mt-5 jsb>
-                <div ht-13 round ac ba catskill col-4 pl-sm pl-6 pointer @click.self="sample.val_11 = !sample.val_11">
+                <div ht-13 round ac ba catskill wd-xs wd-16 pl-sm pl-6 pointer @click.self="sample.val_11 = !sample.val_11">
                     <field check blue round label="默认样式" v-model="sample.val_11"></field>
                 </div>
-                <div bv catskill ba ac px-md round @click.self="sample.val_12 = !sample.val_12">
+                <div bv catskill ba ac px-md round @click.self="sample.val_12 = !sample.val_12" v-if="desk">
                     <field check blue v-model="sample.val_12" xs></field>
                     <field check blue v-model="sample.val_12" sm></field>
                     <field check blue v-model="sample.val_12" md></field>
@@ -71,7 +71,7 @@
                     <field check blue v-model="sample.val_12" sm round></field>
                     <field check blue v-model="sample.val_12" xs round></field>
                 </div>
-                <div round catskill wd-sm wd-15 jsb ba pa-sm @click.self="sample.val_13 = !sample.val_13">
+                <div round catskill wd-sm wd-15 jsb ba pa-sm @click.self="sample.val_13 = !sample.val_13" v-if="desk">
                     <field wd-12 ht-12 check ba blue v-model="sample.val_13" round></field>
                     <field wd-12 ht-12 check ba-md card-xl inset blue v-model="sample.val_13" round></field>
                     <field wd-12 ht-12 check card-xl inset blue v-model="sample.val_13" round></field>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div>
-                <span round ba catskill pointer @click.self="sample.val_11 = !sample.val_11">
+                <span round ba catskill mt-sm pointer @click.self="sample.val_11 = !sample.val_11">
                     <field check blue round v-model="sample.val_11">
                         <div blue bg ac round py-sm pl-10 pr-20 card-md inset>
                             <ico md mr-3>{{ sample.val_11 ? 'user-lock-opened' : 'user-lock-closed' }}</ico>
@@ -94,13 +94,13 @@
         <h2 tag-bar md style="margin-top: 50px">单选框 RadioBox</h2>
         <div ba blue ac-10 flex ac py-sm pl-md bv-md mt-md @click.self="$refs.field.$focus()">
             <div flex fill ac ac-25>
-                <div col-3 blue ls-sm sm>当前服务类型:</div>
+                <div class="aaa" col-3 blue ls-sm sm>当前服务类型:</div>
                 <field col-21 ref="field" blue v-model="sample.val_14"></field>
-                <div  col-1 pointer @click="sample.val_14 = ''"><ico lg blue>form-close</ico></div>
+                <div class="bbb"  col-1 pointer @click="sample.val_14 = ''"><ico lg blue>form-close</ico></div>
             </div>
         </div>
         <div mt-md jsb>
-            <field check ba-md blue v-model="sample.val_14" value="半日会员">
+            <field check ba-md blue v-model="sample.val_14" value="半日会员" v-if="desk">
                 <div ac><ico>kit-welcome</ico><i>体验会员</i></div>
             </field>
             <field check ba-md blue v-model="sample.val_14" value="临时会员">
@@ -112,16 +112,16 @@
             <field check ba-md blue v-model="sample.val_14" value="终身会员">
                 <div ac><ico>level-military</ico><i>终身会员</i></div>
             </field>
-            <field check ba-md blue v-model="sample.val_14" value="钻石会员">
+            <field check ba-md blue v-model="sample.val_14" value="钻石会员" v-if="desk">
                 <div ac><ico>kit-bnb</ico><i>钻石会员</i></div>
             </field>
-            <field check ba-md blue v-model="sample.val_14" value="金币+100">
+            <field check ba-md blue v-model="sample.val_14" value="金币+100" v-if="desk">
                 <div ac><ico>state-bling-twinkle</ico><i>金币+100</i></div>
             </field>
-            <field check ba-md blue v-model="sample.val_14" value="金币+300">
+            <field check ba-md blue v-model="sample.val_14" value="金币+300" v-if="desk">
                 <div ac><ico>state-bling-rise</ico><i>金币+300</i></div>
             </field>
-            <field check ba-md blue v-model="sample.val_14" value="金币+500">
+            <field check ba-md blue v-model="sample.val_14" value="金币+500" v-if="desk">
                 <div ac><ico>level-star-round</ico><i>金币+500</i></div>
             </field>
         </div>
@@ -156,13 +156,6 @@
 export default {
     name: "doc-field",
     mounted(){
-        // document.body.addEventListener('click',(e)=>{
-        //     e.stopPropagation()
-        // },true)
-        // setInterval(()=>{
-        //     // this.label += 'A'
-        //     this.value += 1
-        // },1000)
     },
     data(){
         return {
@@ -238,6 +231,11 @@ export default {
             // console.log(val)
         }
     },
+    computed:{
+        desk(){
+            return !this.$global.mobile
+        }
+    },
     methods:{
         aa(){
             console.log('aa')
@@ -274,7 +272,23 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
+<style scoped lang="scss">
+body[mobile] div.doc-field{
+    div.aaa{
+        min-width: 90px;
+        letter-spacing: 0;
+    }
+    div.bbb{
+        min-width: 34px;
+    }
+    section.sample_dadwa{
+        flex-wrap: wrap;
+        margin: 0;padding: 0;
+        div.mew-field{
+            max-width: 46vw;
+            margin: 10px 0;
+        }
+    }
+}
 
 </style>

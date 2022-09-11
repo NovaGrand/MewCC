@@ -1,4 +1,4 @@
-div.home{
+div.doc-home{
   position: relative;
   //background: url("@/assets/ref.jpg");
   background-size: cover;
@@ -6,91 +6,90 @@ div.home{
   overflow-y: scroll;
   overflow-x: hidden;
   transform-style: preserve-3d;
-  //perspective: 200px;
-  div.blue{
-    //height: 1100px;
-    position: absolute;top: 0;
-    background: linear-gradient(0deg,#004067 40%, #00609d 100%);
-    height: 39vw;
-    width: 100vw;
-  }
-  div.cloud{
-    position: absolute;left: 0;top: 0;
-    width: 100vw;
-    //height: calc(30vw + 32px);
-    height: 31.2vw;
-    background: url("@/assets/home_texture_clouds.svg") no-repeat;
-    background-size: cover;
-    opacity: .6;
-  }
-  div.island{
-    position: absolute;left: 0;top: 8.58vw;
-    //top: -46px;height: calc(30vw + 32px);top: 220px;
-    width: 100vw;
-    height: 31.2vw;
-    background: url("@/assets/white_beach.svg") no-repeat;
-    background-size: cover;
-  }
-  header.bar{
-    //height: 100px;
-    height: 3.9vw;
-    width: 910px;
-    max-width: 90vw;
-    margin: 0 auto;
-    padding-top: 2.34vw;
-    //background-color: rgba(255,0,0,.1);
-    div.logo{
-      //width: 137.1px;height:40px; // 240 70
-      width: 5.343vw;height: 1.56vw;
-      min-width: 80px;
-      min-height: 23.33px;
-      background: url("@/assets/logo_2.png");
-      background-size: 100% 100%;
-      transition: filter .2s;
-      &:hover{
-        filter: brightness(1.2);
-      }
+  div.desktop{
+    //perspective: 200px;
+    div.blue{
+      //height: 1100px;
+      position: absolute;top: 0;
+      background: linear-gradient(0deg,#004067 40%, #00609d 100%);
+      height: 39vw;
+      width: 100vw;
     }
-    a.novagrand{
-      //margin-top: 10px;width: 126px;height:30px;// 210 50
-      margin-top: 0.39vw;
-      width: 4.9vw;height:1.17vw;
-      min-width: 96px;
-      min-height: 20px;
-      background: url("@/assets/novagrand.png");
-      background-size: 100% 100%;
-      transition: filter .2s;
-      &:hover{
-        filter: brightness(1.2);
-      }
+    div.cloud{
+      position: absolute;left: 0;top: 0;
+      width: 100vw;
+      //height: calc(30vw + 32px);
+      height: 31.2vw;
+      background: url("@/assets/home_texture_clouds.svg") no-repeat;
+      background-size: cover;
+      opacity: .6;
     }
-  }
-
-  div.title{
-    //background-color: rgba(0,255,0,.1);
-    //100px === 3.9vw
-    //padding: 170px 0 0 0;
-    //height: 320px;
-    padding: 6.63vw 0 0 0;
-    height: 12.48vw;
-    div.text{
+    div.island{
+      position: absolute;left: 0;top: 8.58vw;
+      //top: -46px;height: calc(30vw + 32px);top: 220px;
+      width: 100vw;
+      height: 31.2vw;
+      background: url("@/assets/white_beach.svg") no-repeat;
+      background-size: cover;
+    }
+    header.bar{
+      //height: 100px;
+      height: 3.9vw;
+      width: 910px;
+      max-width: 90vw;
       margin: 0 auto;
-      // width: 900px;height:97px; // 1390 150
-      width: 35.1vw;height: 3.78vw;
-      min-width: 370px;min-height: 38px;
-      background: url("@/assets/home_title.png");
-      background-size: 100% 100%;
+      padding-top: 2.34vw;
+      //background-color: rgba(255,0,0,.1);
+      div.logo{
+        //width: 137.1px;height:40px; // 240 70
+        width: 5.343vw;height: 1.56vw;
+        min-width: 80px;
+        min-height: 23.33px;
+        background: url("@/assets/logo_2.png");
+        background-size: 100% 100%;
+        transition: filter .2s;
+        &:hover{
+          filter: brightness(1.2);
+        }
+      }
+      a.novagrand{
+        //margin-top: 10px;width: 126px;height:30px;// 210 50
+        margin-top: 0.39vw;
+        width: 4.9vw;height:1.17vw;
+        min-width: 96px;
+        min-height: 20px;
+        background: url("@/assets/novagrand.png");
+        background-size: 100% 100%;
+        transition: filter .2s;
+        &:hover{
+          filter: brightness(1.2);
+        }
+      }
     }
-    div.info{
-      //margin-top: 30px;font-size: 21px;
-      margin-top: 1.17vw;
-      font-family: Arial;font-size: 0.84vw;
-      letter-spacing: .6px;
-      color: white;
-      text-align: center;
+    div.title{
+      //background-color: rgba(0,255,0,.1);
+      //100px === 3.9vw
+      //padding: 170px 0 0 0;
+      //height: 320px;
+      padding: 6.63vw 0 0 0;
+      height: 12.48vw;
+      div.text{
+        margin: 0 auto;
+        // width: 900px;height:97px; // 1390 150
+        width: 35.1vw;height: 3.78vw;
+        min-width: 370px;min-height: 38px;
+        background: url("@/assets/home_title.png");
+        background-size: 100% 100%;
+      }
+      div.info{
+        //margin-top: 30px;font-size: 21px;
+        margin-top: 1.17vw;
+        font-family: Arial;font-size: 0.84vw;
+        letter-spacing: .6px;
+        color: white;
+        text-align: center;
+      }
     }
-  }
-
     div.button{
       letter-spacing: .5px;
       position: relative;
@@ -117,39 +116,71 @@ div.home{
         }
       }
     }
-
-  div.slogan{
-    //margin-top: 260px;height: 200px;padding-top: 30px;
-    //height: 7.8vw;
-    margin-top: 10vw;
-    padding-top: 1.17vw;
-    text-align: center;
-    //background: white;
-    h2.text{
-      font-weight: bold;
-      //font-size: 25px;
-      font-size: 0.975vw;
-      font-family: Arial;
-      color: #004067;
-      letter-spacing: .5px;
+    div.slogan{
+      //margin-top: 260px;height: 200px;padding-top: 30px;
+      //height: 7.8vw;
+      margin-top: 10vw;
+      padding-top: 1.17vw;
+      text-align: center;
+      //background: white;
+      h2.text{
+        font-weight: bold;
+        //font-size: 25px;
+        font-size: 0.975vw;
+        font-family: Arial;
+        color: #004067;
+        letter-spacing: .5px;
+      }
+      div.info{
+        //padding: 20px;font-size: 17px;line-height: 30px;
+        font-family: Arial;
+        font-size: 0.663vw;
+        opacity: .7;
+        letter-spacing: -.1px;
+        padding: 0.78vw;
+        //line-height: 1.8;
+        line-height: 1.17vw;
+      }
     }
-    div.info{
-      //padding: 20px;font-size: 17px;line-height: 30px;
-      font-family: Arial;
-      font-size: 0.663vw;
-      opacity: .7;
-      letter-spacing: -.1px;
-      padding: 0.78vw;
-      //line-height: 1.8;
-      line-height: 1.17vw;
+    footer{
+      //margin: 50px auto 20px auto;
+      //border: .5px solid red;
+      font-size: 12px;
+      width: 920px;
+      margin: 1.95vw auto 0.78vw auto;
     }
   }
+}
+div.doc-home{
+  div.mobile{
+    height: 760px;
+    background: linear-gradient(0deg,#004067 40%, #00609d 100%);
+    div.background{
+      width: 100%;
+      height: 100%;
+    }
+    div.bigTitle{
+      //height: 270px;
+      max-width: 378px;
+      width: 100%;
+    }
+    div.cloud{
+      height: 270px;
+    }
+    div.island{
+      height: 320px;
+      width: 100%;
+    }
+    div.whitespace{
+      height: 1000px;
+      //min-height: calc(100% - 590px);
+    }
+    div.button{
 
-  footer{
-    //margin: 50px auto 20px auto;
-    //border: .5px solid red;
-    font-size: 12px;
-    width: 920px;
-    margin: 1.95vw auto 0.78vw auto;
+    }
+    footer{
+      position: absolute;bottom:0px;left: 0;
+      width: 100%;
+    }
   }
 }

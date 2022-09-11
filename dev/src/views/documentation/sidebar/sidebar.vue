@@ -1,5 +1,6 @@
 <template>
     <div id="sidebar" :class="{ show: stat.drawer}" noselect black br-xs alpha-3>
+
         <div class="content">
             <div class="group homePage">
                 <ul>

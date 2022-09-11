@@ -1,7 +1,7 @@
 <template>
     <div class="monitor" noselect style="margin-top: 20px">
         <div class="screen" ref="screen" ht-lg ht-10 bv-lg>
-            <fit fill>
+            <fit class="dwljadwa" fill>
                 <video class="bg" type="video/mp4" autoplay loop muted :src="vid"/>
             </fit>
             <div class="mask"/>
@@ -29,6 +29,12 @@ export default {
     name: "samp_1",
     mounted(){
         this.$loading.config = { color:'white', target: this.$refs.screen }
+        let controls = this.$el.getElementsByClassName('controls')[0]
+        let a = controls.offsetWidth
+        let b = controls.scrollWidth
+        this.$el.style.setProperty('--scale',a/b - 0.1)
+        console.log(a)
+        console.log(b)
     },
     data(){
         return {
@@ -91,6 +97,25 @@ export default {
 </script>
 
 <style scoped lang="scss">
+body[mobile] div.monitor{
+    div.screen{
+        height: auto;
+        &::before{
+            display: none;
+        }
+        div.dwljadwa{
+            height: auto;
+        }
+        video{
+
+        }
+    }
+
+    div.controls{
+        transform: scale(var(--scale));
+        transform-origin: 50% 50%;
+    }
+}
 div.monitor{
     background-color: #B3B9C8;
     padding: 6px 6px 0 6px;
@@ -126,6 +151,10 @@ div.monitor{
             }
             &:first-child{
                 border-radius: 20px 0 0 20px;
+            }
+            &:nth-child(3){
+                padding: 0 5px 1px 5px;
+                min-width: 100px;
             }
             &:last-child{
                 border-radius: 0 20px 20px 0;

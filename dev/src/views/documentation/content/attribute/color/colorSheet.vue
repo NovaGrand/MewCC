@@ -1,5 +1,5 @@
 <template>
-    <div class="doc-color-sheet" flex wrap jsb>
+    <div class="doc-color-sheet" :class="{ mobile: $global.mobile }" flex wrap jsb>
         <div class="colorBox">
             <div class="bar" red bg lighten>
                 <i class="cpy">red lighten</i><samp class="cpy hex"></samp>
@@ -200,6 +200,18 @@ export default {
 </script>
 
 <style lang="scss">
+div.doc-color-sheet.mobile{
+    div.bar{
+        i{
+            transform-origin: 0% 50%;
+            transform: scale(.8);
+        }
+        samp{
+            transform-origin: 100% 50%;
+            transform: scale(.8);
+        }
+    }
+}
 div.doc-color-sheet{
     font-size: 12px;
     user-select: none;
@@ -217,6 +229,7 @@ div.doc-color-sheet{
             height: 23px;line-height: 22.5px;
             transition: all .1s ease;
             overflow: hidden;
+            white-space: nowrap;
             &:first-child{
                 border-radius: 4px 4px 0 0;
             }

@@ -1,5 +1,5 @@
 <template>
-    <div noselect class="doc-sizing-showcase_card">
+    <div noselect class="doc-sizing-showcase_card" :class="{ mobile: $global.mobile }">
         <!--第一行-->
         <div style="height: 240px" jsb>
             <fit style="width: 360px;height: 100%" class="sample" lg grey darken bg @click="copy('wd-md ht-md')">
@@ -123,6 +123,12 @@
 import a from "@/assets/wolai/轮渡.jpg"
 export default {
     name: "showcase_cards",
+    mounted(){
+        let w = document.body.offsetWidth
+        let i = w / 900 - 0.01
+        this.$el.style.setProperty('--i',i)
+        this.$el.style.setProperty('--marginBottom',1054 * i * -1 + 'px')
+    },
     data(){
         return {
             a
@@ -141,6 +147,11 @@ export default {
 </script>
 
 <style lang="scss">
+div.doc-sizing-showcase_card.mobile{
+    transform: scale(var(--i));
+    transform-origin: 0% 0%;
+    margin-bottom: var(--marginBottom);
+}
 div.doc-sizing-showcase_card{
     width: 900px;
     height: 1054px;

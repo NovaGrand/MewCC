@@ -1,8 +1,8 @@
 <template>
     <div class="doc-message">
         <div ect bv-md>
-            <div class="showcase" noselect>
-                <div class="sample" flex jsb style="margin-bottom: 10px">
+            <div class="showcase" ref="showcase" noselect>
+                <div class="sample" jsb style="margin-bottom: 10px">
                     <toast style="width: 360px;margin: 0 5px 0 0"
                            color="blue"
                            title="消息"
@@ -31,7 +31,7 @@
                            @click="showSample(2)"
                     />
                 </div>
-                <div class="sample" flex jsb style="margin-bottom: 10px">
+                <div class="sample" jsb style="margin-bottom: 10px">
                     <toast style="width: 360px;margin: 0 5px 0 0"
                            color="red"
                            title="错误"
@@ -206,7 +206,10 @@ export default {
         }
     },
     mounted(){
-
+        let a = this.$el.offsetWidth
+        this.$el.style.setProperty('--scale', a / 900)
+        this.$el.style.setProperty('--marginBottom', (1 - a / 900) * 410 * -1 + 'px')
+        console.log(a)
     },
     methods:{
         showSample(n){
@@ -234,19 +237,18 @@ li.doc-message-dadwa{
 }
 </style>
 <style scoped lang="scss">
-
+body[mobile] div.doc-message{
+    div.showcase{
+        width: 900px;
+        transform: scale(var(--scale));
+        transform-origin: 0 0;
+        margin-bottom: var(--marginBottom);
+    }
+}
 div.doc-message{
     div.showcase{
         position: relative;
         transform: scale(.7);
-        transform-origin: center center;
-        //&::after{
-        //    position: absolute;
-        //    left: 45px;top: 55px;content: '';display: inline-block;
-        //    width: 800px;height: 300px;
-        //    border-radius: 100%;
-        //    filter: blur(70px);
-        //}
         div.sample{
             position: relative;z-index: 1;
             li.mew-toast:hover{

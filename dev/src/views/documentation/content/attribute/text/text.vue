@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div class="doc-box" card lighten pa-md>
-            <div class="btns" xs jsb>
+    <div class="doc-text">
+        <div class="showcaseBox" card lighten pa-md>
+            <div class="btns" xs jsb ref="btns">
                 <div class="btnBox" jc v-for="(item, idx) in samps" @click="index = String(idx + 1)">
                     <i noselect class="btn" :class="{ current: index === String(idx + 1)}">
                         {{ item }}
@@ -23,8 +23,8 @@
                     </h2>
                     <small mt-lg mt-24 foo>Excepteur ociafat sint ona</small>
                 </div>
-                <div bl dashed white ac-18 ht-sm ht-19/>
-                <div wd-lg wd-10 column jsb ht-sm ht-22>
+                <div bl dashed white ac-18 ht-sm ht-19 v-if="!$global.mobile"/>
+                <div class="aaa" wd-lg wd-10 column jsb ht-sm ht-22>
                     <p indent>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <p white ac-15>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. </p>
                 </div>
@@ -42,6 +42,14 @@ export default {
     name: "doc-text",
     components:{
         showcase_a,
+    },
+    mounted(){
+        let el = this.$el.getElementsByClassName('doc-text-showcase_a')[0]
+        // fullWidth
+        let f = this.$refs.btns.scrollWidth
+        // currentWidth
+        let c = el.offsetWidth
+        this.$el.style.setProperty('--scale',c / f + 0.01)
     },
     data(){
         return {
@@ -68,7 +76,35 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div.doc-box{
+[mobile]{
+    div.doc-text{
+        div.showcaseBox{
+            div.btns{
+                transform: scale(var(--scale));
+                transform-origin: 0% 50%;
+            }
+            input{
+                width: 100%!important;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        div.sampleBox{
+            min-height: 500px;
+        }
+        div.container{
+            padding: 20px;
+            flex-direction: column;
+            overflow: hidden;
+            div.aaa{
+                margin-top: 20px;
+                width: calc(100vw - 44px);
+            }
+        }
+    }
+}
+div.showcaseBox{
     div.btns{
         div.btnBox{
             width: 78px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="doc-standard">
+    <div class="doc-standard" :class="{ mobile: $global.mobile }">
         <h2 lg>颜色与用户使用环境</h2>
         <p >
             用户<i bold>显示设备亮度、摆放角度、环境亮度</i>这三个因素，使开发者、软件公司对最终用户的观看体验，无法实现全面的控制，前端的呈现环境是产品设计必须面对的问题。<i bold>夜间灯光环境下的有辨识度的颜色，在日光环境中常常难以分辨</i>，
@@ -11,13 +11,13 @@
             <li>交互功能不能完全依赖颜色，必须同时提供其他提示。</li>
         </ul>
         <div jsb mt-md mt-10>
-            <fit ht-sm ht-15 col-9 foo mr-10>
+            <fit aaa ht-sm ht-15 col-9 foo mr-10>
                 <img fill :src="s_1">
             </fit>
-            <fit ht-sm ht-15 col-9 foo mr-10>
+            <fit aaa ht-sm ht-15 col-9 foo mr-10>
                 <img fill :src="s_2">
             </fit>
-            <fit ht-sm ht-15 col-9 foo>
+            <fit aaa ht-sm ht-15 col-9 foo>
                 <img fill :src="s_3">
             </fit>
         </div>
@@ -30,14 +30,14 @@
 
         <h2 lg>布局与视觉原理</h2>
         <p style="margin-top:20px">HTML 和 CSS 的消耗了大量时间成本，仓促的 UI 设计更加重了返工的负担，出于对效率与质量的平衡，Mew 的样式属性，基于视觉研究的理论基础：
-            <i bold>人们会将距离接近、形状相似、连续的、整体闭合的、有主有次的、行为一致的目标们视为一个整体</i>：
+            <i bold>人脑会将距离接近、形状相似、连续的、整体闭合的、有主有次的、行为一致的目标们视为一个整体：</i>
         </p>
         <ul style="margin-top: 10px">
             <li>同区内元素距离应用小间距，不同区域内元素应用大间距。</li>
             <li>功能强相关的元素，布局时应是连续的、闭合的。</li>
             <li>内容、功能不多的页面，内部元素应该有主有次。</li>
         </ul>
-        <fit col-25 ht-sm ht-2 mt-md mt-10 contain :style="dkStyle">
+        <fit bbb col-25 ht-sm ht-2 mt-md mt-10 contain :style="dkStyle">
             <img :src="s_4" >
         </fit>
         <div alpha-5 dashed bb style="margin: 45px 0"></div>
@@ -47,10 +47,10 @@
             <i bold>普通设计人员不应以审美、经验等原因，设计不符合用户偏好的 UI</i>，这会立刻使用户感到<i bold>“不是为我服务”</i>。
             Mew 是敬畏终端用户的，组件设计对 UI 是无偏好的。
         </p>
-        <fit col-25 ht-sm ht-7 mt-md mt-10 contain :style="dkStyle">
+        <fit ccc col-25 ht-sm ht-7 mt-md mt-10 contain :style="dkStyle">
             <img :src="s_5" >
         </fit>
-        <small jc style="margin-top: 20px">偏好一旦成为路径依赖，则难以改变，设计人员不应以审美、经验等原因，设计不符合用户偏好的 UI</small>
+        <small ccc jc mt-md>偏好一旦成为路径依赖，则难以改变，设计人员不应以审美、经验等原因，设计不符合用户偏好的 UI</small>
         <div alpha-5 dashed bb style="margin-top: 20px"></div>
         <h2 lg style="margin-top: 70px">成本与功能完备</h2>
         <p style="margin-top:20px">
@@ -86,6 +86,23 @@ div.doc-standard{
     p{
         text-align: left;
         text-align-last: left;
+    }
+    &.mobile{
+        p{
+            font-size: 14px;
+        }
+        ul{
+        }
+        li{
+            font-size: 13px;
+
+        }
+        [aaa]{ height: 90px; }
+        [bbb]{margin: -20px 0;}
+        [ccc]{ margin-top: -20px }
+        small{
+            text-align: center;line-height: 1.4;
+        }
     }
 }
 </style>

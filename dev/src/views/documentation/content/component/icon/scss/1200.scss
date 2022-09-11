@@ -1,4 +1,8 @@
-div.doc-ico{
+body[mobile] div.doc-ico{
+  div.daljwljdkaw1{
+    min-width: 54px;
+    transform: translateY(10px);
+  }
   div.icons{
     @media(max-width: 1500px) {
       height: 2400px;

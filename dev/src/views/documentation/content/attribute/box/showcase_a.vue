@@ -18,6 +18,8 @@
 export default {
     name: "showcase_a",
     inheritAttrs: false,
+    mounted(){
+    },
     data(){
         return {
             arr:[

@@ -1,3 +1,8 @@
+body[mobile][mew-theme='dark']{
+  div#sidebar{
+    background: #323232!important;
+  }
+}
 div#sidebar{
   position: relative;
   //border-right: 1px solid rgba(55,61,68,.1);

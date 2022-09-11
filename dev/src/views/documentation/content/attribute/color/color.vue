@@ -1,5 +1,5 @@
 <template>
-    <div class="doc-color">
+    <div class="doc-color" :class="{ mobile: $global.mobile }">
         <color-sheet/>
         <small jc style="margin-top: 8px">点击色卡左侧或右侧，复制 颜色属性 或 Hex 到粘贴板</small>
         <div bb dashed alpha-3 style="margin-top: 20px"></div>
@@ -30,7 +30,7 @@
         <prism lang="html" style="margin-top: 12px" bv-xs>
             {{ sample_1 }}
         </prism>
-        <ul style="margin-top: 30px">
+        <ul mt-md>
             <li>元素添加 red 属性，元素的文字颜色会变为红色，这种控制颜色的属性有
                 <q>red</q> <q>pink</q> <q>purple</q> <q>cyan</q> <q>blue</q> ... 等十二种。</li>
             <li>元素添加 <q>ba</q> 属性后，颜色不仅影响文字，还会影响边框，如果此时还要自定义文字颜色，只能通过子元素实现了。</li>
@@ -44,7 +44,7 @@
         <doc-color-showcase_1/>
         <small jc style="margin-top: 12px">Mew 提供 25 段透明；点击示例复制 Alpha 属性到粘贴板</small>
         <div bb dashed alpha-3 style="margin-top: 18px"></div>
-        <ul style="margin-top: 30px">
+        <ul mt-md>
             <li>颜色属性配合 <q>lighten</q> <q>darken</q> 控制颜色亮度，通过 <q>alpha</q> 属性控制透明度。</li>
             <li>
                 <q>alpha</q> 属性有 25 个分段，默认值是 alpha-25，最小值是 alpha-1，等效于 <q>opacity:0.04</q> 。
@@ -94,8 +94,15 @@ export default {
 </script>
 
 <style lang="scss">
-div.doc-color{
-
-
+div.doc-color.mobile{
+    p{
+        font-size: 14px;
+    }
+    ul{
+        margin-top: -5px;
+    }
+    li{
+        font-size: 12px;line-height: 1.5;
+    }
 }
 </style>

@@ -3,7 +3,7 @@
         <fit style="height:300px" bevel>
             <img v-lazy :src="img">
         </fit>
-        <h2 tag-bar lg style="margin-top: 40px">懒加载 v-lazy</h2>
+        <h2 tag-bar md style="margin-top: 40px">懒加载 v-lazy</h2>
         <prism style="margin-top: 20px" lang="html" bevel>{{ usage }}</prism>
     </div>
 </template>

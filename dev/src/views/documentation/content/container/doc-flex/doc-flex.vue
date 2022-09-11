@@ -4,7 +4,7 @@
             <VueDragResize :isActive="false" :parentLimitation="true" :w="w" :h="300" relative>
                 <div fill >
                     <flex fill py-sm py-5>
-                        <div wd-xs wd-10 ht-sm pa-xs v-for="n in 9">
+                        <div class="item" wd-xs wd-10 ht-sm pa-xs v-for="n in 9">
                             <i fill jc ac class="item">{{ n }}</i>
                         </div>
                     </flex>
@@ -48,6 +48,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+body[mobile] div.doc-flex{
+    div.item{
+        width: 80px;height: 80px;
+    }
+}
 div.showcase{
     position: relative;
     &._1{

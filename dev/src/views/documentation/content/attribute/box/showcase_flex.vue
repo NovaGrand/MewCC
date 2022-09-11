@@ -1,5 +1,5 @@
 <template>
-    <div class="showcase_flex">
+    <div class="showcase_flex" :class="{ mobile: $global.mobile }">
         <div class="btns" jsb grey bg>
             <i :class="{ active: horizontal === 'flex'}" @click="horizontal='flex'">flex</i>
             <i :class="{ active: horizontal === 'js'}" @click="horizontal='js'">js</i>
@@ -70,6 +70,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
+div.showcase_flex.mobile{
+    div.btns{
+        i{
+            &:first-child,&:nth-child(10),&:nth-child(11),&:nth-child(12){
+                display: none;
+            }
+        }
+    }
+    div.samp{
+        div.aaaa{
+            display: none;
+        }
+        div.item{
+            box-shadow: 0 0 0 10px rgba(0,0,0,.9);
+            width: 80px;
+        }
+    }
+}
 div.showcase_flex{
     border: .5px solid rgba(0,0,0,.2);
     //height: 360px;

@@ -1,5 +1,5 @@
 <template>
-    <div xs class="doc-sizing-showcase_1" card bv>
+    <div xs class="doc-sizing-showcase_1" :class="{ mobile: $global.mobile }" card bv>
         <div bold jc class="tt"><i jc>宽 度</i><i jc>高 度</i></div>
         <div class="row">
             <div class="box">
@@ -245,6 +245,25 @@ export default {
 </script>
 
 <style lang="scss">
+div.doc-sizing-showcase_1.mobile{
+    div.tt{
+        display: none;
+    }
+    div.row{
+        &:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5){
+            display: none;
+        }
+        div.text{
+            width: 101px;
+        }
+        div.text:nth-child(3){
+            display: none;
+        }
+        div.box:last-child{
+            display: none;
+        }
+    }
+}
 div.doc-sizing-showcase_1{
     font-size: 12px;
     div.tt{

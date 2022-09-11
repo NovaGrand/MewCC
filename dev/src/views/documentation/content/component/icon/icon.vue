@@ -14,7 +14,7 @@
         </div>
         <h2 tag-bar md style="margin-top: 35px">用法</h2>
         <div flex style="margin-top: 20px">
-            <div col-2>
+            <div col-2 class="daljwljdkaw1">
                 <div blue darken wd-12 ht-12 jc ac>
                     <ico xl fs-10>{{ samps[n] }}</ico>
                 </div>

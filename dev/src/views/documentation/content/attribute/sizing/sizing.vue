@@ -1,5 +1,5 @@
 <template>
-    <div class="doc-sizing">
+    <div class="doc-sizing" :class="{ mobile: $global.mobile }">
         <showcase_1/>
         <p style="margin-top: 30px">
             Mew 提供宽高(4px~820px)和栅格(25列)两种尺寸属性。
@@ -48,5 +48,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+div.doc-sizing.mobile{
+    p{
+        font-size: 14px;
+    }
+}
 </style>

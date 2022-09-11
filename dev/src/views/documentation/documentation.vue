@@ -3,6 +3,7 @@
         <headbar :stat="stat"/>
         <sidebar :stat="stat"/>
         <wrapper/>
+        <div class="eventMask" v-if="stat.drawer && $global.mobile" @click.self="stat.drawer = false"></div>
     </div>
 </template>
 
@@ -31,5 +32,9 @@ div.documentation{
     width: 100vw;
     height: 100vh;
     padding: 65px 0 0 0;
+    div.eventMask{
+        position: absolute;right: 0;top: 0;
+        width: 100vw;height: 100vh;
+    }
 }
 </style>

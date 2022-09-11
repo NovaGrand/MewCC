@@ -1,7 +1,7 @@
 <template>
     <div class="doc-btn">
         <section>
-            <div ht-xs ht-20 top bv-xl ac px-lg jsb style="background-color: #4B5050">
+            <div class="dawda1dw1" ht-xs ht-20 top bv-xl ac px-lg jsb style="background-color: #4B5050">
                 <btn golden bg vanilla>Vanilla</btn>
                 <btn blue bg jc>Default</btn>
                 <btn green lighten bg card ac>
@@ -17,7 +17,7 @@
                 <btn blue lighten bg disabled>Disabled</btn>
             </div>
 
-            <div ht-xs ht-20 white bg bottom bv-xl ac px-lg jsb>
+            <div class="dawda1dw1" ht-xs ht-20 white bg bottom bv-xl ac px-lg jsb>
                 <btn foo baz vanilla round>Vanilla</btn>
                 <btn red lighten bg round disabled px-xs wd-xs wd-2>Disabled</btn>
                 <btn white lighten bg card ac>
@@ -26,9 +26,9 @@
                 </btn>
                 <div jsb ac wd-md wd-12>
                     <div js>
-                        <btn wd-19 ht-7 jc ac blue darken ba round xs left>LEFT</btn>
-                        <btn wd-19 ht-7 jc ac blue darken bt bb xs rect>RECT</btn>
-                        <btn wd-19 ht-7 jc ac blue darken ba round xs right>RIGHT</btn>
+                        <btn style="margin: 10px 0" wd-19 ht-7 jc ac blue darken ba round xs left>LEFT</btn>
+                        <btn style="margin: 10px 0" wd-19 ht-7 jc ac blue darken bt bb xs rect>RECT</btn>
+                        <btn style="margin: 10px 0" wd-19 ht-7 jc ac blue darken ba round xs right>RIGHT</btn>
                     </div>
                     <div jc>
                         <btn ml-xs ml-15 black ba ac jc round pa-xs><ico lg>btn-video-round</ico></btn>
@@ -73,7 +73,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div.doc-btn{
-
+body[mobile] div.doc-btn{
+    div.dawda1dw1{
+        //justify-content: start;
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+        button.mew-btn{
+            margin: 10px 2px;
+        }
+    }
 }
+
 </style>

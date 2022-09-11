@@ -1,7 +1,7 @@
 <template>
     <div class="doc-theme" px-lg>
         <section class="sampleForm">
-            <div pa-lg px-15 card-md bv white bg>
+            <div class="dwamlwdlma" pa-lg px-15 card-md bv white bg>
                 <!--第一行-->
                 <div jsb ht-xs ht-15 class="header">
                     <div flex ac>
@@ -78,7 +78,7 @@
         <div bold jc my-sm>
             <btn col-25 vanilla blue bg ls-xl @click="toggle">Toggle to {{ $color.theme === 'dark' ? 'Light Theme' : 'Dark Theme' }}</btn>
         </div>
-        <div class="sample" py-md ba-xs alpha-8 lh-xs mt-xl>
+        <div class="sample ggggggrg" py-md ba-xs alpha-8 lh-xs mt-xl>
             <div jc>
                 <i lg jc mx-xs bold lighten red>MewCC</i>
                 <i lg jc mx-xs bold lighten orange>Sample</i>
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="sample" ba-md dashed alpha-8 pa-sm nu-sm>
-            <div white darken bg lg fs-2 bold py-sm py-5 jc>
+            <div class="ko_faskfk" white darken bg lg fs-2 bold py-sm py-5 jc>
                 GREAT MINDS THINK ALIKE.
             </div>
         </div>
@@ -120,6 +120,10 @@ export default {
     name: "doc-theme",
     mounted(){
         // this.$color.theme = 'dark'
+        let w= this.$el.offsetWidth
+        this.$el.style.setProperty('--scale',w/828)
+        let n = (828 - w - 10) * -1 + 'px'
+        this.$el.style.setProperty('--marginBottom',n)
     },
     beforeUnmount(){
         this.$color.theme = 'light'
@@ -157,6 +161,26 @@ export default {
 </script>
 
 <style scoped lang="scss">
+body[mobile] div.doc-theme{
+    padding: 0;
+    section.sampleForm{
+        width: 828px;
+        transform: scale(var(--scale));
+        transform-origin: 0% 0%;
+        margin-bottom: var(--marginBottom);
+    }
+    div.ggggggrg{
+        i {
+            font-size: 12px;
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+    div.ko_faskfk{
+        font-size: 18px;
+    }
+}
 div.doc-theme{
     div.sample{
         font-family: black;

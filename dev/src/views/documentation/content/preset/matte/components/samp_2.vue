@@ -49,6 +49,8 @@
 export default {
     name: "doc-matte-samp_2",
     mounted(){
+        let a = this.$parent.$el.offsetWidth
+        this.$el.style.setProperty('--scale', a / 900)
       this.$pending.config = {
           target:this.$refs.window, next: true
       }
@@ -109,6 +111,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+body[mobile] div.doc-matte-samp_2{
+    width: 900px;
+    transform: scale(var(--scale));
+    transform-origin: 0% 100%;
+    margin-top: -110px;
+}
 div.doc-matte-samp_2{
     position: relative;
     background-color: #F7F8F9;

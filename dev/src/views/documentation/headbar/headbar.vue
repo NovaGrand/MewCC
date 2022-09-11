@@ -1,9 +1,9 @@
 <template>
     <div id="headbar" :class="{ border: stat.drawer, dark:$color.theme === 'dark' }" bg noselect>
         <div class="leftBox">
-            <div class="logoBox">
+            <div class="logoBox" >
                 <div class="menuBtn" :class="{ close:stat.drawer }" @click="stat.drawer = !stat.drawer"></div>
-                <h2 class="title">Mew cc</h2>
+                <h2 class="titlefda" black lighten>Mew cc</h2>
                 <a class="logo" href="/"/>
             </div>
         </div>

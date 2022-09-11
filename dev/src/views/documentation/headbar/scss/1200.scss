@@ -1,3 +1,8 @@
+body[mobile] div#headbar.dark{
+  div.menuBtn{
+    --CLR: rgba(255,255,255,.7) ;
+  }
+}
 div#headbar{
   @media(max-width: 800px){
     height: 55px;
@@ -27,7 +32,7 @@ div#headbar{
         div.menuBtn{
           display: inline-block;
         }
-        h2.title{
+        h2.titlefda{
           display: inline-block;
           a{
             color: inherit;

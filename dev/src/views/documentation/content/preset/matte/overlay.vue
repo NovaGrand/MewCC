@@ -33,7 +33,7 @@ this.$loading.config = { color:'white', target: this.$refs.screen }
             $pending 样式风格更倾向于 ToB，其他功能与 $loading 完全一样。当蒙版被过多使用时，通过两种蒙版交替使用，减轻用户的疲惫感。
             蒙版在开启状态下，可任意修改属性，以提供不同的状态和指引。
         </p>
-        <samp_2 style="margin-top: 30px"/>
+        <samp_2 mt-md/>
         <prism style="margin-top: 0px">
             <pre>
 mounted(){
@@ -83,10 +83,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div.doc-matte{
 
-
-}
 
 
 </style>

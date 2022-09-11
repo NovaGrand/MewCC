@@ -1,11 +1,11 @@
 <template>
-    <div class="doc-start">
-        <p xl ls-sm>安装</p>
-        <p md mt-sm>
+    <div class="doc-start" :class="{ mobile: $global.mobile }">
+        <p class="doc-title" xl ls-sm>安装</p>
+        <p class="doc-wasd" md mt-sm>
             让我们从 Mew 开始吧，充分利用 Vue 3 的各项特性，构建功能丰富、快速的应用程序。
         </p>
         <div ht-sm bb dashed grey alpha-8></div>
-        <p lg ls-xs>创建 Vue 项目</p>
+        <p class="doc-title" lg ls-xs>创建 Vue 项目</p>
         <p mt-sm>
             如果你还没有使用 <i bold>Vue CLI</i> 创建 Vue.js 的项目，你需要在命令行工具内进行下面的操作:
         </p>
@@ -383,6 +383,19 @@ div.doc-start{
                 //transform: rotateX(5deg)!important;
             }
         }
+    }
+
+}
+div.doc-start.mobile{
+    padding: 0 10px;
+    p.doc-title{
+        font-size: 26px;
+    }
+    p.doc-wasd{
+        font-size: 17px;
+    }
+    div.curtain{
+        transform: scale(.45) translateX(-430px);
     }
 }
 div.iconBox{
