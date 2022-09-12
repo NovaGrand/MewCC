@@ -10,7 +10,7 @@
            :volume="v.volume"
            :poster="v.poster"
            :loop="v.loop"
-
+           type="video/mp4"
     >
         <err/>
     </video>

@@ -1,5 +1,5 @@
 <template>
-    <div class="mew-vid-screen mew-vid-picture" jc>
+    <div class="mew-vid-screen mew-vid-picture" jc v-if="!$global.mobile">
         <i @click="togglePinP" title="Mini player and always front">
             <svg width="35" height="29" viewBox="0 0 35 29" fill="none" >
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M35 0H0V29H35V0ZM32 3H3V26H32V3Z"/>

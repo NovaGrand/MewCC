@@ -18,20 +18,6 @@ export default {
     components:{
         matte, color, notes, fieldWrapper
     },
-    mounted() {
-        // document.onmousewheel=function(){
-        //     console.log(1111)
-        // }
-    },
-    data(){
-        return {
-
-        }
-    },
-    methods:{
-
-    }
-
 }
 </script>
 

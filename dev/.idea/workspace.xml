@@ -20,49 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/home/desktop.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/mew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/mew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/rates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/rates.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/mxvideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/mxvideo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/screen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/screen.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/volume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/volume.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/box/box.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/box/box.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/box/showcase_a.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/box/showcase_a.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/box/showcase_flex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/box/showcase_flex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/color/color.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/color/color.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/color/colorSheet.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/color/colorSheet.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/color/doc-color-showcase_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/color/doc-color-showcase_1.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_1.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_cards.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/showcase_cards.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/sizing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/sizing/sizing.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/text/text.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/attribute/text/text.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/btn/btn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/btn/btn.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/field/field.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/icon/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/icon/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/icon/scss/1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/icon/scss/1200.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/container/doc-flex/doc-flex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/container/doc-flex/doc-flex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/directive/doc-lazy/doc-lazy.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/directive/doc-lazy/doc-lazy.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/intro/standard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/standard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/intro/start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/start.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-message/doc-message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-message/doc-message.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components_local/color/color.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/color/color.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/components/samp_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/components/samp_1.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/components/samp_2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/components/samp_2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/overlay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/overlay.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/reset.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/reset.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/documentation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/documentation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/headbar/headbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/headbar/headbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/headbar/scss/1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/headbar/scss/1200.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/headbar/scss/headbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/headbar/scss/headbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/sidebar/scss/1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/sidebar/scss/1200.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/sidebar/scss/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/sidebar/scss/sidebar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/documentation/sidebar/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/sidebar/sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/wrapper/wrapper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/wrapper/wrapper.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/desktop.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/scss/1200.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/home/scss/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/scss/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../release/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../release/package.json" afterDir="false" />
     </list>
@@ -393,7 +365,8 @@
       <workItem from="1662808839309" duration="9571000" />
       <workItem from="1662879877793" duration="4901000" />
       <workItem from="1662890647687" duration="1065000" />
-      <workItem from="1662928613556" duration="1831000" />
+      <workItem from="1662928613556" duration="10198000" />
+      <workItem from="1662964981592" duration="754000" />
     </task>
     <servers />
   </component>
@@ -452,9 +425,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="930" y="489" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661631155084" />
-    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup" timestamp="1662568184946">
+    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup" timestamp="1662961152234">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1662568184946" />
+    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1662961152234" />
   </component>
 </project>

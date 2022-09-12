@@ -124,6 +124,7 @@ export default {
         this.$el.style.setProperty('--scale',w/828)
         let n = (828 - w - 10) * -1 + 'px'
         this.$el.style.setProperty('--marginBottom',n)
+
     },
     beforeUnmount(){
         this.$color.theme = 'light'

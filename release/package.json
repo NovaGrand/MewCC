@@ -1,6 +1,6 @@
 {
   "name": "mewcc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Frontend Multi-Element Widgets Community Collection",
   "main": "index.js",
   "scripts": {

@@ -6,7 +6,10 @@ import { color } from '../../../mew'
 export default {
     name: "mew-color",
     mounted(){
-        document.body.setAttribute('mew-theme','light')
+        let theme = localStorage.getItem('theme')
+        if (!theme)
+            theme = 'light'
+        this.setColor(theme)
     },
     data(){
         return {
@@ -14,8 +17,24 @@ export default {
         }
     },
     watch:{
-        'color.theme': function (val){
-            document.body.setAttribute('mew-theme',val)
+        'color.theme': function (val, raw){
+            if(raw)
+                this.removeAttr(raw)
+            this.setColor(val)
+            localStorage.setItem('theme', val)
+        }
+    },
+    methods:{
+        setColor(name){
+            document.body.setAttribute('mew-theme',name)
+            color.theme = name
+            this.addAttr(name)
+        },
+        addAttr(name){
+            document.body.setAttributeNode(document.createAttribute(name))
+        },
+        removeAttr(name){
+            document.body.removeAttribute(name)
         }
     }
 }

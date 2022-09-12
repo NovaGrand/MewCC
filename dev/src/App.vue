@@ -5,8 +5,12 @@
 <script>
 export default {
     name:'App',
-    updated(){
-
+    mounted(){
+        if(!window.location.pathname.includes('/doc/theme')){
+            this.$nextTick(()=>{
+                this.$color.theme = 'light'
+            })
+        }
     }
 }
 </script>

@@ -22,7 +22,7 @@ export default {
         },
         src:{
             type: String,
-            default: "http://novagrand.assets.obs.cn-east-3.myhuaweicloud.com/sample/sample.m3u8"
+            default: "",
         }
     },
     watch:{
@@ -41,18 +41,18 @@ export default {
         load(src){
             if(this.codec)
                 this.bind(src)
-            else if(!this.raw)
+            else if(!this.raw && !this.$global.mobile)
                 this.blob(src)
             else
-                this.$el.src = src
+                this.$el.getElementsByTagName('video')[0].src = src
         },
         blob(src){
             fetch(src).then(res => res.blob()).then(res => {
-                this.$el.src = URL.createObjectURL(res)
+                this.$el.getElementsByTagName('video')[0].src = URL.createObjectURL(res)
             })
         },
         bind(src){
-            this.codec.attachMedia(this.el)
+            this.codec.attachMedia(this.$el.getElementsByTagName('video')[0])
             this.codec.on(Hls.Events.MEDIA_ATTACHED,  () => {
                 this.codec.loadSource(src)
             })
@@ -61,13 +61,13 @@ export default {
                 if (data.fatal) {
                     switch (data.type) {
                         case Hls.ErrorTypes.NETWORK_ERROR:
+                            alert('NETWORK_ERROR, Please check your CORS Settings')
                             this.codec.startLoad()
                             break
                         case Hls.ErrorTypes.MEDIA_ERROR:
                             this.codec.recoverMediaError()
                             break
                         default:
-                            // cannot recover
                             this.codec.destroy()
                             break
                     }

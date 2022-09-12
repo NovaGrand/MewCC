@@ -1,7 +1,7 @@
 // 入口文件
 import './main'
 // 数据模型
-import { color, loading, pending, notify } from './mew'
+import { global, color, loading, pending, notify } from './mew'
 
 import ico from './src/components/ico'
 import btn from './src/components/btn'
@@ -17,6 +17,7 @@ export default {
     install: function (app, config){
         app.config.globalProperties.$loading = loading
         app.config.globalProperties.$pending = pending
+        app.config.globalProperties.$global = global
         app.config.globalProperties.$notify = notify
         app.config.globalProperties.$color = color
 
@@ -27,5 +28,6 @@ export default {
         app.component('flex',flex)
         app.component('field',field)
         app.directive('lazy',lazy)
+
     }
 }

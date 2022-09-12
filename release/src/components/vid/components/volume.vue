@@ -1,6 +1,6 @@
 <template>
     <div class="mew-vid-volume" >
-        <div class="wrapper">
+        <div class="mew-vid-volume-wrapper">
             <div class="slider">
                 <progress :value="v.volume" max="1"/>
                 <input type="range" v-model="v.volume" step="any" min="0" max="1">
@@ -56,7 +56,7 @@ export default {
                 this.v.volume = 0
             }
             else
-                this.v.volume = this.temp ? this.temp : 0.1
+                this.v.volume = this.temp ? this.temp : 0.2
         }
     }
 }
@@ -66,7 +66,7 @@ export default {
 div.mew-vid-volume{
     position: relative;
     width: 40px;height: 25px;
-    div.wrapper:hover{
+    div.mew-vid-volume-wrapper:hover{
         div.slider{
             transform: rotate(-90deg) scaleX(1);
         }

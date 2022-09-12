@@ -4,7 +4,7 @@
         <div class="content">
             <div class="group homePage">
                 <ul>
-                    <li>
+                    <li grey style="padding-top: 4px">
                         <router-link to="/">
                             <div class="prefix">首页</div>
                             <div class="suffix">

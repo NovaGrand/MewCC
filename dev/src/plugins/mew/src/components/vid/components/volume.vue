@@ -56,7 +56,7 @@ export default {
                 this.v.volume = 0
             }
             else
-                this.v.volume = this.temp ? this.temp : 0.1
+                this.v.volume = this.temp ? this.temp : 0.2
         }
     }
 }

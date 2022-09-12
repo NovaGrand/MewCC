@@ -1,6 +1,7 @@
 import { reactive } from "vue"
+
 export let global = reactive({
-    mobile: false
+    mobile: false,
 })
 {
     window.addEventListener('load',()=>{
@@ -23,7 +24,6 @@ export let global = reactive({
             document.body.setAttributeNode(m)
         }
         else{
-            console.log(1)
             document.body.removeAttribute('mobile')
         }
     }
