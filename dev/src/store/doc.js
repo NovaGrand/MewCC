@@ -4,13 +4,13 @@ export default {
             name:'开始 Start',
             prefix:'开始',suffix:'Start',
             path:'start',
-            file:'/intro/start.vue'
+            file:'/intro/start'
         },
         {
             name:'规范 Standard',
             prefix:'规范',suffix:'Standard',
             path:'standard',
-            file:'/intro/standard.vue'
+            file:'/intro/standard'
         },
     ],
     "属性":[
@@ -50,7 +50,7 @@ export default {
             name:'CSS Reset',
             prefix:'CSS',suffix:'Reset',
             path:'reset',
-            file:'/preset/reset.vue'
+            file:'/preset/reset'
         },
         {
             name:'蒙板 Matte',

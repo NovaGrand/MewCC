@@ -1,4 +1,5 @@
 import store from '../store'
+const views = import.meta.glob('@/views/documentation/content/**/index.js')
 
 let docRoutes = []
 for(let groupName in store.state.doc){
@@ -6,7 +7,7 @@ for(let groupName in store.state.doc){
         docRoutes.push({
             name: item.name,
             path: item.path,
-            component: () => import('../views/documentation/content' + item.file)
+            component: views['../views/documentation/content' + item.file + '/index.js']
         })
     }
 }
@@ -14,11 +15,11 @@ for(let groupName in store.state.doc){
 let routes = [
     {
         path: '/', name:'Home',
-        component: () => import('@/views/home')
+        component: () => import('../views/home')
     },
     {
         path:'/doc',name:'Documentation',
-        component: () => import('@/views/documentation'),
+        component: () => import('../views/documentation'),
         children:[...docRoutes]
         // 子路由 path 有两种写法，/xxx/xxx 或者 xxx
         // children: [

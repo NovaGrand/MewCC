@@ -20,23 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/standard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/start/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/reset/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/mew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/mew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/mxvideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/mxvideo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/screen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/screen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/volume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/volume.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components_local/color/color.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components_local/color/color.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-theme/doc-theme.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/sidebar/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/sidebar/sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/desktop.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/scss/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/scss/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../release/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../release/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/doc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/attribute/columns.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/intro/standard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/standard/standard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/intro/start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/intro/start/start.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/reset.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/reset/reset.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +43,8 @@
       <list>
         <option value="CSS File" />
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -89,11 +84,11 @@
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\doc-message" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\reset" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro\standard" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro\start" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\home\scss\bak" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\scss\attributes" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components_local" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components\vid\components" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components\vid\mixins" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -366,7 +361,12 @@
       <workItem from="1662879877793" duration="4901000" />
       <workItem from="1662890647687" duration="1065000" />
       <workItem from="1662928613556" duration="10198000" />
-      <workItem from="1662964981592" duration="754000" />
+      <workItem from="1662964981592" duration="3447000" />
+      <workItem from="1662970383644" duration="407000" />
+      <workItem from="1662973417454" duration="733000" />
+      <workItem from="1662979291836" duration="2758000" />
+      <workItem from="1662995442850" duration="1064000" />
+      <workItem from="1663008967871" duration="1991000" />
     </task>
     <servers />
   </component>
@@ -425,9 +425,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="930" y="489" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661631155084" />
-    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup" timestamp="1662961152234">
+    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup" timestamp="1663011990654">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1662961152234" />
+    <state x="779" y="721" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1663011990654" />
   </component>
 </project>

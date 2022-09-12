@@ -15,7 +15,8 @@ export default ({command, mode}) => {
       alias: {
         '@': path.resolve(__dirname, './src'),
       },
-      // 忽略后缀名的配置选项, 添加 .vue 选项时要记得原本默认忽略的选项也要手动写入
+      // 忽略后缀名的配置选项
+      // 即使可以忽略 .vue 后缀，项目中引入时也必须加上 .vue ，否则 build 后依然报错
       extensions: ['.html','.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue', '.scss']
     },
     define:{
@@ -33,10 +34,10 @@ export default ({command, mode}) => {
     },
     build:{
       // 如果构建后无法使用，先尝试删除 rollupOptions
-      rollupOptions:{
-        input:'./index.html'
-      },
-      outDir:'./dist'
+      // rollupOptions:{
+      //   input:'./index.html'
+      // },
+      outDir:'./dist',
     }
   }
 
