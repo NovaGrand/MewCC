@@ -1,5 +1,5 @@
 <template>
-    <div class="mew-vid-setting" jc ac>
+    <div class="mew-vid-setting" :class="{ mobile: $global.mobile }" jc ac>
         <i class="icon" title="Settings">
 
             <svg width="38" height="40" viewBox="0 0 38 40" fill="none" @click="toggle" @mouseenter="flag = true" @mouseleave="flag = false">
@@ -59,6 +59,10 @@ export default {
 <style lang="scss">
 div.mew-vid-setting{
     width: 56px;height: 24px;padding-right: 2px;
+    &.mobile{
+        width: 46px;
+        padding: 0 0 0 6px;
+    }
     i.icon{
         position: relative;
         cursor: pointer;

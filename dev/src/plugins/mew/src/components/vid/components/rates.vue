@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss">
 div.mew-vid-rates{
+    margin-left: 20px;
     position: relative;
     height: 24px;
     display: flex;align-items: center;

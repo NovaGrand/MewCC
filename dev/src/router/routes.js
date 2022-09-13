@@ -15,11 +15,11 @@ for(let groupName in store.state.doc){
 let routes = [
     {
         path: '/', name:'Home',
-        component: () => import('../views/home')
+        component: () => import('@/views/home')
     },
     {
         path:'/doc',name:'Documentation',
-        component: () => import('../views/documentation'),
+        component: () => import('@/views/documentation'),
         children:[...docRoutes]
         // 子路由 path 有两种写法，/xxx/xxx 或者 xxx
         // children: [

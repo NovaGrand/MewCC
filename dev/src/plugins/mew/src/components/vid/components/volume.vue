@@ -1,5 +1,5 @@
 <template>
-    <div class="mew-vid-volume" >
+    <div class="mew-vid-volume" v-if="!$global.mobile">
         <div class="mew-vid-volume-wrapper">
             <div class="slider">
                 <progress :value="v.volume" max="1"/>

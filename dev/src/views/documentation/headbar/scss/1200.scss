@@ -53,8 +53,9 @@ div#headbar{
       width: 78vw;
     }
     @media(max-width: 950px) {
-      width: 40vw;
+      width: 50vw;
       justify-content: end;
+      transform: translateX(2px);
     }
     div.brief{
       @media(max-width: 950px) {

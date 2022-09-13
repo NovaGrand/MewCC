@@ -1,6 +1,6 @@
 <template>
     <div classs="doc-vid">
-        <vid autoplay :src="src"/>
+        <vid autoplay :raw="raw" :src="src"/>
         <h2 bold lg style="margin-top: 20px">视频组件</h2>
         <p>
             由原生 video 封装，提供 blob 资源保护，<i bold>对调试工具进行了防修改、防下载处理，支持直播资源(HLS)</i>。
@@ -36,7 +36,8 @@ export default {
                 { name:'autoplay', type:'Boolean', default:'false', description:'资源加载完成后将自动播放' },
                 { name:'rates', type:'Array', default:"[ '0.2', '0.5', '1.0', '1.5', '2.0' ]", description:'播放速度列表' },
             ],
-            src:''
+            src:'',
+            raw: false
         }
     },
     methods:{
@@ -45,7 +46,14 @@ export default {
         }
     },
     created(){
-        this.src = this.$global.mobile ? vid : "http://novagrand.assets.obs.cn-east-3.myhuaweicloud.com/sample/sample.m3u8"
+        if(this.$global.mobile || window.location.protocol.includes('https')){
+            this.src = vid
+            this.raw = true
+        }
+        else{
+            this.src = "http://novagrand.assets.obs.cn-east-3.myhuaweicloud.com/sample/sample.m3u8"
+            this.raw = false
+        }
     },
     mounted(){
 
