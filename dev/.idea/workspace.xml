@@ -21,13 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/rates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/rates.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/setting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/setting.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/volume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/components/volume.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/component/vid/vid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/documentation/headbar/scss/1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/headbar/scss/1200.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +35,7 @@
         <option value="SCSS File" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,6 +58,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Soysia/herneck.com/dev" />
@@ -365,6 +361,8 @@
       <workItem from="1663008967871" duration="2587000" />
       <workItem from="1663078384931" duration="3777000" />
       <workItem from="1663087477098" duration="850000" />
+      <workItem from="1663100020933" duration="498000" />
+      <workItem from="1663148013455" duration="2442000" />
     </task>
     <servers />
   </component>

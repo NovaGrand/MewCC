@@ -92,6 +92,9 @@
                 </div>
             </footer>
         </div>
+<!--        <div class="nodeSelector">-->
+
+<!--        </div>-->
     </div>
 </template>
 
@@ -104,6 +107,10 @@ import clouds from '@/assets/home_texture_clouds.svg'
 export default {
     name: "doc-home",
     mounted(){
+        // let origin = window.location.origin
+        // if(!origin.includes('github.io') && !origin.includes('huaweicloud.com')){
+        //
+        // }
     },
     data(){
         return {
