@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { notes } from '@/plugins/mew/mew'
+import { notes } from '../../../mew'
 import toast from './toast'
 export default {
     name: "mew-notes",
