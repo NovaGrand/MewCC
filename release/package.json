@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NovaGrand/MewCC/issues"
   },
-  "homepage": "https://github.com/NovaGrand/MewCC#readme"
+  "homepage": "https://github.com/NovaGrand/MewCC#readme",
+  "dependencies": {
+    "hls.js": "^1.2.0"
+  }
 }

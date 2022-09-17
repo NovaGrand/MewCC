@@ -11,7 +11,7 @@ import fit from './src/components/fit'
 import flex from './src/components/flex'
 import field from './src/components/field'
 
-import lazy from './src/directive/lazy'
+import lazy from './src/directive/lazy.js'
 
 export default {
     install: function (app, config){

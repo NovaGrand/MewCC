@@ -59,9 +59,10 @@ export default {
             // 错误处理
             this.codec.on(Hls.Events.ERROR, function (event, data) {
                 if (data.fatal) {
+                    alert('Video is not available now! We are testing and fixing this kind of problem, we are very sorry about this!')
                     switch (data.type) {
                         case Hls.ErrorTypes.NETWORK_ERROR:
-                            alert('NETWORK_ERROR, Please check your CORS Settings')
+                            console.log('Hls.ErrorTypes.NETWORK_ERROR')
                             this.codec.startLoad()
                             break
                         case Hls.ErrorTypes.MEDIA_ERROR:

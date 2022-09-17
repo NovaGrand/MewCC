@@ -16,7 +16,7 @@ export default ({command, mode}) => {
         '@': path.resolve(__dirname, './src'),
       },
       // 忽略后缀名的配置选项
-      // 即使可以忽略 .vue 后缀，项目中引入时也必须加上 .vue ，否则 build 后依然报错
+      // 即使可以忽略 .vue 后缀，项目中引入时也必须加上 .vue ，否则 build 可能报错
       extensions: ['.html','.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue', '.scss']
     },
     define:{

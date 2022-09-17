@@ -20,8 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/hls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/hls.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/bak/bus/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/bak/lib/debounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/bak/lib/throttle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../release/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/components/rates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/components/rates.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/components/setting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/components/setting.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/components/volume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/components/volume.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/mixins/codec.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/mixins/codec.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +71,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Soysia/herneck.com/dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -69,18 +79,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\components\prism" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\doc-message" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components\vid\mixins\dist" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\reset" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro\standard" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro\start" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\home\scss\bak" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\scss\attributes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components\vid\mixins" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\components\prism" />
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\doc-message" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -363,6 +374,11 @@
       <workItem from="1663087477098" duration="850000" />
       <workItem from="1663100020933" duration="498000" />
       <workItem from="1663148013455" duration="2442000" />
+      <workItem from="1663332424059" duration="291000" />
+      <workItem from="1663344144358" duration="16000" />
+      <workItem from="1663344275241" duration="2667000" />
+      <workItem from="1663423919376" duration="618000" />
+      <workItem from="1663436156864" duration="1351000" />
     </task>
     <servers />
   </component>
@@ -405,10 +421,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="94" y="693" width="2360" height="612" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1660286725825" />
-    <state x="1033" y="677" key="FileChooserDialogImpl" timestamp="1662552148344">
+    <state x="1033" y="677" key="FileChooserDialogImpl" timestamp="1663438025774">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1662552148344" />
+    <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1663438025774" />
     <state x="540" y="449" key="SettingsEditor" timestamp="1661711547585">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
