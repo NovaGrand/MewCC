@@ -20,149 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0dffef9-b5dd-4e23-8439-ef7e8f84e481" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/assets/bg_bar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/assets/bg_foo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/app.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/mew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/assets/M.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/assets/bg_bar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/assets/bg_foo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/assets/flag.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/btn/btn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/btn/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/btn/scss/btn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/components/check.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/components/dropList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/components/input.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/components/labelTag.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/components/mewLabel_bak.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/field.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/mixins/inits.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/mixins/types.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/field/mixins/validate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/fit/fit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/fit/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/flex/flex.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/flex/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/ico/ico.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/ico/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/clock.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/control.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/err.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/info.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/mxvideo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/playBtn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/rates.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/screen.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/setting.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/timeline.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/components/volume.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/mixins/codec.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/mixins/hls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/mixins/hls.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components/vid/vid.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/color/color.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/color/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/fieldWrapper/fieldWrapper.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/fieldWrapper/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/matte/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/matte/matte.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/notes/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/notes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/notes/mixin/props.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/notes/notes.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/notes/toast.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/components_local/utils/spinner.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/directive/lazy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/border.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/color.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/padding&amp;margin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/test.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/theme.dark.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/theme.light.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/width&amp;height.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/icon/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/icon/mew.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/mew/src/scss/transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/release/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components_local/notes/notes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components_local/notes/notes.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/test.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/test.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/app.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/release/mew/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/mew.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/mew/src/assets/M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/mew/src/assets/bg_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/bg_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/mew/src/assets/bg_foo.png" beforeDir="false" afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/bg_foo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/mew/src/assets/flag.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/mew/src/scss/attributes/test.scss" beforeDir="false" afterPath="$PROJECT_DIR$/release/mew/src/scss/attributes/test.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/release/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/release/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/assets/M.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/assets/flag.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/btn/btn.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/btn/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/btn/scss/btn.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/components/check.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/components/dropList.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/components/input.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/components/labelTag.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/components/mewLabel_bak.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/field.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/mixins/inits.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/mixins/types.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/field/mixins/validate.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/fit/fit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/fit/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/flex/flex.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/flex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/ico/ico.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/ico/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/clock.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/control.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/err.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/info.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/mxvideo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/playBtn.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/rates.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/screen.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/setting.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/timeline.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/components/volume.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/mixins/codec.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components/vid/vid.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/color/color.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/color/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/fieldWrapper/fieldWrapper.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/fieldWrapper/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/matte/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/matte/matte.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/notes/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/notes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/notes/mixin/props.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/notes/notes.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/notes/toast.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/components_local/utils/spinner.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/directive/lazy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/border.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/color.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/flex.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/padding&amp;margin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/test.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/theme.dark.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/theme.light.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/attributes/width&amp;height.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/icon/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/icon/mew.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/src/scss/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/release/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/release" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Strategy" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -209,11 +74,11 @@
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\release\mew\src\scss\attributes" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\btn" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\field" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\matte" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\container" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\component\hint" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -331,7 +196,7 @@
       <workItem from="1658703076001" duration="3488000" />
       <workItem from="1658789795112" duration="92000" />
       <workItem from="1663438028324" duration="1062000" />
-      <workItem from="1663441448667" duration="2735000" />
+      <workItem from="1663441448667" duration="3551000" />
     </task>
     <servers />
   </component>
@@ -355,18 +220,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1350" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1654839476125" />
-    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl" timestamp="1663441719671">
+    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl" timestamp="1663444372369">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1663441719671" />
+    <state x="1061" y="456" width="983" height="673" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1663444372369" />
     <state x="782" y="345" key="SettingsEditor" timestamp="1658447169674">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1658447169674" />
-    <state x="1684" y="333" key="run.anything.popup" timestamp="1658143310630">
+    <state x="1684" y="333" key="run.anything.popup" timestamp="1663444872029">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1684" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1658143310630" />
+    <state x="1684" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1663444872029" />
     <state x="938" y="593" key="search.everywhere.popup" timestamp="1658621267605">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

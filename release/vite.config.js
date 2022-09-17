@@ -33,9 +33,15 @@ export default ({command, mode}) => {
       open: '/',
     },
     build:{
-      // 打包入口
       rollupOptions:{
-        input:'./mew/index.js'
+        // 打包入口
+        input:'./mew/index.js',
+        // 关闭构建后的哈希
+        output: {
+          entryFileNames: `[name].js`,
+          chunkFileNames: `[name].js`,
+          assetFileNames: `[name].[ext]`,
+        }
       },
       outDir:'./dist',
     }
