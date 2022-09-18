@@ -1,10 +1,20 @@
 <script>
-import Hls from "hls.js";
-
 export default {
     name: "mew-vid-codec",
     mounted(){
-        this.init().load(this.src)
+        if(!window.HlsLoaded){
+            let script = document.createElement("script")
+                script.type = "text/javascript"
+                script.src = "https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.2.3/hls.min.js"
+            document.body.appendChild(script)
+            script.onload = () => {
+                window.HlsLoaded = true
+                this.init().load(this.src)
+            }
+        }
+        else
+            this.init().load(this.src)
+
     },
     beforeUnmount(){
         this.wipe()

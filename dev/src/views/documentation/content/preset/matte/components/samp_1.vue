@@ -33,8 +33,6 @@ export default {
         let a = controls.offsetWidth
         let b = controls.scrollWidth
         this.$el.style.setProperty('--scale',a/b - 0.1)
-        console.log(a)
-        console.log(b)
     },
     data(){
         return {

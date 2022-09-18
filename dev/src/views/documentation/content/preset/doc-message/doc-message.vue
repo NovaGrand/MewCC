@@ -209,7 +209,6 @@ export default {
         let a = this.$el.offsetWidth
         this.$el.style.setProperty('--scale', a / 900)
         this.$el.style.setProperty('--marginBottom', (1 - a / 900) * 410 * -1 + 'px')
-        console.log(a)
     },
     methods:{
         showSample(n){

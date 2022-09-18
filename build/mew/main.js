@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import app from './app'
+import mewApp from './mew-app'
 
 // 引入样式
 import "./src/scss/icon"
@@ -12,5 +12,5 @@ let el = document.createElement('div')
     document.body.appendChild(el)
 
 // 挂载组件
-createApp(app).mount(el)
+createApp(mewApp).mount(el)
 

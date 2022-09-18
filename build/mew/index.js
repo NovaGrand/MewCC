@@ -1,5 +1,12 @@
-// 入口文件
+// // 入口文件
 import './main'
+
+// 引入样式
+import "./src/scss/icon/index.scss"
+import "./src/scss/attributes"
+import "./src/scss/transition"
+
+
 // 数据模型
 import { global, color, loading, pending, notify } from './mew'
 

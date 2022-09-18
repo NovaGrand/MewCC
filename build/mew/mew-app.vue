@@ -14,7 +14,7 @@ import color from './src/components_local/color'
 import notes from './src/components_local/notes'
 import fieldWrapper from './src/components_local/fieldWrapper'
 export default {
-    name: "app",
+    name: "mew-app",
     components:{
         matte, color, notes, fieldWrapper
     },

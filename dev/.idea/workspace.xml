@@ -20,18 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/hls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/hls.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/javascript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aa/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/bak/bus/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/bak/lib/debounce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/bak/lib/throttle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../release/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../release/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/components/rates.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/components/rates.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/components/setting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/components/setting.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/components/volume.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/components/volume.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../release/src/components/vid/mixins/codec.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/src/components/vid/mixins/codec.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/mew-app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/assets/M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/assets/flag.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/codec.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/hls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/vid/mixins/hls.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-message/doc-message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/doc-message/doc-message.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/components/samp_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/documentation/content/preset/matte/components/samp_1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../release/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/mew/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../release/mew/mew-app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../release/mew/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/mew/src/scss/attributes/bg_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/../release/mew/src/assets/bg_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/mew/src/scss/attributes/bg_foo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../release/mew/src/assets/bg_foo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/mew/src/scss/attributes/test.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../release/mew/src/scss/attributes/test.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../release/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../release/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +85,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Strategy" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -80,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\assets" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components\vid\mixins\dist" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\preset\reset" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro\standard" />
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\documentation\content\intro\start" />
-      <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\views\home\scss\bak" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\Git\NovaGrand\MewCC\dev\src\plugins\mew\src\components\vid\mixins" />
@@ -379,6 +393,9 @@
       <workItem from="1663344275241" duration="2667000" />
       <workItem from="1663423919376" duration="618000" />
       <workItem from="1663436156864" duration="1351000" />
+      <workItem from="1663460801382" duration="1231000" />
+      <workItem from="1663496382958" duration="2098000" />
+      <workItem from="1663507565346" duration="1355000" />
     </task>
     <servers />
   </component>
@@ -421,10 +438,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="94" y="693" width="2360" height="612" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1660286725825" />
-    <state x="1033" y="677" key="FileChooserDialogImpl" timestamp="1663438025774">
+    <state x="1033" y="677" key="FileChooserDialogImpl" timestamp="1663509310227">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1663438025774" />
+    <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1663509310227" />
     <state x="540" y="449" key="SettingsEditor" timestamp="1661711547585">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
