@@ -2,6 +2,8 @@
     <div class="mew-field" :class="[ mode, checked, picking, error ]"
          @mousedown.once="activated = true"
          @click="toggle"
+         @focus="$focus"
+         tabindex="0"
     >
         <!--文本输入框和勾选框组件-->
         <component :is="component"><slot/></component>

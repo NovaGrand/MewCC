@@ -1,21 +1,9 @@
 {
   "name": "mewcc",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "A Frontend Multi-Element Widgets Community Collection",
-  "main": "./dist",
+  "main": "./mew",
   "license": "MIT",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib ./mew/index.js"
-  },
-  "dependencies": {
-    "vue": "^3.2.13"
-  },
-  "devDependencies": {
-    "@vue/cli-service": "~5.0.0",
-    "sass": "^1.54.9",
-    "sass-loader": "^12.6.0"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",

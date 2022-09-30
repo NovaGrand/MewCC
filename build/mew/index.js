@@ -2,7 +2,7 @@
 import './main'
 
 // 引入样式
-import "./src/scss/icon/index.scss"
+import "./src/scss/icon"
 import "./src/scss/attributes"
 import "./src/scss/transition"
 

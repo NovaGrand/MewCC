@@ -4,13 +4,13 @@
   color: rgba(var(--c), calc(0.04 * var(--ac)));
 }
 body{
-  --theme: null;
-  &[mew-theme="light"]{
+  &[light]{
     color: rgba(32,32,32, calc(0.04 * var(--ac)));
     --theme:32,32,32;
+    //--theme: null;
     background-color: inherit;
   }
-  &[mew-theme="dark"]{
+  &[dark]{
     color: rgba(235,235,235, calc(0.04 * var(--ac)));
     --theme:235,235,235;
     background-color: #282828;

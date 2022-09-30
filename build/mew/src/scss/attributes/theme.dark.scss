@@ -1,4 +1,4 @@
-body[mew-theme="dark"]{
+body[mew-theme="dark"],body[dark]{
   [red]{  // OK
     &[lighten]{
       --c: 180,0,0

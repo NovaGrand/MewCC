@@ -1,19 +1,15 @@
-# build
+## Install
+```
+npm i mewcc
+```
+### Use in your vue project
+```
+// in main.js 
+import { createApp } from 'vue'
+import App from './App.vue'
 
-## Project setup
+import mew from 'mewcc'
+createApp(App).use(mew).mount('#app')
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
