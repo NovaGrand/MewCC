@@ -21,26 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ad6c12bf-a15d-487a-9ed2-3a68ada9a91c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../build/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/components/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/components/field/field.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/components/field/mixins/inits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/components/field/mixins/inits.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/components/ico/ico.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/components/ico/ico.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/scss/attributes/border.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/scss/attributes/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/scss/attributes/color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/scss/attributes/theme.dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/scss/attributes/theme.dark.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/mew/src/scss/attributes/theme.light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../build/mew/src/scss/attributes/theme.light.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../build/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/field.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/field/mixins/inits.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/components/ico/ico.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/components/ico/ico.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/border.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.dark.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/mew/src/scss/attributes/theme.light.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/hex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/hex.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Soysia/herneck.com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -393,6 +375,9 @@
       <workItem from="1663507565346" duration="1355000" />
       <workItem from="1664314675464" duration="774000" />
       <workItem from="1664418522668" duration="24000" />
+      <workItem from="1664590368826" duration="44000" />
+      <workItem from="1664730455693" duration="29000" />
+      <workItem from="1666286156493" duration="743000" />
     </task>
     <servers />
   </component>
@@ -435,10 +420,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="94" y="693" width="2360" height="612" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1660286725825" />
-    <state x="1033" y="677" key="FileChooserDialogImpl" timestamp="1664418548109">
+    <state x="1033" y="677" key="FileChooserDialogImpl" timestamp="1664730485552">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1664418548109" />
+    <state x="1033" y="677" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1664730485552" />
     <state x="540" y="449" key="SettingsEditor" timestamp="1661711547585">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

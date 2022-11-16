@@ -21,25 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c0dffef9-b5dd-4e23-8439-ef7e8f84e481" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/build/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/components/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/components/field/field.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/components/field/mixins/inits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/components/field/mixins/inits.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/components/ico/ico.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/components/ico/ico.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/scss/attributes/border.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/scss/attributes/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/scss/attributes/color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/scss/attributes/theme.dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/scss/attributes/theme.dark.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/mew/src/scss/attributes/theme.light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/mew/src/scss/attributes/theme.light.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/field/field.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/field/field.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/field/mixins/inits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/field/mixins/inits.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/ico/ico.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/components/ico/ico.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/border.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/theme.dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/theme.dark.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/theme.light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/mew/src/scss/attributes/theme.light.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dev/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/lib/hex.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/lib/hex.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Strategy/dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -220,6 +203,7 @@
       <workItem from="1664212605548" duration="343000" />
       <workItem from="1664213085753" duration="66000" />
       <workItem from="1664218037716" duration="21000" />
+      <workItem from="1666252248090" duration="453000" />
     </task>
     <servers />
   </component>
